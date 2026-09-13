@@ -1,51 +1,60 @@
 # Richard Butts
 
-**Data Architecture · MarTech Systems · AI Governance · Analytics Engineering · Enterprise Integration**
+**AI Systems Architecture · Data Architecture · MarTech / GTM Systems · Analytics Engineering · Enterprise Integration**
 
-I build systems that determine what customer, commercial, and operational data is actually allowed to become true.
+I design and build analytics, MarTech, GTM, AI, and enterprise integration systems with an emphasis on governed state, data quality, reliable automation, evaluation, and measurable business outcomes.
 
-My work sits at the intersection of analytics engineering, enterprise MarTech architecture, AI/agent control systems, GTM infrastructure, and revenue-integrity architecture. I care about canonical identity, source authority, durable state, auditability, idempotency, failure recovery, and making cross-system truth defensible.
-
-> **Signal vs. Noise.** The tools can execute. The control layer determines what is actually true.
+My work sits where software behavior meets business truth: what happened, what state is authoritative, what an automated system is allowed to change, and whether an AI agent is actually safe and better enough to release.
 
 ## Selected engineering work
 
 | Project | What it demonstrates |
 |---|---|
-| **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Governed customer identity, field authority, consent, AI action boundaries, human approval, durable execution, retries, uncertain-result recovery, auditability, Docker, PostgreSQL, FastAPI, and CI. |
-| **[Game Telemetry Analytics Engineering](https://github.com/rlbsem/game-telemetry-analytics-engineering)** | Python, DuckDB, dbt, Airflow, event contracts, transactional ingestion, late-arriving telemetry, incremental models, launch monitoring, replay validation, testing, and CI. |
+| **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | Agent regression testing, actual local LLM inference, structured tool decisions, evidence grounding, prompt-injection/adversarial evaluation, release gating, shadow/canary evaluation, rollback, runtime observability, and cross-platform CI. |
+| **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Governed customer identity, source and field authority, consent, AI action boundaries, human approval, durable execution, retries, uncertain-result recovery, idempotent downstream effects, auditability, PostgreSQL, FastAPI, Docker, and CI. |
+| **[Game Telemetry Analytics Engineering](https://github.com/rlbsem/game-telemetry-analytics-engineering)** | Python, DuckDB, dbt, Airflow, event contracts, transactional ingestion, late-arriving telemetry, incremental models, replay validation, launch monitoring, testing, and CI. |
 
-These are executable portfolio systems, not architecture-only case studies. Each repository separates what was actually run and tested from production-reference design and explicitly documents known limits.
+These are executable portfolio systems, not architecture-only case studies. Each repository separates demonstrated behavior from reference architecture, preserves unfavorable results where they matter, and documents its claim boundary and known limitations.
 
-## What I work on
+### Portfolio thesis
+
+1. **Analytics truth:** What happened in the product?
+2. **Governed enterprise truth:** What business state is authoritative, and what is automation allowed to make true?
+3. **Agent-quality truth:** Is a candidate AI agent grounded, safe, and better enough to release?
+
+## Architecture themes
 
 ```mermaid
 flowchart LR
-    A[Source systems / events] --> B[Identity + provenance]
+    A[Events / enterprise systems] --> B[Identity + provenance]
     B --> C[Governed state]
-    C --> D[Policy + validation]
+    C --> D[Reasoning + policy]
     D --> E[Controlled execution]
-    E --> F[Auditable business truth]
+    E --> F[Evaluation + evidence]
+    F --> G[Defensible business truth]
 ```
 
-**Architecture themes:** canonical customer/entity identity · source provenance · field ownership · source-of-truth governance · No-Regress Logic · stateful middleware · idempotency · exception/retry handling · controlled AI actions · audit logging · cross-system reconciliation
+**Systems concerns:** canonical identity · source provenance · field ownership · source-of-truth governance · No-Regress Logic · durable state · idempotency · retries and exception handling · controlled AI actions · agent evaluation · adversarial testing · auditability · cross-system reconciliation
 
-**Core technologies demonstrated here:** Python · SQL · PostgreSQL · FastAPI · dbt · DuckDB · Airflow · Docker · GitHub Actions · REST APIs · webhooks
+**Core technologies demonstrated here:** Python · SQL · PostgreSQL · FastAPI · SQLite / FTS5 · dbt · DuckDB · Airflow · Docker · GitHub Actions · REST APIs · webhooks · local LLM inference
 
 ## Professional context
 
-My background spans **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital**, across digital growth, analytics, RevOps, GTM systems, data architecture, and enterprise systems.
+My background spans **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital** across analytics, digital growth, RevOps, GTM systems, MarTech, data architecture, and enterprise systems.
 
-At **Groundbreakers Digital**, I work on Data Infrastructure, Revenue Integrity, and M&A Systems Architecture for home-services and acquisition environments. The focus is not moving data for its own sake. It is governing identity, commercial state, source provenance, and system boundaries so the resulting operating data can be trusted.
+At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M** during my tenure. At LMN, I worked across an approximately **$350K/month USD acquisition program** spanning five B2B SaaS products, with CAC improvements of approximately **15–25%**.
 
-## Current portfolio direction
+At Groundbreakers Digital, I work on data infrastructure, revenue integrity, and M&A systems architecture for home-services and acquisition environments. The focus is not moving data for its own sake. It is governing identity, commercial state, source provenance, reconciliation, and system boundaries so operating and transaction data can be defended.
+
+## Current focus
 
 The portfolio is intentionally small. I would rather publish a few systems that can survive technical scrutiny than a large collection of toy projects.
 
-Current focus areas include:
+Current areas of focus include:
 
-- enterprise MarTech and AI control architecture
-- analytics engineering and event/data quality
+- enterprise AI runtime, evaluation, and release governance
+- MarTech / GTM architecture and governed automation
+- analytics engineering and behavioral telemetry
 - CRM → operations → billing → GL traceability
 - revenue integrity and cross-system reconciliation
 - post-acquisition integration and governed data migration
@@ -55,4 +64,4 @@ Current focus areas include:
 - GitHub: [@rlbsem](https://github.com/rlbsem)
 - Groundbreakers Digital: Data Infrastructure · Revenue Integrity · M&A Systems Architecture
 
-I am especially interested in senior roles spanning **MarTech architecture, AI systems, analytics engineering, data architecture, GTM/RevOps systems, and enterprise integration**.
+I am especially interested in senior roles spanning **AI systems architecture, MarTech / GTM architecture, analytics engineering, data architecture, RevOps systems, and enterprise integration**.
