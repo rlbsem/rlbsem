@@ -42,11 +42,13 @@ flowchart LR
 
 ## Professional context
 
-My background spans **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital** across analytics, digital growth, RevOps, GTM systems, MarTech, data architecture, and enterprise systems.
+My background spans enterprise ecommerce, B2B SaaS, MarTech, analytics, GTM systems, data architecture, and enterprise integration across **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital**.
 
-At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M** during my tenure. At LMN, I worked across an approximately **$350K/month USD acquisition program** spanning five B2B SaaS products, with CAC improvements of approximately **15–25%**.
+Across my career, I have managed more than **$65M in paid media and marketing investment**. At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M** during my tenure. At LMN, I worked across an approximately **$350K/month USD acquisition program** spanning five B2B SaaS products, with CAC improvements of approximately **15–25%**.
 
 At Groundbreakers Digital, I work on data infrastructure, revenue integrity, and M&A systems architecture for home-services and acquisition environments. The focus is not moving data for its own sake. It is governing identity, commercial state, source provenance, reconciliation, and system boundaries so operating and transaction data can be defended.
+
+That commercial operating background is the context behind the technical work in this portfolio: the systems are designed around real constraints such as scale, attribution, customer identity, workflow reliability, platform change, and measurable business outcomes.
 
 ## Current focus
 
