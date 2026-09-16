@@ -28,12 +28,31 @@ These are executable portfolio systems, not architecture-only case studies. Each
 
 ```mermaid
 flowchart LR
-    A[Events / enterprise systems] --> B[Identity + provenance]
-    B --> C[Governed + temporal state]
-    C --> D[Reasoning + policy]
-    D --> E[Controlled execution]
-    E --> F[Evaluation + reconciliation]
-    F --> G[Defensible business truth]
+    A[Enterprise systems + customer events]
+    A --> B[Identity + provenance + authoritative state]
+
+    B --> C[Governed Control Plane]
+    B --> D[Temporal Audience Engine]
+    B --> E[Migration Assurance]
+
+    C --> F[Controlled automation + approvals]
+    D --> G[Audience decisions + activation safety]
+    E --> H[Cutover + reconciliation + rollback]
+
+    F --> I[Agent Runtime + Evaluation]
+    G --> J[Defensible customer truth]
+    H --> J
+    I --> J
+
+    classDef source fill:#dbeafe,stroke:#2563eb,color:#0f172a,stroke-width:2px;
+    classDef foundation fill:#bfdbfe,stroke:#1d4ed8,color:#0f172a,stroke-width:2px;
+    classDef capability fill:#93c5fd,stroke:#1e40af,color:#0f172a,stroke-width:2px;
+    classDef output fill:#60a5fa,stroke:#1e3a8a,color:#ffffff,stroke-width:2px;
+
+    class A source;
+    class B foundation;
+    class C,D,E,F,G,H,I capability;
+    class J output;
 ```
 
 **Systems concerns:** canonical identity · source provenance · field ownership · source-of-truth governance · temporal correctness · bitemporal history · No-Regress Logic · durable state · idempotency · retries and exception handling · controlled AI actions · agent evaluation · adversarial testing · audience activation safety · source-coverage evidence · migration assurance · cutover and rollback safety · auditability · cross-system reconciliation
