@@ -1,91 +1,58 @@
 # Richard Butts
 
-**AI Systems Architecture · Data Architecture · MarTech / GTM Systems · Analytics Engineering · Enterprise Integration**
+**Enterprise MarTech Architecture · AI Systems & Agents · Data Architecture · Platform Optimization · Integration & Migration**
 
-I design and build analytics, MarTech, GTM, AI, customer-data, and enterprise integration systems with an emphasis on governed state, temporal correctness, data quality, reliable automation, evaluation, and measurable business outcomes.
+I design and build systems that make marketing technology work as one governed environment. My work connects commercial requirements to technical architecture: choosing platforms that meet cost and performance constraints, preserving customer and revenue meaning across systems, controlling what automation and AI can change, and making migrations verifiable and reversible.
 
-My work sits where software behavior meets business truth: what state is authoritative, what an automated system is allowed to change, whether an AI agent is actually safe and better enough to release, who belongs in an audience at a given business time based on what was known at that point, and whether a critical platform can be replaced without destroying meaning or reversibility.
+The objective is practical: **more reliable marketing measurement, less manual reconciliation, safer automation, lower avoidable platform cost, and systems that can scale without losing control of their data.**
 
 ## Selected engineering work
 
-| Project | What it demonstrates |
-|---|---|
-| **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Governed customer identity, source and field authority, consent, AI action boundaries, human approval, durable execution, retries, uncertain-result recovery, idempotent downstream effects, auditability, PostgreSQL, FastAPI, Docker, and CI. |
-| **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | Agent regression testing, actual local LLM inference, structured tool decisions, evidence grounding, prompt-injection/adversarial evaluation, release gating, shadow/canary evaluation, rollback, runtime observability, and cross-platform CI. |
-| **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** | Bitemporal customer state, late arrivals and corrections, immutable original versus restated audience generations, clock-driven invalidation, coverage-conditioned activation, selective reevaluation, independent full-evaluator equivalence, destination reconciliation, and cross-platform CI. |
-| **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** | System replacement, consistent snapshots, incremental change transfer, versioned mappings, semantic reconciliation, evidence-bound cutover, crash recovery, reverse migration, rollback safety, and cross-platform CI. |
+Five independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
 
-These are executable portfolio systems, not architecture-only case studies. Each repository separates demonstrated behavior from reference architecture, preserves unfavorable results where they matter, and documents its claim boundary and known limitations.
+| Project | Architecture problem | What the implementation demonstrates |
+|---|---|---|
+| **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
+| **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Who owns customer truth, and what may an agent or workflow change? | Canonical identity, provenance and field authority, consent and approval boundaries, PostgreSQL-backed durable execution, idempotent downstream effects, retries, uncertain-result recovery, and audit trails. |
+| **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | How do we evaluate an agent and govern release rather than trusting its output? | Actual local LLM inference, evidence-grounded tool decisions, adversarial tests, regression gates, shadow/canary evaluation, observable rollback, and transparent reporting of failed model behavior. |
+| **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** | Can we replace a platform without losing meaning or making rollback unsafe? | Consistent snapshots and change catch-up, versioned schema mappings, independent semantic reconciliation, evidence-bound cutover, process-crash recovery, reverse migration, and explicit rollback blockers. |
+| **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** | Who belonged in an audience at a given time, based on what we knew then? | Bitemporal customer facts, immutable original and restated audience decisions, time-driven expiry, selective reevaluation, coverage-gated activation, and destination reconciliation. |
 
-### Portfolio thesis
+**Start with the problem closest to your team:** [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), or [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences).
 
-1. **Governed enterprise truth:** What business state is authoritative, and what is automation allowed to make true?
-2. **Agent-quality truth:** Is a candidate AI agent grounded, safe, and better enough to release?
-3. **Temporal customer truth:** Who belongs in an audience at business time T, based on what was known at knowledge time K?
-4. **Migration truth:** Can a critical platform be replaced without losing meaning or reversibility?
-
-## Architecture themes
+### The architecture questions behind the work
 
 ```mermaid
 flowchart LR
-    A[Enterprise systems + customer events]
-    A --> B[Identity + provenance + authoritative state]
-
-    B --> C[Governed Control Plane]
-    B --> D[Temporal Audience Engine]
-    B --> E[Migration Assurance]
-
-    C --> F[Controlled automation + approvals]
-    D --> G[Audience decisions + activation safety]
-    E --> H[Cutover + reconciliation + rollback]
-
-    F --> I[Agent Runtime + Evaluation]
-    G --> J[Defensible customer truth]
-    H --> J
-    I --> J
-
-    classDef source fill:#dbeafe,stroke:#2563eb,color:#0f172a,stroke-width:2px;
-    classDef foundation fill:#bfdbfe,stroke:#1d4ed8,color:#0f172a,stroke-width:2px;
-    classDef capability fill:#93c5fd,stroke:#1e40af,color:#0f172a,stroke-width:2px;
-    classDef output fill:#60a5fa,stroke:#1e3a8a,color:#ffffff,stroke-width:2px;
-
-    class A source;
-    class B foundation;
-    class C,D,E,F,G,H,I capability;
-    class J output;
+    A[Business requirements] --> B[Stack economics]
+    A --> C[Customer state governance]
+    A --> D[Agent runtime and evaluation]
+    A --> E[Migration assurance]
+    A --> F[Temporal audiences]
+    B --> G[Defensible platform and cost choices]
+    C --> H[Controlled data and automation]
+    D --> I[Evidence-based agent releases]
+    E --> J[Verified cutover and rollback]
+    F --> K[Auditable audience decisions]
 ```
 
-**Systems concerns:** canonical identity · source provenance · field ownership · source-of-truth governance · temporal correctness · bitemporal history · No-Regress Logic · durable state · idempotency · retries and exception handling · controlled AI actions · agent evaluation · adversarial testing · audience activation safety · source-coverage evidence · migration assurance · cutover and rollback safety · auditability · cross-system reconciliation
-
-**Core technologies demonstrated across the public repositories:** Python · SQL · PostgreSQL · FastAPI · SQLite / FTS5 · dbt · DuckDB · Airflow · Docker · GitHub Actions · REST APIs · webhooks · local LLM inference
+*This is a map of independent engineering capabilities, not a claim that these five repositories form one deployed production system.*
 
 ## Professional context
 
-My background spans enterprise ecommerce, B2B SaaS, MarTech, analytics, GTM systems, data architecture, and enterprise integration across **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital**.
+My background spans enterprise ecommerce, B2B SaaS, marketing performance, analytics, GTM systems, and enterprise integration across **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital**.
 
-Across my career, I have managed more than **$65M in paid media and marketing investment**. At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M** during my tenure. At LMN, I worked across an approximately **$350K/month USD acquisition program** spanning five B2B SaaS products, with CAC improvements of approximately **15–25%**.
+- **Commercial scale:** Managed more than **$65M in paid media and marketing investment** across my career. At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**.
+- **B2B SaaS:** At LMN, worked across an approximately **$350K/month USD acquisition program** spanning five products, with CAC improvements of approximately **15–25%**. My work has included Salesforce, Pardot, Marketing Cloud, funnel measurement, and GTM systems.
+- **Architecture and delivery:** Founded Groundbreakers Digital and worked across roughly **30 projects** for founder-owned and private-equity-backed businesses. The work spans MarTech and attribution, customer identity, operating and finance systems, APIs and integrations, revenue integrity, data governance, and AI-driven workflows. It gives marketing teams stronger source-to-revenue measurement, reduces manual cross-system work, and helps multi-brand operators build auditable, scalable platforms.
+- **AI:** Working with LLMs and AI systems since **2023**, alongside longer-standing marketing automation, data, and integration experience.
 
-At Groundbreakers Digital, I work on data infrastructure, revenue integrity, and M&A systems architecture for home-services and acquisition environments. The focus is not moving data for its own sake. It is governing identity, commercial state, source provenance, reconciliation, and system boundaries so operating and transaction data can be defended.
+**Technologies demonstrated in the public engineering work:** Python · SQL · PostgreSQL · SQLite · FastAPI · SciPy / HiGHS · Docker · GitHub Actions · HTTP / REST · local LLM inference.
 
-That commercial operating background is the context behind the technical work in this portfolio: the systems are designed around real constraints such as scale, attribution, customer identity, workflow reliability, platform change, and measurable business outcomes.
+## How to review the work
 
-## Current focus
+Each repository has a runnable entry point, documented architecture and assumptions, tests, generated evidence, and explicit limitations. The projects are **independent synthetic portfolio implementations**, not representations of client production data or claims of live vendor integrations. Professional experience and portfolio demonstrations are presented separately.
 
-The portfolio is intentionally small. I would rather publish a few systems that can survive technical scrutiny than a large collection of toy projects.
+The underlying theme is straightforward: **tools execute; the control layer determines what is allowed to become true.**
 
-Current areas of focus include:
-
-- MarTech / GTM architecture and governed automation
-- enterprise AI runtime, evaluation, and release governance
-- temporal customer data, audience computation, and activation safety
-- platform replacement, cutover, rollback, and migration assurance
-- CRM → operations → billing → GL traceability
-- revenue integrity and cross-system reconciliation
-- post-acquisition integration and governed data migration
-
-## Contact
-
-- GitHub: [@rlbsem](https://github.com/rlbsem)
-- Groundbreakers Digital: Data Infrastructure · Revenue Integrity · M&A Systems Architecture
-
-I am especially interested in senior roles spanning **AI systems architecture, MarTech / GTM architecture, customer-data architecture, analytics engineering, data architecture, RevOps systems, and enterprise integration**.
+[GitHub profile](https://github.com/rlbsem) · **Groundbreakers Digital:** Data Infrastructure · Revenue Integrity · M&A Systems Architecture
