@@ -34,6 +34,14 @@ flowchart LR
     D --> I[Evidence-based agent releases]
     E --> J[Verified cutover and rollback]
     F --> K[Auditable audience decisions]
+
+    classDef source fill:#dbeafe,stroke:#2563eb,color:#0f172a,stroke-width:2px;
+    classDef capability fill:#93c5fd,stroke:#1e40af,color:#0f172a,stroke-width:2px;
+    classDef output fill:#2563eb,stroke:#1e3a8a,color:#ffffff,stroke-width:2px;
+
+    class A source;
+    class B,C,D,E,F capability;
+    class G,H,I,J,K output;
 ```
 
 *This is a map of independent engineering capabilities, not a claim that these five repositories form one deployed production system.*
