@@ -8,27 +8,30 @@ The objective is practical: **more reliable marketing measurement, less manual r
 
 ## Selected engineering work
 
-Five independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
+Six independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
 
 | Project | Architecture problem | What the implementation demonstrates |
 |---|---|---|
+| **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** | Before we retire or replace a Marketing platform, what actually depends on it? | Evidence-backed estate reconstruction, provenance and conflict handling, typed dependencies, three-state impact analysis, counterfactual retirement/replacement, witness paths, and prerequisite sequencing across a synthetic 24-system estate. |
 | **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
 | **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Who owns customer truth, and what may an agent or workflow change? | Canonical identity, provenance and field authority, consent and approval boundaries, PostgreSQL-backed durable execution, idempotent downstream effects, retries, uncertain-result recovery, and audit trails. |
 | **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | How do we evaluate an agent and govern release rather than trusting its output? | Actual local LLM inference, evidence-grounded tool decisions, adversarial tests, regression gates, shadow/canary evaluation, observable rollback, and transparent reporting of failed model behavior. |
 | **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** | Can we replace a platform without losing meaning or making rollback unsafe? | Consistent snapshots and change catch-up, versioned schema mappings, independent semantic reconciliation, evidence-bound cutover, process-crash recovery, reverse migration, and explicit rollback blockers. |
 | **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** | Who belonged in an audience at a given time, based on what we knew then? | Bitemporal customer facts, immutable original and restated audience decisions, time-driven expiry, selective reevaluation, coverage-gated activation, and destination reconciliation. |
 
-**Start with the problem closest to your team:** [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), or [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences).
+**Start with the problem closest to your team:** [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact), [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), or [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences).
 
 ### The architecture questions behind the work
 
 ```mermaid
 flowchart LR
-    A[Business requirements] --> B[Stack economics]
+    A[Business requirements] --> L[Estate impact and dependencies]
+    A --> B[Stack economics]
     A --> C[Customer state governance]
     A --> D[Agent runtime and evaluation]
     A --> E[Migration assurance]
     A --> F[Temporal audiences]
+    L --> M[Defensible change scope and prerequisites]
     B --> G[Defensible platform and cost choices]
     C --> H[Controlled data and automation]
     D --> I[Evidence-based agent releases]
@@ -40,11 +43,11 @@ flowchart LR
     classDef output fill:#2563eb,stroke:#1e3a8a,color:#ffffff,stroke-width:2px;
 
     class A source;
-    class B,C,D,E,F capability;
-    class G,H,I,J,K output;
+    class B,C,D,E,F,L capability;
+    class G,H,I,J,K,M output;
 ```
 
-*This is a map of independent engineering capabilities, not a claim that these five repositories form one deployed production system.*
+*This is a map of independent engineering capabilities, not a claim that these six repositories form one deployed production system.*
 
 ## Professional context
 
