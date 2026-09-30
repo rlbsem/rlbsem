@@ -1,10 +1,10 @@
 # Richard Butts
 
-**Enterprise MarTech Architecture · Stack Optimization · Integration & Migration · AI Systems & Agents · Data Architecture**
+**MarTech & Data Architecture · GTM & Revenue Systems · Integration & Migration · AI Systems**
 
-I design and build systems that make marketing technology work as one governed environment. My work connects commercial requirements to technical architecture: choosing platforms that meet cost and performance constraints, preserving customer and revenue meaning across systems, controlling what automation and AI can change, and making migrations verifiable and reversible.
+I design and build governed systems across marketing technology, customer data, GTM and revenue operations, analytics, integrations, and AI. My work connects business definitions to technical control: canonical identity, source-of-truth rules, data quality, APIs, migration, reconciliation, and automation that can be trusted when systems disagree or fail.
 
-The objective is practical: **more reliable marketing measurement, less manual reconciliation, safer automation, lower avoidable platform cost, and systems that can scale without losing control of their data.**
+My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating environments, so I approach architecture from both sides: **how the systems work technically and how they affect acquisition, pipeline, attribution, revenue, and operating decisions.**
 
 ## Selected engineering work
 
@@ -12,15 +12,15 @@ Seven independent, executable portfolio implementations. Each uses synthetic dat
 
 | Project | Architecture problem | What the implementation demonstrates |
 |---|---|---|
-| **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** | Before we retire or replace a Marketing platform, what actually depends on it? | Evidence-backed estate reconstruction, provenance and conflict handling, typed dependencies, three-state impact analysis, counterfactual retirement/replacement, witness paths, and prerequisite sequencing across a synthetic 24-system estate. |
-| **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
-| **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** | Can we replace a platform without losing meaning or making rollback unsafe? | Consistent snapshots and change catch-up, versioned schema mappings, independent semantic reconciliation, evidence-bound cutover, process-crash recovery, reverse migration, and explicit rollback blockers. |
-| **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Who owns customer truth, and what may an agent or workflow change? | Canonical identity, provenance and field authority, consent and approval boundaries, PostgreSQL-backed durable execution, idempotent downstream effects, retries, uncertain-result recovery, and audit trails. |
 | **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)** | Can Marketing trust reporting when source feeds arrive late, repeat, change schema, or correct prior periods? | Content-addressed ingestion, closed data contracts, quarantine and rejection, revision-aware corrections, cross-grain SQL aggregation, freshness and reference gates, crash recovery, controlled backfills, independent reconciliation, and atomic publication. |
-| **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | How do we evaluate an agent and govern release rather than trusting its output? | Actual local LLM inference, evidence-grounded tool decisions, adversarial tests, regression gates, shadow/canary evaluation, observable rollback, and transparent reporting of failed model behavior. |
+| **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Who owns customer truth, and what may an agent or workflow change? | Canonical identity, provenance and field authority, consent and approval boundaries, PostgreSQL-backed durable execution, idempotent downstream effects, retries, uncertain-result recovery, and audit trails. |
+| **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** | Can we replace a platform without losing meaning or making rollback unsafe? | Consistent snapshots and change catch-up, versioned schema mappings, independent semantic reconciliation, evidence-bound cutover, process-crash recovery, reverse migration, and explicit rollback blockers. |
 | **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** | Who belonged in an audience at a given time, based on what we knew then? | Bitemporal customer facts, immutable original and restated audience decisions, time-driven expiry, selective reevaluation, coverage-gated activation, and destination reconciliation. |
+| **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** | Before we retire or replace a marketing platform, what actually depends on it? | Evidence-backed estate reconstruction, provenance and conflict handling, typed dependencies, three-state impact analysis, counterfactual retirement/replacement, witness paths, and prerequisite sequencing across a synthetic 24-system estate. |
+| **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | How do we evaluate an agent and govern release rather than trusting its output? | Actual local LLM inference, evidence-grounded tool decisions, adversarial tests, regression gates, shadow/canary evaluation, observable rollback, and transparent reporting of failed model behavior. |
+| **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
 
-**Start with the problem closest to your team:** [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact), [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [data reliability and reconciliation](https://github.com/rlbsem/martech-data-reliability), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), or [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences).
+**Start with the problem closest to your team:** [data reliability and reconciliation](https://github.com/rlbsem/martech-data-reliability), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences), [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), or [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics).
 
 ### The architecture questions behind the work
 
@@ -55,14 +55,16 @@ flowchart LR
 
 ## Professional context
 
-My background spans enterprise ecommerce, B2B SaaS, marketing performance, analytics, GTM systems, and enterprise integration across **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital**.
+My background spans enterprise ecommerce, B2B SaaS, **MarTech and data architecture, GTM and revenue systems, analytics, and enterprise integration** across **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital**.
 
-- **Commercial scale:** Managed more than **$65M in paid media and marketing investment** across my career. At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**.
-- **B2B SaaS:** At LMN, worked across an approximately **$350K/month USD acquisition program** spanning five products, with CAC improvements of approximately **15–25%**. My work has included Salesforce, Pardot, Marketing Cloud, funnel measurement, and GTM systems.
-- **Architecture and delivery:** Founded Groundbreakers Digital and worked across roughly **30 projects** for founder-owned and private-equity-backed businesses. The work spans MarTech and attribution, customer identity, operating and finance systems, APIs and integrations, revenue integrity, data governance, and AI-driven workflows. It gives marketing teams stronger source-to-revenue measurement, reduces manual cross-system work, and helps multi-brand operators build auditable, scalable platforms.
-- **AI:** Working with LLMs and AI systems since **2023**, alongside longer-standing marketing automation, data, and integration experience.
+- **Enterprise ecommerce and commercial scale:** Managed more than **$65M in paid media and marketing investment** across my career. At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**, while my work expanded across acquisition, attribution, web analytics, ecommerce, executive reporting, and enterprise marketing systems.
+- **B2B SaaS and GTM systems:** At LMN, worked across an approximately **$350K/month USD multi-product acquisition program**, with CAC improvements of approximately **15–25%**. The environment included Salesforce, Pardot, Salesforce Marketing Cloud, GA/GA4, GTM, pipeline measurement, and recurring executive product reporting.
+- **Data architecture and systems delivery:** Founded Groundbreakers Digital and worked across roughly **30 projects** for founder-owned and private-equity-backed businesses. The work spans canonical customer identity, source-of-truth governance, attribution, CRM and operating-system integration, finance/revenue reconciliation, APIs and webhooks, ETL/ELT, stateful middleware, idempotency, retry and exception handling, audit logging, multi-brand data architecture, and AI-driven workflows.
+- **AI and automation:** Working with LLMs and AI systems since **2023**, building on longer-standing experience in marketing automation, analytics, integration, customer data, and governed workflow design.
 
-**Technologies demonstrated in the public engineering work:** Python · SQL · PostgreSQL · SQLite · DuckDB · FastAPI · SciPy / HiGHS · Docker · GitHub Actions · HTTP / REST · local LLM inference.
+**Professional systems and platforms:** Salesforce · HubSpot · Pardot · Salesforce Marketing Cloud · Marketo · Segment · Snowflake · GA4 / GTM · Adobe Analytics · Tableau · PostgreSQL · Supabase · QuickBooks Online · REST APIs · webhooks · ETL / ELT · Make · n8n · Workato · Zapier
+
+**Technologies demonstrated in the public engineering work:** Python · SQL · PostgreSQL · SQLite · DuckDB · FastAPI · SciPy / HiGHS · Docker · GitHub Actions · HTTP / REST · local LLM inference
 
 ## How to review the work
 
