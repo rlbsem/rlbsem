@@ -8,10 +8,11 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 ## Selected engineering work
 
-Seven independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
+Eight independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
 
 | Project | Architecture problem | What the implementation demonstrates |
 |---|---|---|
+| **[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** | How can Marketing, Sales and Finance use consistent, explainable commercial metrics when pipeline, bookings, invoicing, cash and ARR represent different economic events? | Deterministic synthetic enterprise modeling at approximately CAD755M period-end ARR, dbt dimensional models with explicit fact grains and SCD2 history, governed commercial metrics, incremental/full-build equivalence, reconciliation, Streamlit and analyst consumption, CI/testing, and a Snowflake-ready execution path. |
 | **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)** | Can Marketing trust reporting when source feeds arrive late, repeat, change schema, or correct prior periods? | Content-addressed ingestion, closed data contracts, quarantine and rejection, revision-aware corrections, cross-grain SQL aggregation, freshness and reference gates, crash recovery, controlled backfills, independent reconciliation, and atomic publication. |
 | **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Who owns customer truth, and what may an agent or workflow change? | Canonical identity, provenance and field authority, consent and approval boundaries, PostgreSQL-backed durable execution, idempotent downstream effects, retries, uncertain-result recovery, and audit trails. |
 | **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** | Can we replace a platform without losing meaning or making rollback unsafe? | Consistent snapshots and change catch-up, versioned schema mappings, independent semantic reconciliation, evidence-bound cutover, process-crash recovery, reverse migration, and explicit rollback blockers. |
@@ -20,13 +21,14 @@ Seven independent, executable portfolio implementations. Each uses synthetic dat
 | **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | How do we evaluate an agent and govern release rather than trusting its output? | Actual local LLM inference, evidence-grounded tool decisions, adversarial tests, regression gates, shadow/canary evaluation, observable rollback, and transparent reporting of failed model behavior. |
 | **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
 
-**Start with the problem closest to your team:** [data reliability and reconciliation](https://github.com/rlbsem/martech-data-reliability), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences), [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), or [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics).
+**Start with the problem closest to your team:** [commercial metrics and analytics engineering](https://github.com/rlbsem/revenue-metrics-platform), [data reliability and reconciliation](https://github.com/rlbsem/martech-data-reliability), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences), [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), or [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics).
 
 ### The architecture questions behind the work
 
 ```mermaid
 flowchart LR
-    A[Business requirements] --> L[Estate impact and dependencies]
+    A[Business requirements] --> Q[Commercial metrics and analytics]
+    A --> L[Estate impact and dependencies]
     A --> B[Stack economics]
     A --> E[Migration assurance]
     A --> C[Customer state governance]
@@ -34,6 +36,7 @@ flowchart LR
     A --> D[Agent runtime and evaluation]
     A --> F[Temporal audiences]
 
+    Q --> O[Governed revenue measures and consumption]
     L --> M[Defensible change scope and prerequisites]
     B --> G[Defensible platform and cost choices]
     E --> J[Verified cutover and rollback]
@@ -47,11 +50,11 @@ flowchart LR
     classDef output fill:#2563eb,stroke:#1e3a8a,color:#ffffff,stroke-width:2px;
 
     class A source;
-    class B,C,D,E,F,L,R capability;
-    class G,H,I,J,K,M,N output;
+    class B,C,D,E,F,L,Q,R capability;
+    class G,H,I,J,K,M,N,O output;
 ```
 
-*This is a map of independent engineering capabilities, not a claim that these seven repositories form one deployed production system.*
+*This is a map of independent engineering capabilities, not a claim that these eight repositories form one deployed production system.*
 
 ## Professional context
 
@@ -64,7 +67,7 @@ My background spans enterprise ecommerce, B2B SaaS, **MarTech and data architect
 
 **Professional systems and platforms:** Salesforce · HubSpot · Pardot · Salesforce Marketing Cloud · Marketo · Segment · Snowflake · GA4 / GTM · Adobe Analytics · Tableau · PostgreSQL · Supabase · QuickBooks Online · REST APIs · webhooks · ETL / ELT · Make · n8n · Workato · Zapier
 
-**Technologies demonstrated in the public engineering work:** Python · SQL · PostgreSQL · SQLite · DuckDB · FastAPI · SciPy / HiGHS · Docker · GitHub Actions · HTTP / REST · local LLM inference
+**Technologies demonstrated in the public engineering work:** Python · SQL · dbt Core · PostgreSQL · DuckDB · SQLite · Streamlit · FastAPI · Airflow · SciPy / HiGHS · Docker · GitHub Actions · HTTP / REST · local LLM inference
 
 ## How to review the work
 
