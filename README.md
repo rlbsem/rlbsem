@@ -65,7 +65,7 @@ My background spans enterprise ecommerce, B2B SaaS, **MarTech and data architect
 - **Data architecture and systems delivery:** Founded Groundbreakers Digital and led architecture and systems delivery across roughly **30 projects** for founder-owned and private-equity-backed businesses. The work spans canonical customer identity, source-of-truth governance, attribution, CRM and operating-system integration, finance/revenue reconciliation, APIs and webhooks, ETL/ELT, stateful middleware, idempotency, retry and exception handling, audit logging, multi-brand data architecture, and AI-driven workflows.
 - **AI and automation:** Working with LLMs and AI systems since **2023**, building on longer-standing experience in marketing automation, analytics, integration, customer data, and governed workflow design.
 
-**Professional systems and platforms:** Salesforce · HubSpot · Pardot · Salesforce Marketing Cloud · Marketo · Segment · Snowflake · GA4 / GTM · Adobe Analytics · Tableau · PostgreSQL · Supabase · QuickBooks Online · REST APIs · webhooks · ETL / ELT · Make · n8n · Workato · Zapier
+**Professional systems and platforms:** Salesforce · HubSpot · Pardot · Salesforce Marketing Cloud · Marketo · Segment · Clay · Snowflake · GA4 / GTM · Adobe Analytics · Tableau · PostgreSQL · Supabase · QuickBooks Online · REST APIs · webhooks · ETL / ELT · Make · n8n · Workato · Zapier
 
 **Technologies demonstrated in the public engineering work:** Python · SQL · dbt Core · PostgreSQL · DuckDB · SQLite · Streamlit · FastAPI · Airflow · SciPy / HiGHS · Docker · GitHub Actions · HTTP / REST · local LLM inference
 
