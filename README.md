@@ -6,6 +6,51 @@ I design and build governed systems across marketing technology, customer data, 
 
 My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating environments, so I approach architecture from both sides: **how the systems work technically and how they affect acquisition, pipeline, attribution, revenue, and operating decisions.**
 
+### The architecture questions behind the work
+
+```mermaid
+---
+config:
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 20
+    padding: 8
+    wrappingWidth: 260
+  themeVariables:
+    fontSize: 14px
+---
+flowchart TB
+  subgraph M[Which commercial numbers can we trust?]
+    direction LR
+    Q["Commercial metrics and analytics<br/>→ Governed revenue measures and consumption"]
+    R["Data reliability<br/>→ Reconciled reporting and lineage"]
+    Q ~~~ R
+  end
+  subgraph G[What may automation change, and when is it ready?]
+    direction LR
+    C["Customer state governance<br/>→ Controlled data and automation"]
+    D["Agent runtime and evaluation<br/>→ Evidence-based agent releases"]
+    C ~~~ D
+  end
+  subgraph P[Can we change platforms safely?]
+    direction LR
+    L["Estate impact and dependencies<br/>→ Defensible change scope and prerequisites"]
+    E["Migration assurance<br/>→ Verified cutover and rollback"]
+    L ~~~ E
+  end
+  subgraph T[How do time and constraints change the decision?]
+    direction LR
+    F["Temporal audiences<br/>→ Auditable original and restated decisions"]
+    B["Stack economics<br/>→ Defensible platform and cost choices"]
+    F ~~~ B
+  end
+  M ~~~ G ~~~ P ~~~ T
+  classDef capability fill:#edf3fa,stroke:#42658c,color:#172b43;
+  class Q,R,C,D,L,E,F,B capability;
+```
+
+*This is a map of independent engineering capabilities, not a claim that these eight repositories form one deployed production system.*
+
 ## Selected engineering work
 
 Eight independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
@@ -22,39 +67,6 @@ Eight independent, executable portfolio implementations. Each uses synthetic dat
 | **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
 
 **Start with the problem closest to your team:** [commercial metrics and analytics engineering](https://github.com/rlbsem/revenue-metrics-platform), [data reliability and reconciliation](https://github.com/rlbsem/martech-data-reliability), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences), [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), or [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics).
-
-### The architecture questions behind the work
-
-```mermaid
-flowchart LR
-    A[Business requirements] --> Q[Commercial metrics and analytics]
-    A --> L[Estate impact and dependencies]
-    A --> B[Stack economics]
-    A --> E[Migration assurance]
-    A --> C[Customer state governance]
-    A --> R[Data reliability]
-    A --> D[Agent runtime and evaluation]
-    A --> F[Temporal audiences]
-
-    Q --> O[Governed revenue measures and consumption]
-    L --> M[Defensible change scope and prerequisites]
-    B --> G[Defensible platform and cost choices]
-    E --> J[Verified cutover and rollback]
-    C --> H[Controlled data and automation]
-    R --> N[Reconciled reporting and lineage]
-    D --> I[Evidence-based agent releases]
-    F --> K[Auditable audience decisions]
-
-    classDef source fill:#dbeafe,stroke:#2563eb,color:#0f172a,stroke-width:2px;
-    classDef capability fill:#93c5fd,stroke:#1e40af,color:#0f172a,stroke-width:2px;
-    classDef output fill:#2563eb,stroke:#1e3a8a,color:#ffffff,stroke-width:2px;
-
-    class A source;
-    class B,C,D,E,F,L,Q,R capability;
-    class G,H,I,J,K,M,N,O output;
-```
-
-*This is a map of independent engineering capabilities, not a claim that these eight repositories form one deployed production system.*
 
 ## Professional context
 
