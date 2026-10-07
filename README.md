@@ -26,11 +26,11 @@ flowchart TB
     R["Data reliability<br/>→ Reconciled reporting and lineage"]
     Q ~~~ R
   end
-  subgraph G[What may automation change, and when is it ready?]
+  subgraph G[Which customer signals warrant action, and what may automation change?]
     direction LR
+    S["Customer signal activation<br/>→ Verified identity, scoring, CRM and cash feedback"]
     C["Customer state governance<br/>→ Controlled data and automation"]
-    D["Agent runtime and evaluation<br/>→ Evidence-based agent releases"]
-    C ~~~ D
+    S ~~~ C
   end
   subgraph P[Can we change platforms safely?]
     direction LR
@@ -38,35 +38,37 @@ flowchart TB
     E["Migration assurance<br/>→ Verified cutover and rollback"]
     L ~~~ E
   end
-  subgraph T[How do time and constraints change the decision?]
+  subgraph T[When do time and evidence change the decision?]
     direction LR
     F["Temporal audiences<br/>→ Auditable original and restated decisions"]
-    B["Stack economics<br/>→ Defensible platform and cost choices"]
-    F ~~~ B
+    D["Agent runtime and evaluation<br/>→ Evidence-based agent releases"]
+    F ~~~ D
   end
   M ~~~ G ~~~ P ~~~ T
   classDef capability fill:#edf3fa,stroke:#42658c,color:#172b43;
-  class Q,R,C,D,L,E,F,B capability;
+  class Q,R,S,C,L,E,F,D capability;
 ```
 
 *This is a map of independent engineering capabilities, not a claim that these eight repositories form one deployed production system.*
 
 ## Selected engineering work
 
-Eight independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
+Eight featured, independent, executable portfolio implementations. Each uses synthetic data, links to reproducible evidence, and separates demonstrated behavior from production claims and known limitations.
 
 | Project | Architecture problem | What the implementation demonstrates |
 |---|---|---|
 | **[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** | How can Marketing, Sales and Finance use consistent, explainable commercial metrics when pipeline, bookings, invoicing, cash and ARR represent different economic events? | Deterministic synthetic enterprise modeling at approximately $755M period-end ARR, dbt dimensional models with explicit fact grains and SCD2 history, governed commercial metrics, incremental/full-build equivalence, reconciliation, Streamlit and analyst consumption, CI/testing, and a Snowflake-ready execution path. |
-| **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)** | Can Marketing trust reporting when source feeds arrive late, repeat, change schema, or correct prior periods? | Content-addressed ingestion, closed data contracts, quarantine and rejection, revision-aware corrections, cross-grain SQL aggregation, freshness and reference gates, crash recovery, controlled backfills, independent reconciliation, and atomic publication. |
+| **[Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)** | Which customer signals deserve a sales handoff, and can the eventual commercial outcome be traced to allocated cash? | Enterprise B2B browser and call signals, authenticated brand-scoped identity, enrichment authority and conflict handling, explainable fit/intent scoring, consent- and ownership-safe routing, durable CRM activation with uncertain-result recovery, and dbt-validated fulfillment-to-invoice-to-cash attribution and conversion feedback. |
 | **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** | Who owns customer truth, and what may an agent or workflow change? | Canonical identity, provenance and field authority, consent and approval boundaries, PostgreSQL-backed durable execution, idempotent downstream effects, retries, uncertain-result recovery, and audit trails. |
+| **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)** | Can Marketing trust reporting when source feeds arrive late, repeat, change schema, or correct prior periods? | Content-addressed ingestion, closed data contracts, quarantine and rejection, revision-aware corrections, cross-grain SQL aggregation, freshness and reference gates, crash recovery, controlled backfills, independent reconciliation, and atomic publication. |
 | **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** | Can we replace a platform without losing meaning or making rollback unsafe? | Consistent snapshots and change catch-up, versioned schema mappings, independent semantic reconciliation, evidence-bound cutover, process-crash recovery, reverse migration, and explicit rollback blockers. |
 | **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** | Who belonged in an audience at a given time, based on what we knew then? | Bitemporal customer facts, immutable original and restated audience decisions, time-driven expiry, selective reevaluation, coverage-gated activation, and destination reconciliation. |
-| **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** | Before we retire or replace a marketing platform, what actually depends on it? | Evidence-backed estate reconstruction, provenance and conflict handling, typed dependencies, three-state impact analysis, counterfactual retirement/replacement, witness paths, and prerequisite sequencing across a synthetic 24-system estate. |
 | **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** | How do we evaluate an agent and govern release rather than trusting its output? | Actual local LLM inference, evidence-grounded tool decisions, adversarial tests, regression gates, shadow/canary evaluation, observable rollback, and transparent reporting of failed model behavior. |
-| **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
+| **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** | Before we retire or replace a marketing platform, what actually depends on it? | Evidence-backed estate reconstruction, provenance and conflict handling, typed dependencies, three-state impact analysis, counterfactual retirement/replacement, witness paths, and prerequisite sequencing across a synthetic 24-system estate. |
 
-**Start with the problem closest to your team:** [commercial metrics and analytics engineering](https://github.com/rlbsem/revenue-metrics-platform), [data reliability and reconciliation](https://github.com/rlbsem/martech-data-reliability), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences), [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), or [stack optimization and cost](https://github.com/rlbsem/martech-stack-economics).
+**Start with the problem closest to your team:** [commercial metrics and analytics engineering](https://github.com/rlbsem/revenue-metrics-platform), [customer signals and activation](https://github.com/rlbsem/customer-signal-activation), [AI governance and controlled execution](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [data reliability and reconciliation](https://github.com/rlbsem/martech-data-reliability), [platform migrations](https://github.com/rlbsem/martech-migration-assurance), [customer data and audience correctness](https://github.com/rlbsem/temporal-customer-audiences), [agent testing and release](https://github.com/rlbsem/enterprise-agent-runtime-evaluation), or [estate discovery and change impact](https://github.com/rlbsem/martech-estate-impact).
+
+**Additional engineering work:** [MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics) explores platform and integration-cost optimization under capacity, freshness, and operational constraints.
 
 ## Professional context
 
