@@ -22,27 +22,27 @@ config:
 flowchart TB
   subgraph M[Which commercial numbers can we trust?]
     direction LR
-    Q["Commercial metrics and analytics<br/>→ Governed revenue measures and consumption"]
-    R["Data reliability<br/>→ Reconciled reporting and lineage"]
+    Q["Revenue metrics<br/>Governed commercial measures"]
+    R["Data reliability<br/>Reconciled reporting · Lineage"]
     Q ~~~ R
   end
   subgraph G[Which customer signals warrant action, and what may automation change?]
     direction LR
-    S["Customer signal activation<br/>→ Verified identity, scoring, CRM and cash feedback"]
-    C["Customer state governance<br/>→ Controlled data and automation"]
+    S["Customer signal activation<br/>Verified identity · Scoring · Cash feedback"]
+    C["Enterprise MarTech / AI Control Plane<br/>Governed identity · Safe execution · AWS recovery"]
     S ~~~ C
   end
   subgraph P[Can we change or consolidate platforms safely?]
     direction LR
-    L["Estate impact and dependencies<br/>→ Defensible change scope and prerequisites"]
-    E["Migration assurance<br/>→ Verified cutover and rollback"]
-    B["Stack economics<br/>→ Constraint-aware platform and integration choices"]
+    L["Estate impact<br/>Dependencies · Change scope"]
+    E["Migration assurance<br/>Verified cutover · Rollback"]
+    B["Stack economics<br/>Cost · Capacity · Constraints"]
     L ~~~ E ~~~ B
   end
   subgraph T[When do time and evidence change the decision?]
     direction LR
-    F["Temporal audiences<br/>→ Auditable original and restated decisions"]
-    D["Agent runtime and evaluation<br/>→ Evidence-based agent releases"]
+    F["Temporal audiences<br/>Original · Restated · Current"]
+    D["Agent runtime and evaluation<br/>Evidence · Release gates"]
     F ~~~ D
   end
   M ~~~ G ~~~ P ~~~ T
