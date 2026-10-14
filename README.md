@@ -6,7 +6,7 @@ I design and build governed systems across marketing technology, customer data, 
 
 My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating environments, so I approach architecture from both sides: **how the systems work technically and how they affect acquisition, pipeline, attribution, revenue, and operating decisions.**
 
-**Commercial delivery context:** At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**. At LMN, I managed approximately **$350K/month** in multi-product B2B SaaS acquisition with **15–25% CAC improvement**. Through Groundbreakers, I've led roughly **30 systems and data projects** for founder-owned and private-equity-backed operators.
+**Commercial delivery context:** At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**. At LMN, I managed approximately **$350K/month** in multi-product B2B SaaS acquisition with **15–25% CAC improvement**. Through Groundbreakers, I've led roughly **30 systems and data engagements**—approximately **80% supporting operating brands within PE-backed portfolios**, with much of the remainder involving founder-led, multi-brand holding companies.
 
 ## Featured engineering systems
 
@@ -16,7 +16,7 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 **[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** — SQL/dbt dimensional models, temporal history, ARR/bookings/invoicing/cash reconciliation, testable finance definitions and analytical review.
 
-**Interactive evidence:** [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab) — a companion browser explorer for seller decisions, uncertain API outcomes and commercial reconciliation.
+**Interactive evidence:** [Open Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/) ([source and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab)) — a published browser explorer for seller decisions, uncertain API outcomes and commercial reconciliation. The Pages deployment passed; browser smoke-testing is still pending.
 
 ## Find the right engineering evidence
 
@@ -56,7 +56,7 @@ My background spans enterprise ecommerce, B2B SaaS, **MarTech and data architect
 
 - **Enterprise ecommerce and commercial scale:** Managed more than **$65M in paid media and marketing investment** across my career. At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**, while my work expanded across acquisition, attribution, web analytics, ecommerce, executive reporting, and enterprise marketing systems.
 - **B2B SaaS and GTM systems:** At LMN, managed acquisition and performance analysis across an approximately **$350K/month multi-product program**, with CAC improvements of approximately **15–25%**. The environment included Salesforce, Pardot, Salesforce Marketing Cloud, GA/GA4, GTM, pipeline measurement, and recurring executive product reporting.
-- **Data architecture and systems delivery:** Founded Groundbreakers Digital and led architecture and systems delivery across roughly **30 projects** for founder-owned and private-equity-backed businesses. The work spans canonical customer identity, source-of-truth governance, attribution, CRM and operating-system integration, finance/revenue reconciliation, APIs and webhooks, ETL/ELT, stateful middleware, idempotency, retry and exception handling, audit logging, multi-brand data architecture, and AI-driven workflows.
+- **Data architecture and systems delivery:** Founded Groundbreakers Digital and led architecture and systems delivery across roughly **30 projects** for founder-owned and private-equity-backed businesses. Much of that work connects acquired or independently run brands into shared CRM, operations, finance, and reporting infrastructure. The work spans canonical customer identity, source-of-truth governance, attribution, CRM and operating-system integration, finance/revenue reconciliation, APIs and webhooks, ETL/ELT, stateful middleware, idempotency, retry and exception handling, audit logging, multi-brand data architecture, and AI-driven workflows.
 - **AI and automation:** Working with LLMs and AI systems since **2023**, building on longer-standing experience in marketing automation, analytics, integration, customer data, and governed workflow design.
 
 **Professional systems and platforms:** Salesforce · HubSpot · Pardot · Salesforce Marketing Cloud · Marketo · Segment · Clay · Snowflake · GA4 / GTM · Adobe Analytics · Tableau · PostgreSQL · Supabase · QuickBooks Online · REST APIs · webhooks · ETL / ELT · Make · n8n · Workato · Zapier
@@ -65,7 +65,7 @@ My background spans enterprise ecommerce, B2B SaaS, **MarTech and data architect
 
 ## How to review the work
 
-The engineering repositories include runnable implementations, architecture notes, tests and execution evidence. Start with the interactive Lab or an implementation's validation results, then follow the code and diagrams. Commercial test datasets are synthetic; the professional experience above reflects client and employer work.
+The engineering repositories include runnable implementations, architecture notes, tests and execution evidence. Start with the interactive Lab or an implementation's validation results, then follow the code and diagrams. These public, synthetic and vendor-neutral implementations make architecture patterns used in Groundbreakers client work inspectable without publishing private client systems or data; they are not claims that the exact repositories were deployed unchanged into client production.
 
 The underlying theme is straightforward: **tools execute; the control layer determines what is allowed to become true.**
 
