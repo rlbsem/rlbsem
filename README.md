@@ -8,18 +8,15 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 **Commercial delivery context:** At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**. At LMN, I managed approximately **$350K/month** in multi-product B2B SaaS acquisition with **15–25% CAC improvement**. Through Groundbreakers, I've led roughly **30 systems and data projects** for founder-owned and private-equity-backed operators.
 
-## Start here: interactive evidence and flagship systems
+## Featured engineering systems
 
-**[Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab)** — Explore AI seller decisions, governed workflow recovery and revenue reconciliation through nine browser-inspectable evidence cases. It connects three independently implemented engines and provides source records, execution traces, integrity checks and optional local reproduction.
+**[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** — Python and PostgreSQL control architecture for customer identity, field authority, durable processing, idempotency, crash recovery, audited exceptions and governed AI actions.
 
-[![Enterprise Revenue Systems Lab — seller investigation and evidence review](https://raw.githubusercontent.com/rlbsem/enterprise-revenue-systems-lab/main/docs/images/seller-overview.png)](https://github.com/rlbsem/enterprise-revenue-systems-lab)
+**[Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)** — B2B account signals, verified enrichment, sales routing and CRM activation, plus a live Qwen3-14B seller workbench with source-linked evidence and approval-bound actions.
 
-**Flagship implementations behind the Lab**
+**[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** — SQL/dbt dimensional models, temporal history, ARR/bookings/invoicing/cash reconciliation, testable finance definitions and analytical review.
 
-
-- **[Customer Signal & Activation — AI Seller Workbench](https://github.com/rlbsem/customer-signal-activation)** — Executed B2B signal-to-cash journey plus **live Qwen3-14B seller assistance**: traceable account evidence, editable recommendations, human approval, durable CRM task execution and recorded model comparisons. Synthetic scenarios; real local inference and HTTP effects.
-- **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** — PostgreSQL-backed identity and field authority, No-Regress Logic, idempotent execution, crash recovery, audited exceptions and deployable AWS/Terraform architecture.
-- **[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** — dbt dimensional models, SCD2 history, governed ARR/bookings/cash measures, reconciliation and a working commercial analytics review using synthetic enterprise-scale data.
+**Explore the implementation evidence:** [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab) — a companion browser explorer for seller decisions, uncertain API outcomes and commercial reconciliation. [See the interface inside the repository](https://github.com/rlbsem/enterprise-revenue-systems-lab#enterprise-revenue-systems-lab).
 
 ## Find the right engineering evidence
 
@@ -33,15 +30,13 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 **Prefer a guided review?** The [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab) brings together inspectable evidence from three separate engines so you can follow a seller decision, an uncertain API outcome and a revenue discrepancy from source to result.
 
-## The architecture questions behind the work
+## Architecture at a glance
 
-![Four-colour capability map of nine engineering projects covering revenue analytics, GTM and control, enterprise architecture, and temporal and AI assurance](assets/capability-map.svg)
-
-*Nine underlying engineering systems are grouped by the architectural question they answer, rather than by tool. The interactive Revenue Systems Lab above is a separate evidence and exploration layer, not a tenth underlying engine. [View the full-size capability map](assets/capability-map.svg).*
+[View the capability map](assets/capability-map.svg) — nine core engineering implementations organized by the questions they answer: commercial metrics, GTM and control, enterprise change, and AI/data assurance.
 
 ## Selected engineering work
 
-Nine executable engineering projects, each with reproducible evidence and documented operating boundaries.
+The table below covers nine core engineering implementations. Together with the interactive Revenue Systems Lab and a separate application-specific repository that is deliberately not featured here, there are 11 public engineering repositories.
 
 | Project | Architecture problem | What the implementation demonstrates |
 |---|---|---|
