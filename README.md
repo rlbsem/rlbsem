@@ -16,7 +16,7 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 **[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** — SQL/dbt dimensional models, temporal history, ARR/bookings/invoicing/cash reconciliation, testable finance definitions and analytical review.
 
-**Explore the implementation evidence:** [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab) — a companion browser explorer for seller decisions, uncertain API outcomes and commercial reconciliation. [See the interface inside the repository](https://github.com/rlbsem/enterprise-revenue-systems-lab#enterprise-revenue-systems-lab).
+**Interactive evidence:** [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab) — a companion browser explorer for seller decisions, uncertain API outcomes and commercial reconciliation.
 
 ## Find the right engineering evidence
 
@@ -36,7 +36,7 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 ## Selected engineering work
 
-The table below covers nine core engineering implementations. Together with the interactive Revenue Systems Lab and a separate application-specific repository that is deliberately not featured here, there are 11 public engineering repositories.
+The table below highlights nine core engineering implementations, with a separate interactive Lab for exploring selected execution evidence.
 
 | Project | Architecture problem | What the implementation demonstrates |
 |---|---|---|
