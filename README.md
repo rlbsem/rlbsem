@@ -4,12 +4,12 @@
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
 
-I bring both enterprise-scale commercial experience and hands-on engineering delivery across ecommerce, B2B SaaS, and multi-brand operating environments.
+Across my career, I've managed **more than $65M in paid media and marketing investment**, working hands-on with the acquisition, attribution, conversion, and reporting data needed to measure performance and inform revenue decisions. That commercial accountability informs my systems architecture and engineering delivery across enterprise ecommerce, B2B SaaS, and multi-brand operators.
 
 ## Professional experience and scale
 
 - **Groundbreakers Digital — Founder (2023–present):** Led roughly **30 data and systems engagements**, approximately **80% supporting operating brands within PE-backed portfolios**; much of the remainder involved founder-led, multi-brand holding companies. The work spans CRM, operating systems and finance integration, customer identity, source-of-truth governance, stateful middleware, revenue reconciliation, API/webhook orchestration, exception handling, auditability, and AI workflows.
-- **Lorex Technology — Director of Digital Marketing:** Promoted twice into the director role. Annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**. Worked across acquisition, attribution, Adobe Analytics, GA/GTM, Tableau, executive reporting, and enterprise marketing systems.
+- **Lorex Technology — Director of Digital Marketing:** Promoted twice into the director role. Led enterprise ecommerce acquisition and performance measurement, working hands-on across attribution, Adobe Analytics, GA/GTM, Tableau, executive reporting, and enterprise marketing systems.
 - **LMN (Landscape Management Network) — Paid Channel Strategist:** Managed approximately **$350K/month** in multi-product B2B SaaS acquisition, with approximately **15–25% CAC improvement**. Connected performance and pipeline reporting across Salesforce, Pardot, Salesforce Marketing Cloud, GA4/GTM, and product leadership.
 
 ## Featured engineering implementations
@@ -38,7 +38,13 @@ Together with the three implementations above, these make up **nine core enginee
 - **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** — System and dependency discovery with source provenance, impact analysis, and retirement/replacement planning across a synthetic enterprise estate.
 - **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** — Constrained integration-cost optimization across API quotas, freshness, capacity, and capabilities, with independent solution verification.
 
-[Explore the capability map](assets/capability-map.svg) for an architecture-level view of all nine implementations.
+### Architecture capability map
+
+An at-a-glance view of the nine implementations and the enterprise problems they address:
+
+<img src="assets/capability-map.svg" alt="Capability map showing nine engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
+
+[View the full-size diagram](assets/capability-map.svg).
 
 ## Systems, technologies, and control patterns
 
