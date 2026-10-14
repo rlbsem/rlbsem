@@ -4,17 +4,19 @@
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
 
+**GTM AI and seller engineering:** I turn account signals, enrichment and commercial context into explainable sales actions, with governed CRM ownership, permission checks, durable execution and measurable downstream outcomes.
+
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
 ## Featured engineering implementations
 
 These are the best starting points for evaluating the architecture, implementation, and technical controls behind my work.
 
-**1. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**  
-Python and PostgreSQL architecture for canonical identity, field authority, consent, durable execution, No-Regress Logic, idempotency, audited exceptions, and governed AI actions. Includes recovery evidence and Terraform-based AWS architecture. [Architecture and implementation details](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
-
-**2. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**  
+**1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**  
 Controlled account identity, enrichment, scoring, CRM activation, and fulfillment-to-cash feedback. Includes an actual local Qwen3-14B seller workbench, source-linked recommendations, human approval, and durable action processing. [Inspect the seller-workbench evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/seller/report.md).
+
+**2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**  
+Python and PostgreSQL architecture for canonical identity, field authority, consent, durable execution, No-Regress Logic, idempotency, audited exceptions, and governed AI actions. Includes recovery evidence and Terraform-based AWS architecture. [Architecture and implementation details](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
 
 **3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**  
 SQL/dbt dimensional models, SCD2 history, governed ARR and revenue definitions, bookings–invoicing–cash reconciliation, incremental/full-build equivalence, and analytical review. Built against synthetic enterprise-scale data. [Inspect the dbt models](https://github.com/rlbsem/revenue-metrics-platform/tree/main/dbt/models).
