@@ -6,6 +6,8 @@ I architect and build governed systems across customer data, CRM, MarTech, reven
 
 Across my career, I've managed **more than $65M in paid media and marketing investment**, working hands-on with the acquisition, attribution, conversion, and reporting data needed to measure performance and inform revenue decisions. That commercial accountability informs my systems architecture and engineering delivery across enterprise ecommerce, B2B SaaS, and multi-brand operators.
 
+**Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/) · [Email](mailto:richard@groundbreakers.digital) · [Groundbreakers Digital](https://groundbreakers.digital/)
+
 ## Professional experience and scale
 
 - **Groundbreakers Digital — Founder (2023–present):** Led roughly **30 data and systems engagements**, approximately **80% supporting operating brands within PE-backed portfolios**; much of the remainder involved founder-led, multi-brand holding companies. The work spans CRM, operating systems and finance integration, customer identity, source-of-truth governance, stateful middleware, revenue reconciliation, API/webhook orchestration, exception handling, auditability, and AI workflows.
