@@ -4,15 +4,7 @@
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
 
-Across my career, I've managed **more than $65M in paid media and marketing investment**, working hands-on with the acquisition, attribution, conversion, and reporting data needed to measure performance and inform revenue decisions. That commercial accountability informs my systems architecture and engineering delivery across enterprise ecommerce, B2B SaaS, and multi-brand operators.
-
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
-
-## Professional experience and scale
-
-- **Groundbreakers Digital — Founder (2023–present):** Led roughly **30 data and systems engagements**, approximately **80% supporting operating brands within PE-backed portfolios**; much of the remainder involved founder-led, multi-brand holding companies. The work spans CRM, operating systems and finance integration, customer identity, source-of-truth governance, stateful middleware, revenue reconciliation, API/webhook orchestration, exception handling, auditability, and AI workflows.
-- **Lorex Technology — Director of Digital Marketing:** Promoted twice into the director role. Led enterprise ecommerce acquisition and performance measurement, working hands-on across attribution, Adobe Analytics, GA/GTM, Tableau, executive reporting, and enterprise marketing systems.
-- **LMN (Landscape Management Network) — Paid Channel Strategist:** Managed approximately **$350K/month** in multi-product B2B SaaS acquisition, with approximately **15–25% CAC improvement**. Connected performance and pipeline reporting across Salesforce, Pardot, Salesforce Marketing Cloud, GA4/GTM, and product leadership.
 
 ## Featured engineering implementations
 
@@ -58,8 +50,8 @@ An at-a-glance view of the nine implementations and the enterprise problems they
 
 ## How to evaluate the work
 
-Each repository provides implementation details, tests, execution evidence, and known limitations. The public systems use **synthetic or vendor-neutral data** to make the architecture inspectable without exposing private client environments. They demonstrate engineering patterns relevant to Groundbreakers engagements, **not a claim that any public repository was deployed unchanged into client production**.
+Each repository provides implementation details, tests, execution evidence, and known limitations. The public systems use **synthetic or vendor-neutral data** so the architecture can be inspected without exposing private client environments. They demonstrate engineering patterns, **not a claim that any public repository was deployed unchanged into client production**.
+
+**Professional context:** Enterprise ecommerce, multi-product B2B SaaS, and PE-backed and founder-led multi-brand operating environments.
 
 **Tools execute. The control layer determines what is true.**
-
-**Groundbreakers Digital:** Data Infrastructure · Revenue Integrity · M&A Systems Architecture
