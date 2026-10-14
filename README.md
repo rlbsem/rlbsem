@@ -8,7 +8,14 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 **Commercial delivery context:** At Lorex, annual ecommerce revenue grew from approximately **$55M to $101M during my tenure**. At LMN, I managed approximately **$350K/month** in multi-product B2B SaaS acquisition with **15–25% CAC improvement**. Through Groundbreakers, I've led roughly **30 systems and data projects** for founder-owned and private-equity-backed operators.
 
-## Start here: three flagship engineering systems
+## Start here: interactive evidence and flagship systems
+
+**[Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab)** — Explore AI seller decisions, governed workflow recovery and revenue reconciliation through nine browser-inspectable evidence cases. It connects three independently implemented engines and provides source records, execution traces, integrity checks and optional local reproduction.
+
+[![Enterprise Revenue Systems Lab — seller investigation and evidence review](https://raw.githubusercontent.com/rlbsem/enterprise-revenue-systems-lab/main/docs/images/seller-overview.png)](https://github.com/rlbsem/enterprise-revenue-systems-lab)
+
+**Flagship implementations behind the Lab**
+
 
 - **[Customer Signal & Activation — AI Seller Workbench](https://github.com/rlbsem/customer-signal-activation)** — Executed B2B signal-to-cash journey plus **live Qwen3-14B seller assistance**: traceable account evidence, editable recommendations, human approval, durable CRM task execution and recorded model comparisons. Synthetic scenarios; real local inference and HTTP effects.
 - **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** — PostgreSQL-backed identity and field authority, No-Regress Logic, idempotent execution, crash recovery, audited exceptions and deployable AWS/Terraform architecture.
@@ -36,8 +43,6 @@ Nine executable engineering projects, each with reproducible evidence and docume
 | **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** | Before we retire or replace a marketing platform, what actually depends on it? | Evidence-backed estate reconstruction, provenance and conflict handling, typed dependencies, three-state impact analysis, counterfactual retirement/replacement, witness paths, and prerequisite sequencing across a synthetic 24-system estate. |
 | **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** | How do we reduce integration cost without breaking freshness, capacity, or data requirements? | Mixed-integer configuration planning across shared fees, partial batches, API quotas, regional and capability constraints, and demand spikes. An independent accountant checks the solution; exhaustive enumeration confirms the optimum across 3,125 synthetic configurations. |
 
-**Additional analytics engineering:** [Game Telemetry Analytics Engineering](https://github.com/rlbsem/game-telemetry-analytics-engineering) demonstrates incremental dbt models, late-event repair, Airflow orchestration, Docker and CI with synthetic game-event data.
-
 ## Professional context
 
 My background spans enterprise ecommerce, B2B SaaS, **MarTech and data architecture, GTM and revenue systems, analytics, and enterprise integration** across **Lorex Technology, LMN (Landscape Management Network), and Groundbreakers Digital**.
@@ -53,7 +58,7 @@ My background spans enterprise ecommerce, B2B SaaS, **MarTech and data architect
 
 ## How to review the work
 
-Each repository has a runnable entry point, documented architecture and assumptions, tests, generated evidence, and explicit limitations. Start with the executed results, then inspect the design and validation records. Synthetic commercial scenarios and public engineering implementations are distinguished from professional client work; an infrastructure definition is not a claim of live deployment.
+The engineering repositories include runnable implementations, architecture notes, tests and execution evidence. Start with the interactive Lab or an implementation's validation results, then follow the code and diagrams. Commercial test datasets are synthetic; the professional experience above reflects client and employer work.
 
 The underlying theme is straightforward: **tools execute; the control layer determines what is allowed to become true.**
 
