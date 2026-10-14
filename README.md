@@ -21,11 +21,23 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 - **[Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)** — PostgreSQL-backed identity and field authority, No-Regress Logic, idempotent execution, crash recovery, audited exceptions and deployable AWS/Terraform architecture.
 - **[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** — dbt dimensional models, SCD2 history, governed ARR/bookings/cash measures, reconciliation and a working commercial analytics review using synthetic enterprise-scale data.
 
+## Find the right engineering evidence
+
+| If you're reviewing... | Start with | What you can verify |
+|---|---|---|
+| **AI-enabled GTM and seller productivity** | [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Seller Workbench results](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/seller/report.md) | Account evidence, local Qwen3-14B inference, guided recommendations, approval and CRM effects |
+| **Enterprise systems and integration architecture** | [MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md) | Canonical identity, field ownership, PostgreSQL work queues, idempotency, failure recovery and cloud architecture |
+| **Revenue analytics and data engineering** | [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [dbt models](https://github.com/rlbsem/revenue-metrics-platform/tree/main/dbt/models) | Fact grains, temporal dimensions, governed metrics, finance bridges and reconciliation |
+| **M&A, migration and platform change** | [Migration Assurance](https://github.com/rlbsem/martech-migration-assurance) · [Estate Impact](https://github.com/rlbsem/martech-estate-impact) | Provenance, dependency impact, cutover controls, semantic parity and rollback safety |
+| **Data quality, temporal state and operational reliability** | [Data Reliability](https://github.com/rlbsem/martech-data-reliability) · [Temporal Audiences](https://github.com/rlbsem/temporal-customer-audiences) | Late or corrected records, immutable history, publication gates, selective reevaluation and destination reconciliation |
+
+**Prefer a guided review?** The [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab) brings together inspectable evidence from three separate engines so you can follow a seller decision, an uncertain API outcome and a revenue discrepancy from source to result.
+
 ## The architecture questions behind the work
 
 ![Four-colour capability map of nine engineering projects covering revenue analytics, GTM and control, enterprise architecture, and temporal and AI assurance](assets/capability-map.svg)
 
-*The nine systems are grouped by the architecture question they answer, not by the tools they use. [Open the full-size capability map](assets/capability-map.svg).*
+*Nine underlying engineering systems are grouped by the architectural question they answer, rather than by tool. The interactive Revenue Systems Lab above is a separate evidence and exploration layer, not a tenth underlying engine. [View the full-size capability map](assets/capability-map.svg).*
 
 ## Selected engineering work
 
