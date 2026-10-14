@@ -16,7 +16,7 @@ My background spans enterprise ecommerce, B2B SaaS, and multi-brand operating en
 
 **[Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)** — SQL/dbt dimensional models, temporal history, ARR/bookings/invoicing/cash reconciliation, testable finance definitions and analytical review.
 
-**Interactive evidence:** [Open Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/) ([source and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab)) — a published browser explorer for seller decisions, uncertain API outcomes and commercial reconciliation. The Pages deployment passed; browser smoke-testing is still pending.
+**Interactive evidence:** [Open Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/) ([source and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab)) — a published browser explorer for seller decisions, uncertain API outcomes and commercial reconciliation. The hosted version presents recorded synthetic evidence; fresh engine execution remains a separate local workflow.
 
 ## Find the right engineering evidence
 
