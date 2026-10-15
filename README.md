@@ -1,10 +1,8 @@
 # Richard Butts
 
-**Data & Analytics Engineering · MarTech / GTM Architecture · Enterprise Integration · AI Governance**
+**Data & Analytics Engineering · MarTech & Enterprise Architecture · Revenue Integrity · AI Governance**
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
-
-At Groundbreakers, I've led roughly **30 systems and data engagements**, with approximately **80% of the work for operating brands inside PE-backed portfolios**. Much of that work connects acquired or independently run businesses into a governed commercial, operational, data and finance architecture without erasing local source authority.
 
 **GTM AI and seller engineering:** I turn account signals, enrichment and commercial context into explainable sales actions, with governed CRM ownership, permission checks, durable execution and measurable downstream outcomes.
 
@@ -48,13 +46,13 @@ An at-a-glance view of the nine implementations and the enterprise problems they
 
 **Professional platforms:** Salesforce · HubSpot · Pardot · Salesforce Marketing Cloud · Marketo · Segment · Clay · LMN · Aspire · QuickBooks · GA4 / GTM · Adobe Analytics · Tableau · Snowflake · Supabase · REST APIs · webhooks · ETL / ELT · Make · n8n · Workato · Zapier
 
-**Engineering stack demonstrated publicly:** Python · SQL · PostgreSQL · dbt Core · DuckDB · SQLite · FastAPI · Streamlit · Airflow · Docker · GitHub Actions · Terraform · AWS architecture (ECS/Fargate, RDS, ECR, IAM/OIDC) · local LLM inference
+**Engineering stack demonstrated publicly:** Python · SQL · PostgreSQL · dbt Core · DuckDB · Snowflake (native fixture-validated) · SQLite · FastAPI · Streamlit · Airflow · Docker · GitHub Actions · Terraform · AWS architecture (ECS/Fargate, RDS, ECR, IAM/OIDC) · local LLM inference
 
 **Architecture and governance:** canonical entity identity · source authority · field ownership · No-Regress Logic · event provenance · temporal state · stateful middleware · idempotency · retry/exception queues · audit trails · revenue reconciliation · release gates
 
 ## How to evaluate the work
 
-Each repository exposes implementation details, tests, execution evidence and known boundaries. These are **public, inspectable implementations of the architecture patterns used in Groundbreakers client work**, recast with synthetic or vendor-neutral data to protect private client systems. The public code is technical proof of the patterns—not a claim that the exact public repositories ran unchanged in a named client's production environment.
+Each repository provides implementation details, tests, execution evidence, and known limitations. The public systems use **synthetic or vendor-neutral data** so the architecture can be inspected without exposing private client environments. They demonstrate engineering patterns, **not a claim that any public repository was deployed unchanged into client production**.
 
 **Professional context:** PE-backed and founder-led multi-brand operating environments; enterprise ecommerce at Lorex (annual revenue grew approximately $55M to $101M during my tenure); and multi-product B2B SaaS at LMN.
 
