@@ -1,8 +1,10 @@
 # Richard Butts
 
-**MarTech & Data Architecture · Enterprise Systems & Integration · Revenue Integrity · AI Governance**
+**Data & Analytics Engineering · MarTech / GTM Architecture · Enterprise Integration · AI Governance**
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
+
+At Groundbreakers, I've led roughly **30 systems and data engagements**, with approximately **80% of the work for operating brands inside PE-backed portfolios**. Much of that work connects acquired or independently run businesses into a governed commercial, operational, data and finance architecture without erasing local source authority.
 
 **GTM AI and seller engineering:** I turn account signals, enrichment and commercial context into explainable sales actions, with governed CRM ownership, permission checks, durable execution and measurable downstream outcomes.
 
@@ -19,7 +21,7 @@ Controlled account identity, enrichment, scoring, CRM activation, and fulfillmen
 Python and PostgreSQL architecture for canonical identity, field authority, consent, durable execution, No-Regress Logic, idempotency, audited exceptions, and governed AI actions. Includes recovery evidence and Terraform-based AWS architecture. [Architecture and implementation details](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
 
 **3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**  
-SQL/dbt dimensional models, SCD2 history, governed ARR and revenue definitions, bookings–invoicing–cash reconciliation, incremental/full-build equivalence, and analytical review. Built against synthetic enterprise-scale data. [Inspect the dbt models](https://github.com/rlbsem/revenue-metrics-platform/tree/main/dbt/models).
+SQL/dbt dimensional models, SCD2 history, governed ARR and revenue definitions, bookings–invoicing–cash reconciliation, and incremental/full-build equivalence. **Native Snowflake fixture acceptance executed:** three warehouse dbt builds, each with 15 passing models and 30 data tests; exact model parity, read-only consumer RBAC and publication recovery checks, with 461 retained query IDs. The larger synthetic enterprise dataset is locally validated, **not** cloud-benchmarked. [Native execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md) · [dbt models](https://github.com/rlbsem/revenue-metrics-platform/tree/main/dbt/models).
 
 **Optional interactive walkthrough:** [Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/) ([source and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab)) — a browser-based review of recorded synthetic evidence from three independent engines: AI seller decisions, uncertain workflow recovery, and revenue reconciliation. Fresh engine execution remains a separate local workflow.
 
@@ -52,8 +54,8 @@ An at-a-glance view of the nine implementations and the enterprise problems they
 
 ## How to evaluate the work
 
-Each repository provides implementation details, tests, execution evidence, and known limitations. The public systems use **synthetic or vendor-neutral data** so the architecture can be inspected without exposing private client environments. They demonstrate engineering patterns, **not a claim that any public repository was deployed unchanged into client production**.
+Each repository exposes implementation details, tests, execution evidence and known boundaries. These are **public, inspectable implementations of the architecture patterns used in Groundbreakers client work**, recast with synthetic or vendor-neutral data to protect private client systems. The public code is technical proof of the patterns—not a claim that the exact public repositories ran unchanged in a named client's production environment.
 
-**Professional context:** Enterprise ecommerce, multi-product B2B SaaS, and PE-backed and founder-led multi-brand operating environments.
+**Professional context:** PE-backed and founder-led multi-brand operating environments; enterprise ecommerce at Lorex (annual revenue grew approximately $55M to $101M during my tenure); and multi-product B2B SaaS at LMN.
 
 **Tools execute. The control layer determines what is true.**
