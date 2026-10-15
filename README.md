@@ -44,11 +44,13 @@ An at-a-glance view of the nine implementations and the enterprise problems they
 
 ## Systems, technologies, and control patterns
 
-**Professional platforms:** Salesforce · HubSpot · Pardot · Salesforce Marketing Cloud · Marketo · Segment · Clay · LMN · Aspire · QuickBooks · GA4 / GTM · Adobe Analytics · Tableau · Snowflake · Supabase · REST APIs · webhooks · ETL / ELT · Make · n8n · Workato · Zapier
+**Enterprise platforms and business systems:** Salesforce · HubSpot · Salesforce Marketing Cloud · Pardot · Marketo · Segment · Clay · LMN · Aspire · QuickBooks · GA4 / GTM · Adobe Analytics · Tableau · Power BI · Make · n8n · Workato · Zapier
 
-**Engineering stack demonstrated publicly:** Python · SQL · PostgreSQL · dbt Core · DuckDB · Snowflake (native fixture-validated) · SQLite · FastAPI · Streamlit · Airflow · Docker · GitHub Actions · Terraform · AWS architecture (ECS/Fargate, RDS, ECR, IAM/OIDC) · local LLM inference
+**Engineering, data platforms, and cloud:** Python · SQL · JavaScript / TypeScript · PostgreSQL · Snowflake (native fixture-validated) · Supabase · dbt · DuckDB · SQLite · FastAPI · Streamlit · Airflow · Git · GitHub Actions / CI/CD · Docker · Terraform · AWS architecture (ECS/Fargate, RDS, ECR, IAM/OIDC)
 
-**Architecture and governance:** canonical entity identity · source authority · field ownership · No-Regress Logic · event provenance · temporal state · stateful middleware · idempotency · retry/exception queues · audit trails · revenue reconciliation · release gates
+**Data architecture and enterprise integration:** Dimensional modeling · SCD Type 2 · Bitemporal data · Governed metrics · Data contracts · Schema evolution · ETL / ELT · Incremental processing · Backfills · REST APIs · Webhooks · OAuth 2.0 · Canonical identity · Entity resolution · Source lineage
+
+**Reliability, governance, and AI systems:** Source authority · Field ownership · No-Regress Logic · Stateful middleware · Idempotency · Replay safety · Retry/backoff · Exception queues · RBAC · Consent governance · Audit logging · Revenue reconciliation · Failure recovery · Release gates · LLM inference and evaluation · Human approval controls
 
 ## How to evaluate the work
 
