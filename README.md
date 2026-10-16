@@ -8,11 +8,9 @@ I architect and build governed systems across customer data, CRM, MarTech, reven
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
-## Start here — explore the engineering
+## Featured engineering projects
 
-**See it in the browser:** [Open the Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/) · [Source and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab). Investigate three independent systems: AI seller recommendations and approval, recovery when a write may already have committed, and reconciliation of bookings, invoices and cash. The hosted explorer presents **recorded, verifiable synthetic evidence**; original-engine execution remains local.
-
-**Prefer to inspect code and architecture?** These three systems are the strongest starting points for revenue/GTM systems, enterprise integration and analytics engineering.
+Three implementation-focused entry points spanning revenue and GTM systems, enterprise integration, and analytics engineering. Each repository links to architecture, executed tests, and technical evidence.
 
 **1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**  
 **Problem:** Marketing, CRM, sales and finance can disagree about customer identity, appropriate sales actions and whether a deal produced collected cash. **System:** Consent-aware signals, verified accounts, intent and fit, ownership-safe activation, AI-assisted seller review and fulfillment-to-cash reconciliation. **Benefit:** Commercial decisions become traceable without treating scores or Closed Won opportunities as proof of cash. Includes a **real Salesforce Developer Edition API integration** tested with restricted synthetic review records, permissions, idempotency and failure recovery. [Native Salesforce evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
@@ -41,6 +39,18 @@ An at-a-glance view of the nine implementations and the enterprise problems they
 <img src="assets/capability-map.svg" alt="Capability map showing nine engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
 
 [View the full-size diagram](assets/capability-map.svg).
+
+## Explore engineering in action
+
+**[Enterprise Revenue Systems Lab — browser-based evidence explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** · [Source code and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab)
+
+For a closer look at selected implementation behaviors, the Lab offers three independent investigations:
+
+- **AI seller decisions:** Examine a model-generated recommendation, its supporting sources, a reviewed edit, approval and recorded delivery evidence.
+- **Execution recovery:** Trace a lost acknowledgment and worker interruption through durable workflow state and independent receiver receipts, including duplicate prevention.
+- **Revenue reconciliation:** Explore why installed ARR, bookings, invoices and collected cash differ, with a source-backed financial bridge.
+
+**No installation is needed to explore.** The hosted site presents recorded, verifiable **synthetic evidence**; fresh inference and original-engine execution are available only through separate local workflows.
 
 ## Systems, technologies, and control patterns
 
