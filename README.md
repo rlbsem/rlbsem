@@ -13,7 +13,7 @@ I architect and build governed systems across customer data, CRM, MarTech, reven
 These are the best starting points for evaluating the architecture, implementation, and technical controls behind my work.
 
 **1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**  
-Controlled account identity, enrichment, scoring, CRM activation, and fulfillment-to-cash feedback. Includes an actual local Qwen3-14B seller workbench, source-linked recommendations, human approval, and durable action processing. [Inspect the seller-workbench evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/seller/report.md).
+Enterprise customer-signal and revenue systems architecture spanning canonical account identity, enrichment, intent scoring, ownership-safe CRM activation, and reconciled fulfillment-to-cash measurement. Includes a live Qwen3-14B seller workbench, human approval controls, durable idempotent delivery, and a Salesforce Developer Edition integration with native security and recovery acceptance evidence. [Inspect the Salesforce verification](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
 
 **2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**  
 Python and PostgreSQL architecture for canonical identity, field authority, consent, durable execution, No-Regress Logic, idempotency, audited exceptions, and governed AI actions. Includes recovery evidence and Terraform-based AWS architecture. [Architecture and implementation details](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
