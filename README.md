@@ -56,6 +56,4 @@ An at-a-glance view of the nine implementations and the enterprise problems they
 
 Each repository provides implementation details, tests, execution evidence, and known limitations. The public systems use **synthetic or vendor-neutral data** so the architecture can be inspected without exposing private client environments. They demonstrate engineering patterns, **not a claim that any public repository was deployed unchanged into client production**.
 
-**Professional context:** PE-backed and founder-led multi-brand operating environments; enterprise ecommerce at Lorex (annual revenue grew approximately $55M to $101M during my tenure); and multi-product B2B SaaS at LMN.
-
 **Tools execute. The control layer determines what is true.**
