@@ -8,31 +8,31 @@ I architect and build governed systems across customer data, CRM, MarTech, reven
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
-## Featured engineering implementations
+## Start here — explore the engineering
 
-These are the best starting points for evaluating the architecture, implementation, and technical controls behind my work.
+**See it in the browser:** [Open the Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/) · [Source and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab). Investigate three independent systems: AI seller recommendations and approval, recovery when a write may already have committed, and reconciliation of bookings, invoices and cash. The hosted explorer presents **recorded, verifiable synthetic evidence**; original-engine execution remains local.
+
+**Prefer to inspect code and architecture?** These three systems are the strongest starting points for revenue/GTM systems, enterprise integration and analytics engineering.
 
 **1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**  
-Enterprise customer-signal and revenue systems architecture spanning canonical account identity, enrichment, intent scoring, ownership-safe CRM activation, and reconciled fulfillment-to-cash measurement. Includes a live Qwen3-14B seller workbench, human approval controls, durable idempotent delivery, and a Salesforce Developer Edition integration with native security and recovery acceptance evidence. [Inspect the Salesforce verification](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
+**Problem:** Marketing, CRM, sales and finance can disagree about customer identity, appropriate sales actions and whether a deal produced collected cash. **System:** Consent-aware signals, verified accounts, intent and fit, ownership-safe activation, AI-assisted seller review and fulfillment-to-cash reconciliation. **Benefit:** Commercial decisions become traceable without treating scores or Closed Won opportunities as proof of cash. Includes a **real Salesforce Developer Edition API integration** tested with restricted synthetic review records, permissions, idempotency and failure recovery. [Native Salesforce evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
 
 **2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**  
-Python and PostgreSQL architecture for canonical identity, field authority, consent, durable execution, No-Regress Logic, idempotency, audited exceptions, and governed AI actions. Includes recovery evidence and Terraform-based AWS architecture. [Architecture and implementation details](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
+**Problem:** Connected platforms can overwrite correct data, repeat uncertain actions or let AI act beyond its authority. **System:** Python/PostgreSQL governance for canonical identity, field ownership, consent, lifecycle changes, durable workflows, approvals and exceptions. **Benefit:** Integration failures can be recovered without silently rewriting authoritative state or duplicating effects. Includes executed recovery evidence and AWS deployment architecture. [Inspect the architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
 
 **3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**  
-SQL/dbt dimensional models, SCD2 history, governed ARR and revenue definitions, reconciliation of bookings, invoices, and cash, and incremental/full-build equivalence. **Native Snowflake fixture acceptance executed:** three warehouse dbt builds, each with 15 passing models and 30 data tests; exact model parity, read-only consumer RBAC and publication recovery checks, with 461 retained query IDs. The larger synthetic enterprise dataset is locally validated, **not** cloud-benchmarked. [Native execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md) · [dbt models](https://github.com/rlbsem/revenue-metrics-platform/tree/main/dbt/models).
+**Problem:** Marketing sees pipeline, sales sees bookings and finance sees invoices or cash—different measures on different timelines. **System:** Governed SQL/dbt dimensional models, historical state, metric definitions and reconciliation bridges. **Benefit:** Commercial discrepancies become explainable with shared definitions and traceable sources. **Native Snowflake fixture acceptance passed** across three builds (15 models and 30 tests each); the larger synthetic enterprise scenario is locally validated, not cloud-benchmarked. [Snowflake execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md).
 
-**Optional interactive walkthrough:** [Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/) ([source and reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab)). Review recorded synthetic evidence from three independent engines: AI seller decisions, uncertain workflow recovery, and revenue reconciliation. Fresh engine execution remains a separate local workflow.
+## Six more enterprise systems
 
-## Additional engineering systems
+Together with the three implementations above, these make up **nine core engineering projects**. Each addresses a different enterprise failure or decision.
 
-Together with the three implementations above, these make up **nine core engineering projects**, organized around distinct enterprise problems.
-
-- **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)**: Contract-checked ingestion, schema changes, quarantines, late corrections, recovery, reconciliation, and atomic reporting publication.
-- **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)**: Versioned mappings, semantic parity checks, safe cutover, crash recovery, reverse migration, and evidence-bound rollback.
-- **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)**: Bitemporal customer state, historical restatement, expiry-driven reevaluation, coverage gates, and activation reconciliation.
-- **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)**: Actual local LLM inference, adversarial evaluation, regression gates, shadow/canary assessment, and safe release decisions.
-- **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)**: System and dependency discovery with source provenance, impact analysis, and retirement/replacement planning across a synthetic enterprise estate.
-- **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)**: Constrained integration-cost optimization across API quotas, freshness, capacity, and capabilities, with independent solution verification.
+- **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)** — **Problem:** Late, duplicate or corrected data can invalidate marketing reports. **System:** Contract-checked ingestion, quarantines, corrections and reconciliation. **Benefit:** A bad load cannot silently replace the last validated publication.
+- **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** — **Problem:** Moving platforms can preserve row counts while corrupting business meaning. **System:** Semantic parity tests, change catch-up, cutover gates and evidence-bound rollback. **Benefit:** Unsafe migrations are stopped before customers' records are misrepresented.
+- **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** — **Problem:** Customer eligibility changes, and late-arriving facts may correct what was known yesterday. **System:** Business-time and knowledge-time history, restatements, expiry and activation reconciliation. **Benefit:** Audiences reflect current eligibility while earlier decisions remain auditable.
+- **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)** — **Problem:** AI output can sound reasonable while being unsafe or unsupported. **System:** Actual local model inference, adversarial tests, source checks and release gates. **Benefit:** Unsafe agent versions can be blocked instead of promoted on persuasive prose alone.
+- **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)** — **Problem:** Retiring a seemingly redundant platform can break hidden business workflows. **System:** Evidence-backed dependency maps and change-impact analysis that preserve uncertainty. **Benefit:** Consolidation decisions have inspectable justification.
+- **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics)** — **Problem:** The cheapest integration design can miss deadlines or API limits during peak demand. **System:** Constrained, independently checked optimization across cost, capacity, quotas and freshness. **Benefit:** Proposed savings are evaluated against service requirements.
 
 ### Architecture capability map
 
