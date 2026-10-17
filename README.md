@@ -1,10 +1,10 @@
 # Richard Butts
 
-**Data & Analytics Engineering · MarTech & Enterprise Architecture · Revenue Integrity · AI Governance**
+**Go-to-Market Engineering & Revenue Systems · MarTech & Enterprise Architecture · Data & Analytics Engineering · AI Governance**
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
 
-**GTM Engineering & Revenue Systems:** I architect and build systems for account enrichment, intent signals, lead scoring, inbound routing, seller-assist AI, and CRM workflow automation. I connect sales and marketing execution to governed data, human approval controls, pipeline measurement, and downstream revenue outcomes.
+**Go-to-Market (GTM) Engineering & Revenue Systems:** I architect and build Clay-enabled account enrichment, intent signals, lead scoring and routing, AI-assisted outbound personalization, SDR/AE workflows, and CRM/API integrations. I connect sales and marketing execution to governed data, durable workflow controls, human approvals, and pipeline-to-revenue measurement.
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
