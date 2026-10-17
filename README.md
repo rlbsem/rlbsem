@@ -16,7 +16,6 @@ Follow the engineering evidence most relevant to your role; the systems below us
 - **Enterprise Integration / Systems Architecture:** [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance) · [MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)
 - **Senior Analytics Engineering:** [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability) · [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)
 - **Applied AI / AI Systems Engineering:** [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
-- **Director-Level Technical-Commercial Leadership:** [MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact) · [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
 
 ## Selected Engineering Implementations
 
