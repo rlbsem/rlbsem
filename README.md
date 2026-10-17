@@ -1,14 +1,26 @@
 # Richard Butts
 
-**Go-to-Market Engineering & Revenue Systems · MarTech & Enterprise Architecture · Data & Analytics Engineering · AI Governance**
+**Enterprise MarTech & Systems Architecture · GTM & Revenue Systems · Data & Analytics Engineering · Applied AI**
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
 
-**Go-to-Market (GTM) Engineering & Revenue Systems:** I architect and build Clay-enabled account enrichment, intent signals, lead scoring and routing, AI-assisted outbound personalization, SDR/AE workflows, and CRM/API integrations. I connect sales and marketing execution to governed data, durable workflow controls, human approvals, and pipeline-to-revenue measurement.
+**Professional Experience & Engineering Scope:** My background combines enterprise ecommerce and B2B SaaS leadership with approximately 30 systems and data engagements through Groundbreakers, primarily across PE-backed, multi-brand operating environments. My work spans MarTech and GTM architecture, enterprise integrations, customer data infrastructure, analytics engineering, revenue integrity, and AI-enabled systems. I combine technical strategy and stakeholder leadership with hands-on architecture, Python, SQL, APIs, data modeling, implementation, and engineering governance.
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
-## Featured engineering projects
+## Explore by Engineering Discipline
+
+Follow the engineering evidence most relevant to your role; the systems below use inspectable implementations, documented execution, and explicit verification boundaries.
+
+- **Senior MarTech / Marketing Technology:** [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)
+- **GTM Engineering / Revenue Systems:** [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab)
+- **Marketing Data / Data Architecture:** [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability) · [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)
+- **Enterprise Integration / Systems Architecture:** [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance) · [MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)
+- **Senior Analytics Engineering:** [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability) · [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)
+- **Applied AI / AI Systems Engineering:** [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
+- **Director-Level Technical-Commercial Leadership:** [MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact) · [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
+
+## Selected Engineering Implementations
 
 Three implementation-focused entry points spanning revenue and GTM systems, enterprise integration, and analytics engineering. Each repository links to architecture, executed tests, and technical evidence.
 
