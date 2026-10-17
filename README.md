@@ -21,10 +21,11 @@ Three implementation-focused entry points spanning revenue and GTM systems, ente
 **3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**  
 **Problem:** Marketing sees pipeline, sales sees bookings and finance sees invoices or cash—different measures on different timelines. **System:** Governed SQL/dbt dimensional models, historical state, metric definitions and reconciliation bridges. **Benefit:** Commercial discrepancies become explainable with shared definitions and traceable sources. **Native Snowflake fixture acceptance passed** across three builds (15 models and 30 tests each); the larger synthetic enterprise scenario is locally validated, not cloud-benchmarked. [Snowflake execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md).
 
-## Six more enterprise systems
+## Seven more enterprise systems
 
-Together with the three implementations above, these make up **nine core engineering projects**. Each addresses a different enterprise failure or decision.
+Together with the three implementations above, these make up **ten core engineering projects**. Each addresses a different enterprise failure or decision.
 
+- **[First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)** — **Problem:** Browser events can misstate signed contracts and deposits as the same revenue conversion. **System:** Consent-aware browser instrumentation, GTM-compatible data-layer events, source-authorized offline conversions and SQL/dbt reconciliation. **Benefit:** Missing, duplicated and overstated conversions become traceable without conflating committed value and cash collected. [Windows/Linux CI evidence](https://github.com/rlbsem/first-party-measurement-assurance/actions/runs/39004652004).
 - **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)** — **Problem:** Late, duplicate or corrected data can invalidate marketing reports. **System:** Contract-checked ingestion, quarantines, corrections and reconciliation. **Benefit:** A bad load cannot silently replace the last validated publication.
 - **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** — **Problem:** Moving platforms can preserve row counts while corrupting business meaning. **System:** Semantic parity tests, change catch-up, cutover gates and evidence-bound rollback. **Benefit:** Unsafe migrations are stopped before customers' records are misrepresented.
 - **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** — **Problem:** Customer eligibility changes, and late-arriving facts may correct what was known yesterday. **System:** Business-time and knowledge-time history, restatements, expiry and activation reconciliation. **Benefit:** Audiences reflect current eligibility while earlier decisions remain auditable.
@@ -34,9 +35,9 @@ Together with the three implementations above, these make up **nine core enginee
 
 ### Architecture capability map
 
-An at-a-glance view of the nine implementations and the enterprise problems they address:
+An at-a-glance view of the ten implementations and the enterprise problems they address:
 
-<img src="assets/capability-map.svg" alt="Capability map showing nine engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
+<img src="assets/capability-map.svg" alt="Capability map showing ten engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
 
 [View the full-size diagram](assets/capability-map.svg).
 
