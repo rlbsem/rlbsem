@@ -4,8 +4,6 @@
 
 I architect and build governed systems across customer data, CRM, MarTech, revenue operations, analytics, and AI. My work connects commercial definitions to technical controls: canonical identity, field ownership, source provenance, durable state, reconciliation, and recovery when systems disagree or fail.
 
-**Professional Experience & Engineering Scope:** My background combines enterprise ecommerce and B2B SaaS leadership with approximately 30 systems and data engagements through Groundbreakers, primarily across PE-backed, multi-brand operating environments. My work spans MarTech and GTM architecture, enterprise integrations, customer data infrastructure, analytics engineering, revenue integrity, and AI-enabled systems. I combine technical strategy and stakeholder leadership with hands-on architecture, Python, SQL, APIs, data modeling, implementation, and engineering governance.
-
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
 ## Explore by Engineering Discipline
