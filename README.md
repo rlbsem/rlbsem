@@ -6,35 +6,38 @@ I architect and build governed systems across customer data, CRM, MarTech, reven
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
-## Explore by Engineering Discipline
+## Engineering Implementations & Evidence
 
-Follow the engineering evidence most relevant to your role; the systems below use inspectable implementations, documented execution, and explicit verification boundaries.
+Four selected systems demonstrate how I approach enterprise failures: define the problem, implement the controls, and make the resulting behavior inspectable.
 
-- **Senior MarTech / Marketing Technology:** [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)
-- **GTM Engineering / Revenue Systems:** [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [Enterprise Revenue Systems Lab](https://github.com/rlbsem/enterprise-revenue-systems-lab)
-- **Marketing Data / Data Architecture:** [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability) · [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)
-- **Enterprise Integration / Systems Architecture:** [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance) · [MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact)
-- **Senior Analytics Engineering:** [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability) · [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)
-- **Applied AI / AI Systems Engineering:** [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
+**1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
 
-## Selected Engineering Implementations
+**Problem:** Fragmented customer identity, stale enrichment, unsafe sales handoffs and revenue outcomes that cannot be traced to collected cash.  
+**Solution:** Consent-aware signals, verified accounts, explainable fit and intent scoring, owner-safe CRM activation, AI-assisted seller review and fulfillment-to-cash reconciliation.  
+**Evidence:** Executed local workflows and a **native Salesforce Developer Edition API integration** tested with restricted synthetic records, permissions, approvals, idempotency and recovery. [Inspect Salesforce execution evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
 
-Three implementation-focused entry points spanning revenue and GTM systems, enterprise integration, and analytics engineering. Each repository links to architecture, executed tests, and technical evidence.
+**2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**
 
-**1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**  
-**Problem:** Marketing, CRM, sales and finance can disagree about customer identity, appropriate sales actions and whether a deal produced collected cash. **System:** Consent-aware signals, verified accounts, intent and fit, ownership-safe activation, AI-assisted seller review and fulfillment-to-cash reconciliation. **Benefit:** Commercial decisions become traceable without treating scores or Closed Won opportunities as proof of cash. Includes a **real Salesforce Developer Edition API integration** tested with restricted synthetic review records, permissions, idempotency and failure recovery. [Native Salesforce evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
+**Problem:** Connected platforms can overwrite authoritative data, repeat uncertain downstream actions or allow automation to exceed its permissions.  
+**Solution:** Python/PostgreSQL governance for canonical identity, source authority, consent, field ownership, durable execution, human approval and exception handling.  
+**Evidence:** Executed failure and recovery tests, including lost acknowledgments and receiver-level reconciliation; AWS deployment architecture is documented separately. [Review recovery evidence](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
 
-**2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**  
-**Problem:** Connected platforms can overwrite correct data, repeat uncertain actions or let AI act beyond its authority. **System:** Python/PostgreSQL governance for canonical identity, field ownership, consent, lifecycle changes, durable workflows, approvals and exceptions. **Benefit:** Integration failures can be recovered without silently rewriting authoritative state or duplicating effects. Includes executed recovery evidence and AWS deployment architecture. [Inspect the architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
+**3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
 
-**3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**  
-**Problem:** Marketing sees pipeline, sales sees bookings and finance sees invoices or cash—different measures on different timelines. **System:** Governed SQL/dbt dimensional models, historical state, metric definitions and reconciliation bridges. **Benefit:** Commercial discrepancies become explainable with shared definitions and traceable sources. **Native Snowflake fixture acceptance passed** across three builds (15 models and 30 tests each); the larger synthetic enterprise scenario is locally validated, not cloud-benchmarked. [Snowflake execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md).
+**Problem:** Pipeline, bookings, invoicing, cash and ARR are different economic measures, yet disconnected reports can treat them as interchangeable.  
+**Solution:** Governed SQL/dbt dimensional models, historical state, consistent metric definitions and source-traceable reconciliation bridges.  
+**Evidence:** **Native Snowflake fixture acceptance** passed across three builds, each with 15 models and 30 tests. The larger synthetic enterprise scenario was verified locally, not cloud-benchmarked. [Inspect Snowflake execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md).
 
-## Seven more enterprise systems
+**4. [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)**
 
-Together with the three implementations above, these make up **ten core engineering projects**. Each addresses a different enterprise failure or decision.
+**Problem:** Browser and offline conversion reporting can miss events or overstate revenue by confusing proposals, signed contracts, deposits and payments.  
+**Solution:** Consent-aware browser events, GTM-compatible data layers, source-authorized offline conversions, durable receipts and SQL/dbt reconciliation.  
+**Evidence:** Executed browser and local warehouse workflows; **native BigQuery Studio queries against Google's public GA4 sample** exposed 14 purchase events versus 57 nested item rows and preserved two revenue discrepancies. This Google sample evidence is separate from the synthetic business scenario. [BigQuery execution evidence](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md) · [Passing Windows/Linux CI](https://github.com/rlbsem/first-party-measurement-assurance/actions/runs/39007934132).
 
-- **[First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)** — **Problem:** Browser and offline conversions can conflate signed contract value with actual deposits and payments. **System:** Consent-aware browser events, GTM-compatible data layers, source-authorized offline conversions and SQL/dbt reconciliation. **Benefit:** Missing, duplicated and overstated conversions become traceable. **Native BigQuery Studio execution** against Google's public GA4 sample confirmed 14 purchases versus 57 nested item rows, with two revenue disagreements preserved. [Google execution evidence](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md) · [Passing Windows/Linux CI](https://github.com/rlbsem/first-party-measurement-assurance/actions/runs/39007934132).
+## Six Additional Engineering Systems
+
+Alongside the four implementations above, these complete **ten core engineering projects**. Each addresses a different enterprise failure or decision.
+
 - **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)** — **Problem:** Late, duplicate or corrected data can invalidate marketing reports. **System:** Contract-checked ingestion, quarantines, corrections and reconciliation. **Benefit:** A bad load cannot silently replace the last validated publication.
 - **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)** — **Problem:** Moving platforms can preserve row counts while corrupting business meaning. **System:** Semantic parity tests, change catch-up, cutover gates and evidence-bound rollback. **Benefit:** Unsafe migrations are stopped before customers' records are misrepresented.
 - **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences)** — **Problem:** Customer eligibility changes, and late-arriving facts may correct what was known yesterday. **System:** Business-time and knowledge-time history, restatements, expiry and activation reconciliation. **Benefit:** Audiences reflect current eligibility while earlier decisions remain auditable.
