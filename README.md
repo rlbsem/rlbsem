@@ -14,7 +14,7 @@ Four selected systems demonstrate how I approach enterprise failures: define the
 
 **Problem:** Fragmented customer identity, stale enrichment, unsafe sales handoffs and revenue outcomes that cannot be traced to collected cash.  
 **Solution:** Consent-aware signals, verified accounts, explainable fit and intent scoring, owner-safe CRM activation, AI-assisted seller review and fulfillment-to-cash reconciliation.  
-**Evidence:** Executed local workflows and a **native Salesforce Developer Edition API integration** tested with restricted synthetic records, permissions, approvals, idempotency and recovery. [Inspect Salesforce execution evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
+**Evidence:** Executed **native Salesforce ↔ Snowflake governed round-trip**: synthetic CRM state through warehouse decisions, one approval-bound Salesforce write with a deliberately lost acknowledgment, exact receipt recovery, independent read-back and feedback that changed the warehouse decision. Restricted Snowflake reads and replay/no-regress controls were verified; 352 local tests passed. [Inspect cross-platform execution evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md) · [Salesforce permission and recovery evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md).
 
 **2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**
 
