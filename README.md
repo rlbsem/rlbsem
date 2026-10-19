@@ -20,7 +20,7 @@ Four selected systems demonstrate how I approach enterprise failures: define the
 
 **Problem:** Connected platforms can overwrite authoritative data, repeat uncertain downstream actions or allow automation to exceed its permissions.  
 **Solution:** Python/PostgreSQL governance for canonical identity, source authority, consent, field ownership, durable execution, human approval and exception handling.  
-**Evidence:** Executed failure and recovery tests, including lost acknowledgments and receiver-level reconciliation; AWS deployment architecture is documented separately. [Review recovery evidence](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
+**Evidence:** Executed PostgreSQL governance and recovery tests plus **native AWS RDS acceptance**: private databases, 1-intent/1-receipt reconciliation, duplicate safety, read-only permission denials, and a real retained-backup restore observed available. Independent teardown was verified. Native restored-state fail-closed reconciliation remains unverified; the production AWS stack was not deployed. [Inspect AWS execution and cleanup evidence](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/aws-readiness/retained-two-instance/native-outcome/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md).
 
 **3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
 
