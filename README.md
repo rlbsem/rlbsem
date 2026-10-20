@@ -1,8 +1,10 @@
 # Richard Butts
 
-**Enterprise MarTech & Systems Architecture · GTM & Revenue Systems · Data & Analytics Engineering · Applied AI**
+**Enterprise Data & Systems Architecture · Revenue Integrity · MarTech & GTM Engineering · Applied AI**
 
-My professional work spans enterprise ecommerce, B2B SaaS and the design and delivery of integrated customer, operational and financial systems. These public implementations make the engineering inspectable through code, failure tests, reconciliation and recorded execution.
+My professional work spans enterprise ecommerce, B2B SaaS, and founder-owned and private-equity-backed multi-brand operating companies. I design and deliver the data infrastructure connecting commercial, operational, and financial systems—including canonical identity, source-of-truth governance, revenue reconciliation, resilient integrations, and audit-ready controls for acquisition-driven environments.
+
+The public implementations below make that engineering inspectable through working code, failure tests, reconciliation, and recorded execution.
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
