@@ -2,7 +2,7 @@
 
 **Enterprise MarTech & Systems Architecture · GTM & Revenue Systems · Data & Analytics Engineering · Applied AI**
 
-I build systems that keep customer, revenue and activation data reliable across platforms. The work covers identity resolution, source authority, field ownership, lineage, durable execution, reconciliation and recovery. The implementations below show the engineering decisions and tests behind those controls.
+My professional work spans enterprise ecommerce, B2B SaaS and the design and delivery of integrated customer, operational and financial systems. These public implementations make the engineering inspectable through code, failure tests, reconciliation and recorded execution.
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
@@ -31,6 +31,8 @@ Bookings, invoices, collected cash and ARR measure different events. This platfo
 **4. [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)**
 
 Attribution breaks when browser events are lost or sales milestones are treated as collected revenue. This implementation combines consent-aware events, GTM data layers, durable offline conversion receipts and SQL/dbt reconciliation. **Native BigQuery queries** against Google's public GA4 sample distinguished 14 purchase events from 57 nested item rows and retained two revenue discrepancies. The Google sample and local synthetic business scenarios are documented separately.
+
+A separate [local GA4 warehouse module](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/ga4-warehouse/README.md) verifies late corrections, replay safety and incremental/full-refresh parity; native dbt-bigquery remains unverified.
 
 [BigQuery execution evidence](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md) · [Windows/Linux CI](https://github.com/rlbsem/first-party-measurement-assurance/actions/runs/39007934132)
 
