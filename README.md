@@ -2,39 +2,39 @@
 
 **Enterprise MarTech & Systems Architecture · GTM & Revenue Systems · Data & Analytics Engineering · Applied AI**
 
-I design and build systems that keep customer, operational and revenue data reliable across platforms. My work focuses on source authority, identity, reconciliation, durable execution and recovery.
+I engineer commercial systems so customer identity, sales activity, operational commitments, financial outcomes and automated decisions stay trustworthy across platforms. The result is safer handoffs, accountable recovery and analytics leaders can use to make decisions.
 
-**Professional background:** I founded Groundbreakers Digital in 2023 and have delivered roughly 30 projects across founder-owned and PE-backed businesses, including CRM, operations and finance integration, data integrity and audit controls. Before that, I was promoted twice at Lorex, reaching Director of Digital Marketing as annual ecommerce revenue grew from approximately $55M to $101M. At LMN, I managed approximately US$350K per month in acquisition across multiple B2B SaaS products, with CAC reductions of approximately 15–25%.
+**Enterprise delivery context:** My professional work spans **approximately 30 systems and data engagements**, roughly **80% supporting operating brands in private-equity-backed portfolios**, alongside independently operated multi-brand groups. The work includes acquisition/platform integrations, CRM-to-operations and finance handoffs, master-data authority, pipeline attribution, revenue reconciliation, data infrastructure and governed AI.
 
-These repositories demonstrate relevant engineering methods using public synthetic or vendor data. They are not representations of confidential client deployments.
+These public implementations are **selected technical demonstrations** from a much broader professional engineering career. They use synthetic or permitted public data and do not disclose confidential client deployments.
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/) · [Interactive evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/)
 
 ## Engineering Implementations & Evidence
 
-Four implementations with working code, failure tests and execution records.
+Four flagship implementations connecting enterprise business problems to working code, failure tests and inspectable execution evidence.
 
 **1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
 
-Customer signals are only useful when identity, consent and CRM ownership remain intact. This system combines verified accounts, explainable fit and intent scoring, approval-controlled activation and fulfillment-to-cash reconciliation. In an **executed Salesforce ↔ Snowflake round-trip**, a lost Salesforce acknowledgment was recovered without creating another record. Independent read-back confirmed the effect, and CRM feedback changed the warehouse recommendation. Restricted reads and replay controls were also verified, alongside 352 passing local tests.
+**Business outcome:** Turn scattered account signals into explainable, owner-safe seller actions without duplicate work or treating Closed Won as collected cash. This system combines verified identity, fit/intent scoring, approval-controlled CRM activation and fulfillment-to-cash measurement. **Engineering proof:** An executed **Salesforce ↔ Snowflake round-trip** recovered a lost acknowledgment without another create; independent read-back confirmed the effect, and CRM feedback changed the warehouse recommendation. Restricted reads and replay controls were also verified, alongside 352 passing local tests.
 
 [Native integration evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md) · [Salesforce permission and recovery tests](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md)
 
 **2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**
 
-When CRM, operations or AI workflows disagree, authoritative customer data can be overwritten and uncertain requests can trigger duplicate actions. I built a Python/PostgreSQL control plane to enforce identity, field ownership, consent, approval and durable execution across those boundaries. Native AWS tests verified independent receipts, duplicate prevention, read-only restrictions and a **retained-backup RDS restore observed available**. The final native fail-closed comparison was not recorded; production AWS services were not deployed.
+**Business outcome:** Keep disconnected systems and AI automations from overwriting customer truth, bypassing permissions or repeating a commercial action when an API acknowledgment is lost. This Python/PostgreSQL control plane enforces identity, field ownership, consent, approval, durable execution and reconciliation. **Engineering proof:** Native AWS checks verified independent PostgreSQL receipts, duplicate safety and restricted reads; an RDS backup restore was observed available. The linked AWS report documents the unverified application-level restore check and unexecuted production deployment.
 
 [AWS execution and cleanup](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/aws-readiness/retained-two-instance/native-outcome/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md)
 
 **3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
 
-Bookings, invoices, collected cash and ARR measure different events. This platform uses SQL/dbt models, historical state and source-traceable reconciliation to keep those definitions consistent. **Native Snowflake acceptance** completed three fixture builds, each with 15 models and 30 tests. The larger synthetic enterprise scenario was tested locally rather than benchmarked in Snowflake.
+**Business outcome:** Give Sales, Finance and executives comparable definitions for pipeline, bookings, invoicing, collected cash and ARR instead of competing dashboards. The SQL/dbt platform models distinct economic events, historical state and source-traceable reconciliation. **Engineering proof:** Native Snowflake acceptance completed three fixture builds, each with 15 models and 30 passing tests. The larger synthetic enterprise scenario was tested locally, not benchmarked in Snowflake.
 
 [Snowflake execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md)
 
 **4. [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)**
 
-Attribution breaks when browser events are lost or sales milestones are treated as collected revenue. This implementation combines consent-aware events, GTM data layers, durable offline conversion receipts and SQL/dbt reconciliation. **Native BigQuery queries** against Google's public GA4 sample distinguished 14 purchase events from 57 nested item rows and retained two revenue discrepancies. The Google sample and local synthetic business scenarios are documented separately.
+**Business outcome:** Prevent Marketing from mistaking a website inquiry, signed commitment or deposit for the same economic conversion. This implementation connects consent-aware browser events, GTM data layers, durable offline conversion receipts and SQL/dbt reconciliation. **Engineering proof:** Native BigQuery queries against Google's public GA4 sample identified 14 purchase events behind 57 nested item rows and retained two unresolved revenue discrepancies. The local business scenarios are separately synthetic.
 
 [BigQuery execution evidence](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md) · [Windows/Linux CI](https://github.com/rlbsem/first-party-measurement-assurance/actions/runs/39007934132)
 
