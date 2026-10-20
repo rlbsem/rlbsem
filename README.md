@@ -8,6 +8,8 @@ The repositories below show how I approach those problems, with working code, te
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
+**[Explore the Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** — four interactive investigations using recorded synthetic evidence, with pinned sources and reproducible checks.
+
 ## Engineering Implementations & Evidence
 
 Four projects with detailed code, test results, and execution evidence.
