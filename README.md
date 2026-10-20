@@ -2,9 +2,13 @@
 
 **Enterprise MarTech & Systems Architecture · GTM & Revenue Systems · Data & Analytics Engineering · Applied AI**
 
-I build systems that keep customer, revenue and activation data reliable across platforms. The work covers identity resolution, source authority, field ownership, lineage, durable execution, reconciliation and recovery. The implementations below show the engineering decisions and tests behind those controls.
+I design and build systems that keep customer, operational and revenue data reliable across platforms. My work focuses on source authority, identity, reconciliation, durable execution and recovery.
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
+**Professional background:** I founded Groundbreakers Digital in 2023 and have delivered roughly 30 projects across founder-owned and PE-backed businesses, including CRM, operations and finance integration, data integrity and audit controls. Before that, I was promoted twice at Lorex, reaching Director of Digital Marketing as annual ecommerce revenue grew from approximately $55M to $101M. At LMN, I managed approximately US$350K per month in acquisition across multiple B2B SaaS products, with CAC reductions of approximately 15–25%.
+
+These repositories demonstrate relevant engineering methods using public synthetic or vendor data. They are not representations of confidential client deployments.
+
+**Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/) · [Interactive evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/)
 
 ## Engineering Implementations & Evidence
 
@@ -18,7 +22,7 @@ Customer signals are only useful when identity, consent and CRM ownership remain
 
 **2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**
 
-An integration should not be able to overwrite authoritative data or repeat an uncertain downstream action. This Python/PostgreSQL control plane enforces canonical identity, field ownership, consent, approval and durable execution. Native AWS acceptance verified independent PostgreSQL receipts, duplicate safety, read-only permissions and a **retained-backup RDS restore observed available**. The restored-state fail-closed comparison was not recorded, and the production AWS architecture was not deployed.
+When CRM, operations or AI workflows disagree, authoritative customer data can be overwritten and uncertain requests can trigger duplicate actions. I built a Python/PostgreSQL control plane to enforce identity, field ownership, consent, approval and durable execution across those boundaries. Native AWS tests verified independent receipts, duplicate prevention, read-only restrictions and a **retained-backup RDS restore observed available**. The final native fail-closed comparison was not recorded; production AWS services were not deployed.
 
 [AWS execution and cleanup](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/aws-readiness/retained-two-instance/native-outcome/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md)
 
