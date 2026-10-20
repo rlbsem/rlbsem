@@ -2,31 +2,31 @@
 
 **Enterprise Data & Systems Architecture · Revenue Integrity · MarTech & GTM Engineering · Applied AI**
 
-My professional work spans enterprise ecommerce, B2B SaaS, and founder-owned and private-equity-backed multi-brand operating companies. I design and deliver the data infrastructure connecting commercial, operational, and financial systems—including canonical identity, source-of-truth governance, revenue reconciliation, resilient integrations, and audit-ready controls for acquisition-driven environments.
+My work covers enterprise ecommerce, B2B SaaS, and founder-owned and PE-backed businesses, including multi-brand operating groups. I spend a lot of time solving problems that arise when CRM, operations, and finance systems disagree about customers, jobs, and revenue. That involves building integrations, defining which system owns each field, reconciling records, and making sure failed or repeated transactions don't corrupt the data.
 
-The public implementations below make that engineering inspectable through working code, failure tests, reconciliation, and recorded execution.
+The repositories below show how I approach those problems, with working code, tests, and recorded execution.
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
 ## Engineering Implementations & Evidence
 
-Four implementations with working code, failure tests and execution records.
+Four projects with detailed code, test results, and execution evidence.
 
 **1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
 
-Customer signals are only useful when identity, consent and CRM ownership remain intact. This system combines verified accounts, explainable fit and intent scoring, approval-controlled activation and fulfillment-to-cash reconciliation. In an **executed Salesforce ↔ Snowflake round-trip**, a lost Salesforce acknowledgment was recovered without creating another record. Independent read-back confirmed the effect, and CRM feedback changed the warehouse recommendation. Restricted reads and replay controls were also verified, alongside 352 passing local tests.
+This project takes customer signals into the CRM while checking identity, consent, field ownership, and approval first. It includes account verification, explainable fit and intent scoring, and fulfillment-to-cash reconciliation. In an **executed Salesforce ↔ Snowflake round-trip**, a lost Salesforce acknowledgment was recovered without creating another record. Independent read-back confirmed the effect, and CRM feedback changed the warehouse recommendation. Restricted reads and replay controls were also verified, alongside 352 passing local tests.
 
 [Native integration evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md) · [Salesforce permission and recovery tests](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md)
 
 **2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**
 
-An integration should not be able to overwrite authoritative data or repeat an uncertain downstream action. This Python/PostgreSQL control plane enforces canonical identity, field ownership, consent, approval and durable execution. Native AWS acceptance verified independent PostgreSQL receipts, duplicate safety, read-only permissions and a **retained-backup RDS restore observed available**. The restored-state fail-closed comparison was not recorded, and the production AWS architecture was not deployed.
+This Python/PostgreSQL control plane checks canonical identity, field ownership, consent, and approval before changes move between systems. It keeps durable execution state so a retry cannot overwrite authoritative data or repeat an uncertain downstream action. Native AWS acceptance verified independent PostgreSQL receipts, duplicate safety, read-only permissions and a **retained-backup RDS restore observed available**. The restored-state fail-closed comparison was not recorded, and the production AWS architecture was not deployed.
 
 [AWS execution and cleanup](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/aws-readiness/retained-two-instance/native-outcome/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md)
 
 **3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
 
-Bookings, invoices, collected cash and ARR measure different events. This platform uses SQL/dbt models, historical state and source-traceable reconciliation to keep those definitions consistent. **Native Snowflake acceptance** completed three fixture builds, each with 15 models and 30 tests. The larger synthetic enterprise scenario was tested locally rather than benchmarked in Snowflake.
+Bookings, invoices, collected cash, and ARR are not interchangeable. This platform uses SQL/dbt models, historical state and source-traceable reconciliation to keep those definitions consistent. **Native Snowflake acceptance** completed three fixture builds, each with 15 models and 30 tests. The larger synthetic enterprise scenario was tested locally rather than benchmarked in Snowflake.
 
 [Snowflake execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md)
 
@@ -40,7 +40,7 @@ A separate [local GA4 warehouse module](https://github.com/rlbsem/first-party-me
 
 ## Six Additional Engineering Systems
 
-These six repositories cover different failure modes and bring the core engineering portfolio to ten projects.
+Six more projects cover specific problems in data reliability, migrations, temporal history, AI evaluation, and platform governance.
 
 - **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability):** Contract-checked ingestion, quarantine and correction handling keep invalid loads from replacing validated reporting data.
 - **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance):** Semantic parity, change catch-up and rollback gates expose migrations that preserve row counts but alter business meaning.
@@ -51,7 +51,7 @@ These six repositories cover different failure modes and bring the core engineer
 
 ### Architecture capability map
 
-How the ten projects relate across revenue, GTM controls, enterprise architecture and AI systems:
+Where the projects fit across revenue systems, integration controls, enterprise architecture, and AI:
 
 <img src="assets/capability-map.svg" alt="Capability map showing ten engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
 
@@ -61,14 +61,14 @@ How the ten projects relate across revenue, GTM controls, enterprise architectur
 
 **[Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/): interactive evidence explorer** · [Source code](https://github.com/rlbsem/enterprise-revenue-systems-lab)
 
-For a closer look at selected implementation behaviors, the Lab now offers four investigations:
+The interactive lab lets you walk through four cases:
 
 - **AI seller decisions:** Examine a model-generated recommendation, its supporting sources, a reviewed edit, approval and recorded delivery evidence.
 - **Execution recovery:** Trace a lost acknowledgment and worker interruption through durable workflow state and independent receiver receipts, including duplicate prevention.
 - **Revenue reconciliation:** Explore why installed ARR, bookings, invoices and collected cash differ, with a source-backed financial bridge.
 - **Native Salesforce and Snowflake:** [Inspect the CRM-to-warehouse round trip](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=connected-roundtrip), including source authority, lost-acknowledgment recovery, independent CRM readback and the resulting warehouse decision.
 
-**No installation is needed to explore.** The hosted site presents recorded, verifiable **synthetic evidence**; fresh inference and original-engine execution are available only through separate local workflows.
+The hosted lab uses recorded **synthetic evidence**, not live production data. Running the underlying engines or fresh model inference requires the separate local workflows.
 
 ## Systems, technologies, and control patterns
 
@@ -82,6 +82,6 @@ For a closer look at selected implementation behaviors, the Lab now offers four 
 
 ## How to evaluate the work
 
-The repositories include source code, tests, evidence and operating limits. Public examples use synthetic or vendor-neutral data; native execution is identified separately from local tests and production deployment.
+Each repository documents its code, tests, and limits. The examples use synthetic or vendor-neutral data, and I distinguish native service execution from local tests and production deployment.
 
 **Tools execute. The control layer determines what is true.**
