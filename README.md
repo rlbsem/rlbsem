@@ -28,9 +28,9 @@ This Python/PostgreSQL control plane checks canonical identity, field ownership,
 
 **3. [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration)**
 
-This Python system connects account discovery, fit/intent scoring, inbound routing, and approval-gated sales engagement to replies, meetings, accepted opportunities, and account-level treatment/holdout measurement. An independent HTTP destination records actual effects and receipts, with safe recovery from uncertain API outcomes. **73 regression tests passed** and Linux, Windows, and container CI verified the complete local workflow. Native CRM/sales-engagement vendor connections, fresh LLM inference, and actual commercial pipeline uplift are not claimed.
+This Python GTM system connects account research, fit/intent scoring, inbound routing, approved seller actions, and qualified-pipeline measurement. **Native Salesforce Developer Edition execution** verified Account/Contact matching, guarded SDR Task creation, independent readback, duplicate rollback, and lost-acknowledgment recovery. **Fresh Qwen3 inference**, 163 passing regression tests, and cross-platform CI complement a **120-account, USD $3.46M synthetic enterprise qualified-pipeline scenario**.
 
-[Executed end-to-end evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/README.md) · [Application and browser screenshots](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/images/provenance.json) · [Cross-platform CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39533467119)
+[Native Salesforce execution evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/salesforce-standard/README.md) · [Recorded Qwen3 inference](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/native-ai/README.md) · [Enterprise demo and screenshots](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/enterprise-usd/README.md) · [Linux, Windows and container CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39653715427)
 
 **4. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
 
