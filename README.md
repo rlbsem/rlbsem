@@ -12,7 +12,7 @@ The repositories below show how I approach those problems, with working code, te
 
 ## Engineering Implementations & Evidence
 
-Four projects with detailed code, test results, and execution evidence.
+Five projects with detailed code, test results, and execution evidence.
 
 **1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
 
@@ -26,13 +26,19 @@ This Python/PostgreSQL control plane checks canonical identity, field ownership,
 
 [AWS execution and cleanup](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/aws-readiness/retained-two-instance/native-outcome/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md)
 
-**3. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
+**3. [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration)**
+
+This Python system connects account discovery, fit/intent scoring, inbound routing, and approval-gated sales engagement to replies, meetings, accepted opportunities, and account-level treatment/holdout measurement. An independent HTTP destination records actual effects and receipts, with safe recovery from uncertain API outcomes. **73 regression tests passed** and Linux, Windows, and container CI verified the complete local workflow. Native CRM/sales-engagement vendor connections, fresh LLM inference, and actual commercial pipeline uplift are not claimed.
+
+[Executed end-to-end evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/README.md) · [Application and browser screenshots](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/images/provenance.json) · [Cross-platform CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39533467119)
+
+**4. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
 
 Bookings, invoices, collected cash, and ARR are not interchangeable. This platform uses SQL/dbt models, historical state and source-traceable reconciliation to keep those definitions consistent. **Native Snowflake acceptance** completed three fixture builds, each with 15 models and 30 tests. The larger synthetic enterprise scenario was tested locally rather than benchmarked in Snowflake.
 
 [Snowflake execution evidence](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/evidence/snowflake/fixture/README.md)
 
-**4. [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)**
+**5. [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)**
 
 Attribution breaks when browser events are lost or sales milestones are treated as collected revenue. This implementation combines consent-aware events, GTM data layers, durable offline conversion receipts and SQL/dbt reconciliation. **Native BigQuery queries** against Google's public GA4 sample distinguished 14 purchase events from 57 nested item rows and retained two revenue discrepancies. The Google sample and local synthetic business scenarios are documented separately.
 
@@ -55,7 +61,7 @@ Six more projects cover specific problems in data reliability, migrations, tempo
 
 Where the projects fit across revenue systems, integration controls, enterprise architecture, and AI:
 
-<img src="assets/capability-map.svg" alt="Capability map showing ten engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
+<img src="assets/capability-map.svg" alt="Capability map showing eleven engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
 
 [View the full-size diagram](assets/capability-map.svg).
 
