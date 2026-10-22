@@ -6,7 +6,7 @@ I build AI-powered revenue and GTM systems that turn account signals and buyer i
 
 The repositories below show working code, test results and recorded execution evidence, including native Salesforce, Snowflake and BigQuery acceptance as well as actual local LLM inference. The public examples use synthetic or public sample data, with execution and commercial outcome boundaries documented.
 
-**Start here for AI GTM engineering:** [GTM Pipeline Orchestration — SDR account intelligence and executed Salesforce proof](https://github.com/rlbsem/gtm-pipeline-orchestration) · [AI GTM evidence — interactive hosted Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise) · [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)
+**Start here for AI GTM engineering:** [GTM Pipeline Orchestration — SDR account intelligence and executed Salesforce proof](https://github.com/rlbsem/gtm-pipeline-orchestration) · [Interactive SDR Account Intelligence — hosted case](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research) · [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
@@ -79,7 +79,7 @@ The interactive lab lets you walk through five investigations:
 - **Execution recovery:** Trace a lost acknowledgment and worker interruption through durable workflow state and independent receiver receipts, including duplicate prevention.
 - **Revenue reconciliation:** Explore why installed ARR, bookings, invoices and collected cash differ, with a source-backed financial bridge.
 - **Native Salesforce and Snowflake:** [Inspect the CRM-to-warehouse round trip](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=connected-roundtrip), including source authority, lost-acknowledgment recovery, independent CRM readback and the resulting warehouse decision.
-- **AI account intelligence to qualified pipeline:** [Explore the hosted GTM investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise), which presents earlier separate synthetic pipeline, native Salesforce and Qwen3 evaluation evidence. The newly merged SDR research desk and connected Qwen3-to-Salesforce Task run are documented in the source GTM repository, not yet added to the hosted Lab.
+- **AI account intelligence to qualified pipeline:** [Explore the hosted SDR Account Intelligence investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research): six synthetic research accounts, 40 recorded Qwen3 responses, evidence-grounded recommendations, rejected outputs and saved local seller-review proof. [Explore the separate pipeline investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise) for synthetic opportunity measurement and earlier native Salesforce evidence. The richer research did not execute through Salesforce; the separate connected Qwen3-to-Salesforce Task proof remains in the [source GTM repository](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/connected-sdr.md).
 
 The hosted lab uses recorded **synthetic evidence**, not live production data. Running the underlying engines or fresh model inference requires the separate local workflows.
 
