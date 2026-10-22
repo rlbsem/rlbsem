@@ -1,36 +1,38 @@
 # Richard Butts
 
-**Enterprise Data & Systems Architecture · Revenue Integrity · MarTech & GTM Engineering · Applied AI**
+**AI GTM Engineering · Enterprise Data & Systems Architecture · Applied AI · Revenue Integrity · MarTech**
 
-My work covers enterprise ecommerce, B2B SaaS, and founder-owned and PE-backed businesses, including multi-brand operating groups. I spend a lot of time solving problems that arise when CRM, operations, and finance systems disagree about customers, jobs, and revenue. That involves building integrations, defining which system owns each field, reconciling records, and making sure failed or repeated transactions don't corrupt the data.
+I build AI-powered revenue and GTM systems that turn account signals and buyer interest into useful seller actions, connect CRM and marketing tools, and trace outcomes through pipeline and revenue. My work spans enterprise B2B SaaS, ecommerce, and founder-owned and PE-backed multi-brand operators. I write the Python, SQL, APIs and durable control logic needed when ordinary workflows cannot safely manage identity, ownership, consent, retries and system-of-record changes.
 
-The repositories below show how I approach those problems, with working code, tests, and recorded execution.
+The repositories below show working code, test results and recorded execution evidence, including native Salesforce, Snowflake and BigQuery acceptance as well as actual local LLM inference. The public examples use synthetic or public sample data, with execution and commercial outcome boundaries documented.
+
+**Start here for AI GTM engineering:** [AI Account Intelligence to Qualified Pipeline — interactive evidence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise) · [GTM Pipeline Orchestration — code and executed proof](https://github.com/rlbsem/gtm-pipeline-orchestration) · [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
-**[Explore the Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/).** The interactive explorer includes four investigations using recorded evidence, pinned source references, and reproducible checks.
+**[Explore the full Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/).** The hosted investigation library covers AI seller decisions, GTM pipeline workflows, execution recovery, commercial reconciliation and actual native CRM/warehouse integration evidence.
 
 ## Engineering Implementations & Evidence
 
 Five projects with detailed code, test results, and execution evidence.
 
-**1. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
+**1. [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration)**
+
+This Python GTM system connects account research, fit/intent scoring, inbound routing, approved seller actions, and qualified-pipeline measurement. **Native Salesforce Developer Edition execution** verified Account/Contact matching, guarded SDR Task creation, independent readback, duplicate rollback, and lost-acknowledgment recovery. **Fresh Qwen3 inference**, 163 passing regression tests, and cross-platform CI complement a **120-account, USD $3.46M synthetic enterprise qualified-pipeline scenario**.
+
+[Native Salesforce execution evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/salesforce-standard/README.md) · [Recorded Qwen3 inference](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/native-ai/README.md) · [Enterprise demo and screenshots](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/enterprise-usd/README.md) · [Linux, Windows and container CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39653715427)
+
+**2. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
 
 This project takes customer signals into the CRM while checking identity, consent, field ownership, and approval first. It includes account verification, explainable fit and intent scoring, and fulfillment-to-cash reconciliation. In an **executed Salesforce ↔ Snowflake round-trip**, a lost Salesforce acknowledgment was recovered without creating another record. Independent read-back confirmed the effect, and CRM feedback changed the warehouse recommendation. Restricted reads and replay controls were also verified, alongside 352 passing local tests.
 
 [Native integration evidence](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md) · [Salesforce permission and recovery tests](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/salesforce-native/README.md)
 
-**2. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**
+**3. [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)**
 
 This Python/PostgreSQL control plane checks canonical identity, field ownership, consent, and approval before changes move between systems. It keeps durable execution state so a retry cannot overwrite authoritative data or repeat an uncertain downstream action. Native AWS acceptance verified independent PostgreSQL receipts, duplicate safety, read-only permissions and a **retained-backup RDS restore observed available**. The restored-state fail-closed comparison was not recorded, and the production AWS architecture was not deployed.
 
 [AWS execution and cleanup](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/aws-readiness/retained-two-instance/native-outcome/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md)
-
-**3. [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration)**
-
-This Python GTM system connects account research, fit/intent scoring, inbound routing, approved seller actions, and qualified-pipeline measurement. **Native Salesforce Developer Edition execution** verified Account/Contact matching, guarded SDR Task creation, independent readback, duplicate rollback, and lost-acknowledgment recovery. **Fresh Qwen3 inference**, 163 passing regression tests, and cross-platform CI complement a **120-account, USD $3.46M synthetic enterprise qualified-pipeline scenario**.
-
-[Native Salesforce execution evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/salesforce-standard/README.md) · [Recorded Qwen3 inference](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/native-ai/README.md) · [Enterprise demo and screenshots](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/enterprise-usd/README.md) · [Linux, Windows and container CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39653715427)
 
 **4. [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)**
 
