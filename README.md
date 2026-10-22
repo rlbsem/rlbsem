@@ -6,7 +6,7 @@ I build AI-powered revenue and GTM systems that turn account signals and buyer i
 
 The repositories below show working code, test results and recorded execution evidence, including native Salesforce, Snowflake and BigQuery acceptance as well as actual local LLM inference. The public examples use synthetic or public sample data, with execution and commercial outcome boundaries documented.
 
-**Start here for AI GTM engineering:** [AI Account Intelligence to Qualified Pipeline — interactive evidence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise) · [GTM Pipeline Orchestration — code and executed proof](https://github.com/rlbsem/gtm-pipeline-orchestration) · [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)
+**Start here for AI GTM engineering:** [GTM Pipeline Orchestration — SDR account intelligence and executed Salesforce proof](https://github.com/rlbsem/gtm-pipeline-orchestration) · [AI GTM evidence — interactive hosted Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise) · [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
@@ -18,9 +18,11 @@ Five projects with detailed code, test results, and execution evidence.
 
 **1. [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration)**
 
-This Python GTM system connects account research, fit/intent scoring, inbound routing, approved seller actions, and qualified-pipeline measurement. A **connected native Salesforce Developer Edition run** took a fictional buying signal through **fresh Qwen3 inference → exact seller review → one guarded Salesforce SDR Task → independent readback**, including lost-acknowledgment recovery and duplicate/authority rejection. The implementation includes **199 passing regression tests** and cross-platform CI. A separate **120-account, USD $3.46M synthetic qualified-pipeline scenario** illustrates downstream measurement; it is not real customer pipeline or AI uplift.
+This Python GTM application covers AI account research, fit/intent prioritization, inbound owner-routing, approved seller actions, failure recovery and qualified-pipeline measurement. The new **SDR account-intelligence desk** exposes dated source evidence, explainable account priorities, conflicting fixture enrichment, editable outreach openings and durable local approvals/dismissals. It retains **40 actual Qwen3-14B evaluation responses across three prompt approaches**, including preserved failures, plus a separate fresh source-to-inference-to-local-approval demonstration. The latest verification reports **237 passing tests** and Linux, Windows and container CI.
 
-[Connected AI-to-Salesforce execution and architecture](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/connected-sdr.md) · [Actual Task and recovery evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/connected/README.md) · [Earlier native Salesforce acceptance](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/salesforce-standard/README.md) · [Synthetic pipeline demo](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/enterprise-usd/README.md) · [Linux, Windows and container CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39705273772)
+A **separate connected native Salesforce Developer Edition run** took a synthetic buying signal through **fresh Qwen3 inference → exact operator review → one guarded internal Salesforce SDR Task → independent readback**, including lost-acknowledgment recovery. The richer research desk does **not** create Salesforce Tasks or send outreach; Clay enrichment is fixture-based and n8n is a reference. A separate **120-account, USD $3.46M synthetic qualified-pipeline scenario** demonstrates measurement, not real customer pipeline or AI uplift.
+
+[New research desk and limits](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/account-intelligence.md) · [Recorded Qwen3 evaluations](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/research/README.md) · [Fresh operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/research/operator-proof.json) · [Connected native Salesforce execution](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/connected-sdr.md) · [Native Task and recovery evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/connected/README.md) · [Synthetic pipeline demo](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/enterprise-usd/README.md) · [Latest Linux, Windows and container CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39725745010)
 
 **2. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
 
@@ -71,12 +73,13 @@ Where the projects fit across revenue systems, integration controls, enterprise 
 
 **[Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/): interactive evidence explorer** · [Source code](https://github.com/rlbsem/enterprise-revenue-systems-lab)
 
-The interactive lab lets you walk through four cases:
+The interactive lab lets you walk through five investigations:
 
 - **AI seller decisions:** Examine a model-generated recommendation, its supporting sources, a reviewed edit, approval and recorded delivery evidence.
 - **Execution recovery:** Trace a lost acknowledgment and worker interruption through durable workflow state and independent receiver receipts, including duplicate prevention.
 - **Revenue reconciliation:** Explore why installed ARR, bookings, invoices and collected cash differ, with a source-backed financial bridge.
 - **Native Salesforce and Snowflake:** [Inspect the CRM-to-warehouse round trip](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=connected-roundtrip), including source authority, lost-acknowledgment recovery, independent CRM readback and the resulting warehouse decision.
+- **AI account intelligence to qualified pipeline:** [Explore the hosted GTM investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise), which presents earlier separate synthetic pipeline, native Salesforce and Qwen3 evaluation evidence. The newly merged SDR research desk and connected Qwen3-to-Salesforce Task run are documented in the source GTM repository, not yet added to the hosted Lab.
 
 The hosted lab uses recorded **synthetic evidence**, not live production data. Running the underlying engines or fresh model inference requires the separate local workflows.
 
