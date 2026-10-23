@@ -14,7 +14,7 @@ The repositories below show working code, test results and recorded execution ev
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
-**[Explore the full Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/).** The hosted investigation library covers AI seller decisions, GTM pipeline workflows, execution recovery, commercial reconciliation and actual native CRM/warehouse integration evidence.
+**Explore without installing software:** [Open the hosted Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/). This public, read-only explorer presents recorded AI, GTM, recovery, revenue and native CRM/warehouse evidence. The underlying applications run separately on a developer's computer; their local addresses are not public websites.
 
 ## Engineering Implementations & Evidence
 
