@@ -16,6 +16,8 @@ The repositories below show working code, test results and recorded execution ev
 
 **Explore without installing software:** [Open the hosted Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/). This public, read-only explorer presents recorded AI, GTM, recovery, revenue and native CRM/warehouse evidence. The underlying applications run separately on a developer's computer; their local addresses are not public websites.
 
+**Featured AI release proof:** [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation) ran actual local **Qwen3-14B** inference, completed **48/48 synthetic tasks per configuration**, and exercised shadow evaluation, read-only canary, local promotion, controlled-fault detection and verified rollback. **79 tests passed** with Windows/Linux CI. These are finite-suite local results with synthetic effects, not production claims. [Executed release assessment](https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/live-release-acceptance.md) · [Self-contained evidence review](https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/release-review.html)
+
 ## Engineering Implementations & Evidence
 
 Five projects with detailed code, test results, and execution evidence.
@@ -63,7 +65,7 @@ Six more projects cover specific problems in data reliability, migrations, tempo
 - **[MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability):** Contract-checked ingestion, quarantine and correction handling keep invalid loads from replacing validated reporting data.
 - **[MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance):** Semantic parity, change catch-up and rollback gates expose migrations that preserve row counts but alter business meaning.
 - **[Temporal Customer Audiences](https://github.com/rlbsem/temporal-customer-audiences):** Business-time and knowledge-time history account for late-arriving facts, corrected eligibility and auditable past decisions.
-- **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation):** Local model inference, adversarial evaluation, source checks and release gates provide evidence before an AI version is promoted.
+- **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation):** Real Qwen3-14B inference with independent outcome/effect checks, preserved rejected attempts, **48/48 tasks per paired configuration**, and an executed shadow → canary → promotion → fault/rollback lifecycle. [Read the acceptance evidence](https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/live-release-acceptance.md).
 - **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact):** Dependency evidence and explicit uncertainty make platform retirement and consolidation decisions inspectable.
 - **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics):** Constrained optimization tests proposed savings against cost, freshness, capacity and API quotas.
 
