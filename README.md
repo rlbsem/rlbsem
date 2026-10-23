@@ -6,7 +6,11 @@ I build AI-powered revenue and GTM systems that turn account signals and buyer i
 
 The repositories below show working code, test results and recorded execution evidence, including native Salesforce, Snowflake and BigQuery acceptance as well as actual local LLM inference. The public examples use synthetic or public sample data, with execution and commercial outcome boundaries documented.
 
-**Start here for AI GTM engineering:** [GTM Pipeline Orchestration — SDR account intelligence and executed Salesforce proof](https://github.com/rlbsem/gtm-pipeline-orchestration) · [Interactive SDR Account Intelligence — hosted case](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research) · [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation)
+**Explore by engineering focus:**
+
+- **AI & GTM engineering:** [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration) · [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation) · [Interactive SDR Account Intelligence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research)
+- **MarTech & enterprise integration:** [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)
+- **Data & analytics engineering:** [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
@@ -22,7 +26,7 @@ This Python GTM application covers AI account research, fit/intent prioritizatio
 
 A **separate connected native Salesforce Developer Edition run** took a synthetic buying signal through **fresh Qwen3 inference → exact operator review → one guarded internal Salesforce SDR Task → independent readback**, including lost-acknowledgment recovery. The richer research desk does **not** create Salesforce Tasks or send outreach; Clay enrichment is fixture-based and n8n is a reference. A separate **120-account, USD $3.46M synthetic qualified-pipeline scenario** demonstrates measurement, not real customer pipeline or AI uplift.
 
-[New research desk and limits](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/account-intelligence.md) · [Recorded Qwen3 evaluations](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/research/README.md) · [Fresh operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/research/operator-proof.json) · [Connected native Salesforce execution](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/connected-sdr.md) · [Native Task and recovery evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/connected/README.md) · [Synthetic pipeline demo](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/enterprise-usd/README.md) · [Latest Linux, Windows and container CI](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/runs/39725745010)
+[New research desk and limits](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/account-intelligence.md) · [Recorded Qwen3 evaluations](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/research/README.md) · [Fresh operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/research/operator-proof.json) · [Connected native Salesforce execution](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/connected-sdr.md) · [Native Task and recovery evidence](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/connected/README.md) · [Synthetic pipeline demo](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/evidence/enterprise-usd/README.md) · [GTM verification (main)](https://github.com/rlbsem/gtm-pipeline-orchestration/actions/workflows/verify.yml?query=branch%3Amain)
 
 **2. [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)**
 
@@ -48,7 +52,7 @@ Attribution breaks when browser events are lost or sales milestones are treated 
 
 A separate [local GA4 warehouse module](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/ga4-warehouse/README.md) verifies late corrections, replay safety and incremental/full-refresh parity; native dbt-bigquery remains unverified.
 
-[BigQuery execution evidence](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md) · [Windows/Linux CI](https://github.com/rlbsem/first-party-measurement-assurance/actions/runs/39007934132)
+[BigQuery execution evidence](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md) · [Measurement verification (main)](https://github.com/rlbsem/first-party-measurement-assurance/actions/workflows/verify.yml?query=branch%3Amain)
 
 ## Six Additional Engineering Systems
 
