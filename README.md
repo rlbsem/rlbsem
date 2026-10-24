@@ -12,7 +12,6 @@ The repositories below show working code, test results and recorded execution ev
 - **MarTech & enterprise integration:** [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) · [MarTech Migration Assurance](https://github.com/rlbsem/martech-migration-assurance)
 - **Data & analytics engineering:** [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability)
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/rbutts/)
 
 **Explore without installing software:** [Open the hosted Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/). Its six interactive investigations cover AI model release assurance, governed seller actions, GTM account intelligence, failure recovery, revenue reconciliation and native CRM/warehouse evidence. [Inspect the AI Model Release Assurance investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) to follow recorded Qwen3 model evaluation, shadow/canary decisions, promotion and verified rollback. The hosted site is read-only; executing fresh inference or the underlying applications requires their separate local workflows.
 
