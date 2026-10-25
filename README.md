@@ -70,9 +70,9 @@ Six more projects cover specific problems in data reliability, migrations, tempo
 
 ### Architecture capability map
 
-Where the projects fit across revenue systems, integration controls, enterprise architecture, and AI:
+Where the projects fit across revenue integrity, acquisition integration, MarTech, analytics and applied AI. The map also features the [Enterprise Revenue Integrity Platform](https://github.com/rlbsem/enterprise-revenue-integrity-platform/pull/1), with its PostgreSQL/HTTP integration foundation and initial financial reconciliation verified in draft PR #1; the remaining roadmap is still underway:
 
-<img src="assets/capability-map.svg" alt="Capability map showing eleven engineering projects grouped by revenue and analytics, GTM and control, enterprise architecture, and temporal and AI assurance" width="880">
+<img src="assets/capability-map.svg" alt="Capability map of twelve engineering projects, including the verified foundation of the Enterprise Revenue Integrity Platform, with private equity portfolio integration and four enterprise capability groups" width="880">
 
 [View the full-size diagram](assets/capability-map.svg).
 
