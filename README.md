@@ -4,7 +4,9 @@
 
 I architect and build AI-enabled GTM, revenue and data systems that turn account intelligence into governed actions and trace outcomes through pipeline and revenue. As founder of Groundbreakers Digital, I work across founder-owned and PE-backed operators alongside enterprise B2B SaaS and ecommerce environments. I implement Python, SQL, APIs and durable control logic for identity resolution, field ownership, source authority, consent, retries, auditability and reconciliation.
 
-The repositories below show working code, test results and recorded execution evidence, including native Salesforce, Snowflake and BigQuery acceptance as well as actual local LLM inference. The public examples use synthetic or public sample data, with execution and commercial outcome boundaries documented.
+**Professional client delivery (February 2023–present):** Through Groundbreakers Digital, I have architected, built and delivered integration, data infrastructure, CRM/ERP/finance workflows, canonical identity and source governance, revenue integrity, automation and AI-enabled systems for real operating businesses, including **private-equity-backed, multi-brand companies**. These are professional client engagements, not experience confined to portfolio projects.
+
+**Public engineering evidence:** The repositories below are executable, independently inspectable implementations of the capabilities I apply in client work, with real code, test results and recorded execution evidence—including native Salesforce, Snowflake and BigQuery acceptance and actual local LLM inference. They use synthetic or public sample data rather than confidential client records; individual public scenarios and measured outcomes are not presented as client deployments or production results.
 
 **Explore by engineering focus:**
 
