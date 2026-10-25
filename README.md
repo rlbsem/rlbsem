@@ -2,11 +2,9 @@
 
 **AI GTM Engineering · Enterprise Data & Systems Architecture · Applied AI · Revenue Integrity · MarTech**
 
-I architect and build AI-enabled GTM, revenue and data systems that turn account intelligence into governed actions and trace outcomes through pipeline and revenue. As founder of Groundbreakers Digital, I work across founder-owned and PE-backed operators alongside enterprise B2B SaaS and ecommerce environments. I implement Python, SQL, APIs and durable control logic for identity resolution, field ownership, source authority, consent, retries, auditability and reconciliation.
+I architect and deliver enterprise data infrastructure, stateful integration control layers, revenue integrity systems and AI-enabled GTM workflows for **private equity sponsors, multi-brand operating companies and enterprise teams**. My client work includes connecting acquired businesses to shared portfolio infrastructure while preserving their existing CRM, operations and finance systems, canonical identities, source authority, audit trails and reconciled reporting. I implement these systems with Python, SQL, PostgreSQL, APIs, dbt and governed controls for field ownership, No-Regress Logic, idempotency and recoverable execution.
 
-**Professional client delivery (February 2023–present):** Through Groundbreakers Digital, I have architected, built and delivered integration, data infrastructure, CRM/ERP/finance workflows, canonical identity and source governance, revenue integrity, automation and AI-enabled systems for real operating businesses, including **private-equity-backed, multi-brand companies**. These are professional client engagements, not experience confined to portfolio projects.
-
-**Public engineering evidence:** The repositories below are executable, independently inspectable implementations of the capabilities I apply in client work, with real code, test results and recorded execution evidence—including native Salesforce, Snowflake and BigQuery acceptance and actual local LLM inference. They use synthetic or public sample data rather than confidential client records; individual public scenarios and measured outcomes are not presented as client deployments or production results.
+**Engineering evidence:** The repositories below demonstrate capabilities applied in real client environments through executable code, tests and recorded integration evidence, including **native Salesforce, Snowflake and BigQuery acceptance** and **actual local LLM inference**. Public implementations use synthetic or sample data to protect confidential business information; public test scenarios and their measured outcomes are not represented as specific client deployments.
 
 **Explore by engineering focus:**
 
@@ -84,7 +82,7 @@ Where the projects fit across revenue systems, integration controls, enterprise 
 
 The interactive lab lets you walk through six investigations:
 
-- **AI model release assurance:** [Explore the recorded Qwen3 release progression](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance)—original Qwen2.5 failures, rejected 35/36 candidate, paired 48/48 finite-suite acceptance, actual local shadow/canary/promotion and controlled-fault rollback. Inspect pinned model traces, independent receipts and evidence limitations; all effects are synthetic.
+- **AI model release assurance:** [Explore the recorded Qwen3 release progression](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance): original Qwen2.5 failures, rejected 35/36 candidate, paired 48/48 finite-suite acceptance, actual local shadow/canary/promotion and controlled-fault rollback. Inspect pinned model traces, independent receipts and evidence limitations; all effects are synthetic.
 - **AI seller decisions:** Examine a model-generated recommendation, its supporting sources, a reviewed edit, approval and recorded delivery evidence.
 - **Execution recovery:** Trace a lost acknowledgment and worker interruption through durable workflow state and independent receiver receipts, including duplicate prevention.
 - **Revenue reconciliation:** Explore why installed ARR, bookings, invoices and collected cash differ, with a source-backed financial bridge.
