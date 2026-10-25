@@ -2,7 +2,13 @@
 
 **AI GTM Engineering · Enterprise Data & Systems Architecture · Applied AI · Revenue Integrity · MarTech**
 
-I architect and deliver **enterprise data infrastructure, stateful integration systems, AI-enabled GTM workflows and revenue integrity platforms** for private equity sponsors, multi-brand operating companies and enterprise teams. My work connects acquired businesses through shared portfolio infrastructure while preserving each company's CRM, operations and finance systems. The result is **consolidated customer and revenue visibility, auditable reconciliation, faster exception investigation and a scalable foundation for acquisition integration**. I build with Python, SQL, PostgreSQL, APIs and dbt, applying canonical identity, source authority, field ownership, No-Regress Logic, idempotency and reliable recovery.
+I architect and deliver **enterprise data infrastructure, analytics engineering, MarTech systems, AI-enabled GTM workflows and revenue integrity platforms** across **B2B SaaS, ecommerce and complex multi-business environments**.
+
+My work connects CRM, marketing, operations and finance through governed integration layers that improve customer intelligence, pipeline visibility, revenue reconciliation, automation reliability and executive decision-making.
+
+My experience also includes direct engagements with **private equity sponsors**, integrating acquired businesses into shared portfolio infrastructure while preserving their existing applications and authoritative data.
+
+I build with **Python, SQL, PostgreSQL, Snowflake, dbt, APIs** and durable control logic, applying canonical identity, source governance, idempotency, auditability and reliable recovery.
 
 **Engineering evidence:** These repositories make capabilities applied in real client environments inspectable through working code, tests, **native Salesforce, Snowflake and BigQuery acceptance**, and actual local LLM inference. Public demonstrations use synthetic or sample data to protect confidential client records, while retaining source lineage and measured execution evidence.
 
@@ -72,7 +78,7 @@ Six more projects cover specific problems in data reliability, migrations, tempo
 
 Where the projects fit across revenue integrity, acquisition integration, MarTech, analytics and applied AI. The map also features the [Enterprise Revenue Integrity Platform](https://github.com/rlbsem/enterprise-revenue-integrity-platform/pull/1), with its PostgreSQL/HTTP integration foundation and initial financial reconciliation verified in draft PR #1; the remaining roadmap is still underway:
 
-<img src="assets/capability-map.svg" alt="Capability map of twelve engineering projects, including the verified foundation of the Enterprise Revenue Integrity Platform, with private equity portfolio integration and four enterprise capability groups" width="880">
+<img src="assets/capability-map.svg" alt="Enterprise architecture capability map featuring twelve engineering projects across revenue integrity, B2B SaaS, MarTech, analytics, integration governance and applied AI" width="880">
 
 [View the full-size diagram](assets/capability-map.svg).
 
