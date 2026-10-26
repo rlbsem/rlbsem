@@ -21,6 +21,14 @@ I build with **Python, SQL, PostgreSQL, Snowflake, dbt, APIs** and durable contr
 
 **Explore without installing software:** [Open the hosted Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/). Its **seven interactive investigations** cover AI model release assurance, governed seller actions, GTM account intelligence, execution recovery, financial reconciliation, native CRM/warehouse evidence and order-to-cash revenue integrity. [Explore the Revenue Integrity investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity). [Inspect the AI Model Release Assurance investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) to follow recorded Qwen3 model evaluation, shadow/canary decisions, promotion and verified rollback. The hosted site is read-only; executing fresh inference or the underlying applications requires their separate local workflows.
 
+## Architecture Capability Map
+
+Thirteen implementations spanning revenue integrity, PE acquisition integration, MarTech, analytics and applied AI. The map includes the [merged Enterprise Revenue Integrity Platform](https://github.com/rlbsem/enterprise-revenue-integrity-platform) and [Enterprise Acquisition Onboarding](https://github.com/rlbsem/enterprise-acquisition-onboarding/pull/1), whose first three passes are verified in an active, unmerged draft PR:
+
+<img src="assets/capability-map.svg" alt="Enterprise capability map of thirteen engineering projects across acquisition onboarding, revenue integrity, GTM, MarTech, analytics, governance and applied AI" width="880">
+
+[View the full-size diagram](assets/capability-map.svg).
+
 **Featured AI release proof:** [Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation) ran actual local **Qwen3-14B** inference, completed **48/48 synthetic tasks per configuration**, and exercised shadow evaluation, read-only canary, local promotion, controlled-fault detection and verified rollback. **79 tests passed** with Windows/Linux CI. The executed synthetic release cycle demonstrates how AI changes can be evaluated, promoted and rolled back using evidence. [Explore the interactive release investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) · [Executed release assessment](https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/live-release-acceptance.md) · [Self-contained evidence review](https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/release-review.html)
 
 ## Featured Enterprise Integration Platforms
@@ -79,14 +87,6 @@ Six more projects cover specific problems in data reliability, migrations, tempo
 - **[Enterprise Agent Runtime & Evaluation](https://github.com/rlbsem/enterprise-agent-runtime-evaluation):** Real Qwen3-14B inference with independent outcome/effect checks, preserved rejected attempts, **48/48 tasks per paired configuration**, and an executed shadow → canary → promotion → fault/rollback lifecycle. [Read the acceptance evidence](https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/live-release-acceptance.md).
 - **[MarTech Estate Impact](https://github.com/rlbsem/martech-estate-impact):** Dependency evidence and explicit uncertainty make platform retirement and consolidation decisions inspectable.
 - **[MarTech Stack Economics](https://github.com/rlbsem/martech-stack-economics):** Constrained optimization tests proposed savings against cost, freshness, capacity and API quotas.
-
-### Architecture capability map
-
-Thirteen implementations spanning revenue integrity, PE acquisition integration, MarTech, analytics and applied AI. The map includes the [merged Enterprise Revenue Integrity Platform](https://github.com/rlbsem/enterprise-revenue-integrity-platform) and [Enterprise Acquisition Onboarding](https://github.com/rlbsem/enterprise-acquisition-onboarding/pull/1), whose first three passes are verified in an active, unmerged draft PR:
-
-<img src="assets/capability-map.svg" alt="Enterprise capability map of thirteen engineering projects across acquisition onboarding, revenue integrity, GTM, MarTech, analytics, governance and applied AI" width="880">
-
-[View the full-size diagram](assets/capability-map.svg).
 
 ## Explore engineering in action
 
