@@ -1,8 +1,8 @@
 <!-- Personal engineering portfolio visual standard: midnight #10101D, lavender #B8B8FF, IBM Plex Sans / JetBrains Mono fallbacks. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="955" viewBox="0 0 1280 955" role="img" aria-labelledby="cap-title cap-desc"><title id="cap-title">Richard Butts: Thirteen engineering projects spanning private equity acquisition onboarding and revenue integrity</title><desc id="cap-desc">Thirteen engineering implementations grouped by capability. The two lead platforms demonstrate order-to-cash revenue integrity and private equity acquisition onboarding. Supporting projects span enterprise architecture and integration, revenue analytics, GTM and customer systems, and AI operational assurance. Acquisition Onboarding includes a verified local Docker demonstration, an independent synthetic twelve-month reporting scenario with USD 20.06 million consolidated net invoicing, and 83 passing regression tests. The original five-pass control-correctness evidence is preserved. The categories describe engineering capabilities, not GitHub merge status or maturity rankings. Native Salesforce, Snowflake and BigQuery work is distinguished from synthetic local execution in each repository.</desc><g font-family="IBM Plex Sans, Segoe UI, Arial, sans-serif"><rect x="0" y="0" width="1280" height="955" rx="24" fill="#10101D"/><rect x="1" y="1" width="1278" height="953" rx="23" fill="none" stroke="#7C7CAF" stroke-width="2"/><path d="M0 141 H1280" stroke="#2E2E45" stroke-width="1"/><rect x="34" y="31" width="5" height="75" rx="2.5" fill="#B8B8FF"/><text x="54" y="60" font-size="15" letter-spacing="3" fill="#C5C5DB" font-weight="700">ENGINEERING PORTFOLIO · CAPABILITY MAP</text><text x="54" y="101" font-size="28" font-family="JetBrains Mono, IBM Plex Mono, monospace" font-weight="700" fill="#F0F0FF">Enterprise Architecture · Revenue Integrity · Applied AI</text><text x="1242" y="60" text-anchor="end" font-size="15" fill="#C5C5DB" font-weight="700">13 ENGINEERING PROJECTS</text><g id="portfolio-impact-and-new-platform">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="955" viewBox="0 0 1280 955" role="img" aria-labelledby="cap-title cap-desc"><title id="cap-title">Richard Butts: Thirteen engineering projects spanning enterprise architecture, MarTech, revenue systems, data and analytics, integration, and applied AI</title><desc id="cap-desc">Thirteen engineering implementations organized by capability across enterprise architecture, revenue and analytics, GTM and customer systems, and AI assurance. The two applications at the top are illustrative end-to-end integration examples, not a ranking of projects or career paths. All projects have distinct engineering evidence. Actual native Salesforce, Snowflake and BigQuery execution is distinguished from local synthetic demonstrations in each repository.</desc><g font-family="IBM Plex Sans, Segoe UI, Arial, sans-serif"><rect x="0" y="0" width="1280" height="955" rx="24" fill="#10101D"/><rect x="1" y="1" width="1278" height="953" rx="23" fill="none" stroke="#7C7CAF" stroke-width="2"/><path d="M0 141 H1280" stroke="#2E2E45" stroke-width="1"/><rect x="34" y="31" width="5" height="75" rx="2.5" fill="#B8B8FF"/><text x="54" y="60" font-size="15" letter-spacing="3" fill="#C5C5DB" font-weight="700">ENGINEERING PORTFOLIO · CAPABILITY MAP</text><text x="54" y="101" font-size="28" font-family="JetBrains Mono, IBM Plex Mono, monospace" font-weight="700" fill="#F0F0FF">Enterprise Architecture · Revenue Integrity · Applied AI</text><text x="1242" y="60" text-anchor="end" font-size="15" fill="#C5C5DB" font-weight="700">13 ENGINEERING PROJECTS</text><g id="illustrative-end-to-end-examples">
 <rect x="24" y="155" width="1232" height="126" rx="16" fill="#181825" stroke="#7C7CAF" stroke-width="1.4"/>
 <rect x="24" y="155" width="5" height="126" rx="2.5" fill="#B8B8FF"/>
-<text x="48" y="182" font-size="12.5" letter-spacing="1.4" font-weight="700" fill="#B8B8FF">ENTERPRISE INTEGRATION · BUSINESS INTELLIGENCE</text>
+<text x="48" y="182" font-size="12.5" letter-spacing="1.4" font-weight="700" fill="#B8B8FF">END-TO-END ARCHITECTURE EXAMPLES</text>
 <rect x="48" y="195" width="159" height="65" rx="9" fill="#24243A" stroke="#5F5F81" stroke-width="1"/>
 <text x="60" y="219" font-size="12.6" fill="#F0F0FF" font-weight="700">Business Units / Brands</text>
 <text x="60" y="241" font-size="12" fill="#CFCFE5">CRM · Ops · Finance</text>
@@ -19,13 +19,13 @@
 <text x="645" y="187" font-size="10.8" letter-spacing="0.9" font-weight="700" fill="#81C5B0">ORDER-TO-CASH ARCHITECTURE</text>
 <text x="645" y="217" font-size="18" fill="#F0F0FF" font-weight="700">Revenue Integrity Platform</text>
 <text x="645" y="241" font-size="12.3" fill="#CFCFE5">CRM → Billing → ERP · dbt</text>
-<text x="645" y="256" font-size="11.1" fill="#CFCFE5">Verified recovery · $1.5K open</text>
+<text x="645" y="256" font-size="11.1" fill="#CFCFE5">Independent receipts · Safe recovery</text>
 <rect x="932" y="166" width="300" height="104" rx="12" fill="#2A2A3D" stroke="#B8B8FF" stroke-width="1.8"/>
 <rect x="932" y="166" width="5" height="104" rx="2.5" fill="#B8B8FF"/>
 <text x="951" y="187" font-size="10.8" letter-spacing="0.9" font-weight="700" fill="#B8B8FF">ENTERPRISE M&amp;A INTEGRATION</text>
 <text x="951" y="217" font-size="19" fill="#F0F0FF" font-weight="700">Acquisition Onboarding</text>
-<text x="951" y="241" font-size="12.3" fill="#CFCFE5">Identity · Docker · 83 tests</text>
-<text x="951" y="256" font-size="11.1" fill="#CFCFE5">$20.06M synthetic net invoicing</text>
+<text x="951" y="241" font-size="12.3" fill="#CFCFE5">Identity · Source authority</text>
+<text x="951" y="256" font-size="11.1" fill="#CFCFE5">Admission gates · Financial reconciliation</text>
 </g><g id="established-engineering-capabilities" transform="translate(0 140)"><rect x="24" y="158" width="1232" height="141" rx="16" fill="#181825" stroke="#4A4A67" stroke-width="1.2"/>
 <rect x="24" y="158" width="5" height="141" rx="2" fill="#B8B8FF"/>
 <text x="49" y="193" font-size="12.5" letter-spacing="1.08" font-weight="700" fill="#B8B8FF">01  ENTERPRISE ARCHITECTURE</text>
@@ -65,7 +65,7 @@
 <rect x="327" y="491" width="294" height="92" rx="12" fill="#2A2A3D" stroke="#81C5B0" stroke-opacity="0.76" stroke-width="1.5"/>
 <rect x="342" y="508" width="22" height="4" rx="2" fill="#81C5B0"/>
 <text x="342" y="538" font-size="15.3" fill="#F0F0FF" font-weight="700">Customer Signal &amp; Activation</text>
-<text x="342" y="563" font-size="12.6" fill="#CFCFE5">Lifecycle · SF + Snowflake</text><rect x="633" y="491" width="294" height="92" rx="12" fill="#2A2A3D" stroke="#81C5B0" stroke-opacity="0.76" stroke-width="1.5"/>
+<text x="342" y="563" font-size="12.6" fill="#CFCFE5">Lifecycle · Salesforce + Snowflake</text><rect x="633" y="491" width="294" height="92" rx="12" fill="#2A2A3D" stroke="#81C5B0" stroke-opacity="0.76" stroke-width="1.5"/>
 <rect x="648" y="508" width="22" height="4" rx="2" fill="#81C5B0"/>
 <text x="648" y="538" font-size="15.3" fill="#F0F0FF" font-weight="700">GTM Pipeline Orchestration</text>
 <text x="648" y="563" font-size="12.6" fill="#CFCFE5">Salesforce SDR Task · Qwen3</text><rect x="939" y="491" width="294" height="92" rx="12" fill="#2A2A3D" stroke="#81C5B0" stroke-opacity="0.76" stroke-width="1.5"/>
