@@ -12,7 +12,7 @@ My work extends to **sponsor- and holding-company architecture**, connecting acq
 
 <img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
 
-**Interactive Engineering Evidence Lab:** [Explore nine browser-based engineering investigations](https://rlbsem.github.io/enterprise-revenue-systems-lab/) with recorded decisions, source records, failures and verification evidence. [Lab source code](https://github.com/rlbsem/enterprise-revenue-systems-lab).
+**Interactive Engineering Evidence Lab:** [Explore twelve browser-based engineering investigations](https://rlbsem.github.io/enterprise-revenue-systems-lab/) with recorded decisions, source records, failures and verification evidence. [Lab source code](https://github.com/rlbsem/enterprise-revenue-systems-lab).
 
 ## Engineering implementations
 
@@ -109,7 +109,7 @@ PostgreSQL-governed permits, bounded queues and durable receiver receipts were t
 
 **[Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/): interactive evidence explorer** · [Source code](https://github.com/rlbsem/enterprise-revenue-systems-lab)
 
-The nine read-only investigations let you inspect recorded execution, decisions and outcomes directly in the browser:
+Twelve read-only investigations let you inspect recorded execution, decisions and outcomes directly in the browser:
 
 <a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/"><img src="https://raw.githubusercontent.com/rlbsem/enterprise-revenue-systems-lab/6135acd0c8ff4e4970d05ece035b31f963120ad6/docs/images/release-qa-eight/presentation/seller-overview.png" alt="Actual locally captured engineering evidence lab interface" width="760"/></a>
 
@@ -124,6 +124,18 @@ The nine read-only investigations let you inspect recorded execution, decisions 
 - **Order-to-cash revenue integrity:** [Explore the revenue integrity investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity), covering CRM-to-billing-to-ERP source lineage, verified operator recovery and a still-open synthetic $1,500 financial variance. The hosted case is read-only and cites the underlying recorded local evidence.
 - **Native Salesforce and Snowflake:** [Inspect the CRM-to-warehouse round trip](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=connected-roundtrip), including source authority, lost-acknowledgment recovery, independent CRM readback and the resulting warehouse decision.
 - **AI account intelligence to qualified pipeline:** [Explore the hosted SDR Account Intelligence investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research): six synthetic research accounts, 40 recorded Qwen3 responses, evidence-grounded recommendations, rejected outputs and saved local seller-review proof. [Explore the separate pipeline investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-enterprise) for synthetic opportunity measurement and earlier native Salesforce evidence. The richer research did not execute through Salesforce; the separate connected Qwen3-to-Salesforce Task proof remains in the [source GTM repository](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/main/docs/connected-sdr.md).
+
+### Enterprise architecture and data assurance
+
+Three new investigations expose actual local synthetic execution evidence through the published read-only Lab. Open any investigation directly, including the recorded exception states.
+
+<table>
+<tr><td valign="top" width="38%"><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=estate-assurance"><img width="100%" alt="Actual local browser evidence for Enterprise Change Assurance" src="https://raw.githubusercontent.com/rlbsem/enterprise-revenue-systems-lab/bad6887f4ec2e0dac5a1ddeeadeda7c51d5c4a96/docs/images/architecture-assurance/estate-desktop.png"/></a></td><td valign="top"><strong><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=estate-assurance">Enterprise Change Assurance</a></strong><p>Explore company-scoped dependencies, proposal revisions, reviewer decisions and unresolved evidence before technology retirement. The recorded synthetic estate contains four company scopes and 112 independently checked requirement outcomes.</p><p><a href="https://github.com/rlbsem/enterprise-revenue-systems-lab/blob/bad6887f4ec2e0dac5a1ddeeadeda7c51d5c4a96/docs/architecture-assurance.md#enterprise-change-assurance">Execution boundaries and source evidence</a></p></td></tr>
+<tr><td valign="top" width="38%"><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=reliability-operations"><img width="100%" alt="Actual local browser evidence for MarTech Data Reliability" src="https://raw.githubusercontent.com/rlbsem/enterprise-revenue-systems-lab/bad6887f4ec2e0dac5a1ddeeadeda7c51d5c4a96/docs/images/architecture-assurance/reliability-desktop.png"/></a></td><td valign="top"><strong><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=reliability-operations">MarTech Data Reliability</a></strong><p>Trace independent local HTTP feeds through source bytes, checkpoints, rejected publications and reconciled results. Investigate why an equal-row-count report with an incorrect value was blocked.</p><p><a href="https://github.com/rlbsem/enterprise-revenue-systems-lab/blob/bad6887f4ec2e0dac5a1ddeeadeda7c51d5c4a96/docs/architecture-assurance.md#martech-data-reliability">Execution boundaries and source evidence</a></p></td></tr>
+<tr><td valign="top" width="38%"><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=temporal-assurance"><img width="100%" alt="Actual local browser evidence for Temporal Audience Assurance" src="https://raw.githubusercontent.com/rlbsem/enterprise-revenue-systems-lab/bad6887f4ec2e0dac5a1ddeeadeda7c51d5c4a96/docs/images/architecture-assurance/temporal-desktop.png"/></a></td><td valign="top"><strong><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=temporal-assurance">Temporal Audience Assurance</a></strong><p>Compare original and restated history, present permission checks, lost acknowledgments and independent destination receipts. A historic receipt never authorizes a new action.</p><p><a href="https://github.com/rlbsem/enterprise-revenue-systems-lab/blob/bad6887f4ec2e0dac5a1ddeeadeda7c51d5c4a96/docs/architecture-assurance.md#temporal-audience-assurance">Execution boundaries and source evidence</a></p></td></tr>
+</table>
+
+*These views inspect recorded local synthetic execution. They do not execute source systems, call vendors or activate customer audiences.*
 
 The hosted lab makes recorded synthetic execution evidence instantly inspectable; linked repositories provide reproducible workflows and fresh-inference procedures.
 
