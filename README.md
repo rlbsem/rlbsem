@@ -16,6 +16,14 @@ Nine published, **read-only interactive investigations** make recorded evidence 
 
 **Explore a technical lane:** [Revenue integrity](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity) · [Analytics Engineering](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=analytics-engineering) · [First-party measurement](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=measurement-integrity) · [AI release assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) · [AI account intelligence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research)
 
+## Architecture Capability Map
+
+Thirteen engineering implementations across enterprise integration, data, revenue integrity, MarTech, GTM and applied AI. The diagram shows how the capabilities connect; the repositories below provide the code and execution evidence.
+
+<img src="assets/capability-map.svg" width="100%" alt="Enterprise capability map illustrating thirteen projects spanning systems architecture, revenue integrity, analytics, MarTech, GTM and AI"/>
+
+[View the full-size diagram](assets/capability-map.svg). These are separate engineering implementations, not a claim of one production deployment.
+
 ## Engineering implementations
 
 **13 engineering systems · four complementary disciplines.** These are substantive implementations, not rankings. Select a repository for source code, executed tests, evidence and limitations.
@@ -55,19 +63,9 @@ How to change the systems estate without relying on unsupported impact or cost a
 <tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/martech-estate-impact"><img src="assets/projects/estate-impact.svg" width="100%" alt="MarTech Estate Impact architecture: Systems to Dependency map to Uncertainty to Decision"/></a><p><strong><a href="https://github.com/rlbsem/martech-estate-impact">MarTech Estate Impact</a></strong></p><p>Dependency and impact analysis for platform consolidation; unresolved dependencies remain visible instead of becoming assumed savings.</p><p><a href="https://github.com/rlbsem/martech-estate-impact">Explore architecture</a> · <a href="https://github.com/rlbsem/martech-estate-impact">Code &amp; documentation</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/martech-stack-economics"><img src="assets/projects/stack-economics.svg" width="100%" alt="MarTech Stack Economics architecture: Tool spend to API quotas to Freshness to Constrained plan"/></a><p><strong><a href="https://github.com/rlbsem/martech-stack-economics">MarTech Stack Economics</a></strong></p><p>Constrained architecture-cost decisions that weigh spending, API quotas, capacity and freshness rather than price alone.</p><p><a href="https://github.com/rlbsem/martech-stack-economics">Optimization implementation</a> · <a href="https://github.com/rlbsem/martech-stack-economics">Code &amp; documentation</a></p></td></tr>
 </table>
 
-## Architecture & verification evidence
+## Selected execution evidence
 
-<details>
-<summary><strong>View the full enterprise capability map</strong></summary>
-
-<img src="assets/capability-map.svg" width="100%" alt="Thirteen engineering projects connected by enterprise architecture, revenue integrity, analytics, MarTech, GTM and AI capabilities"/>
-
-[Open the full-size SVG](assets/capability-map.svg). The map groups related capabilities; it is not a claim that the repositories are one production deployment.
-
-</details>
-
-<details>
-<summary><strong>Selected execution evidence — native systems, failure recovery and independent checks</strong></summary>
+Native integrations, recovery behavior and independent validations are documented with their exact execution scope.
 
 - [Native Salesforce ↔ Snowflake handoff](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md): governed CRM action, uncertain acknowledgment, independent record readback and warehouse feedback.
 - [Historical native BigQuery results](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md): executed public GA4 sample queries; separate from the synthetic contract/payment scenario.
@@ -77,18 +75,13 @@ How to change the systems estate without relying on unsupported impact or cost a
 - [Measured warehouse performance](https://github.com/rlbsem/revenue-metrics-platform/blob/main/docs/performance.md): reconciled SQL/dbt outputs and a rejected slower optimization.
 - [Control-plane dependency isolation](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/dependency-isolation/arrival-review/README.md): admission, overload rejections and observed downstream effects.
 
-</details>
-
-<details>
-<summary><strong>Platforms, engineering technologies and architectural controls</strong></summary>
+## Platforms, engineering technologies & architectural controls
 
 **Business platforms:** Salesforce · HubSpot · Salesforce Marketing Cloud / Pardot · Marketo · Segment · Clay · LMN · Aspire · QuickBooks · NetSuite · GA4 / GTM · Adobe Analytics · Tableau
 
 **Engineering:** Python · SQL · JavaScript / TypeScript · PostgreSQL · Snowflake · BigQuery · Supabase · dbt · DuckDB · FastAPI · Airflow · Docker · GitHub Actions · AWS · REST APIs · Webhooks
 
 **Design and reliability:** Canonical identity · Source-of-truth governance · Field ownership · SCD Type 2 · Bitemporal modeling · Data contracts · ETL/ELT · Incremental processing · No-Regress Logic · Idempotency · Durable outbox · Retry/exception queues · RBAC · Consent governance · Audit logs · Revenue reconciliation · LLM evaluation
-
-</details>
 
 **Engineering standard:** Tools execute. The control layer determines what is true.
 
