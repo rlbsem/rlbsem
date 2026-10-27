@@ -8,17 +8,7 @@ My work extends to **sponsor- and holding-company architecture**, connecting acq
 
 **Engineering evidence:** The repositories include working Python, SQL, PostgreSQL, dbt and API implementations, native Salesforce, Snowflake and BigQuery acceptance records, and actual local LLM inference. Public business scenarios use synthetic or public sample data to protect confidential records. Native integrations and local simulated contracts are identified separately.
 
-## Start here — explore by hiring focus
-
-| Hiring focus | Relevant engineering evidence |
-|---|---|
-| **Enterprise Architecture & Transformation** | [Estate Change Assurance](https://github.com/rlbsem/martech-estate-impact) · [Enterprise Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) |
-| **GTM Engineering & Revenue Systems** | [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration) · [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation) |
-| **Data & Analytics Engineering** | [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [MarTech Data Reliability](https://github.com/rlbsem/martech-data-reliability) |
-| **MarTech & Marketing Data** | [First-Party Measurement](https://github.com/rlbsem/first-party-measurement-assurance) · [Temporal Audiences](https://github.com/rlbsem/temporal-customer-audiences) |
-| **AI Systems & Enterprise Integration** | [Enterprise Agent Runtime](https://github.com/rlbsem/enterprise-agent-runtime-evaluation) · [Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) |
-
-## Architecture Capability Map
+## Architecture & Engineering Portfolio
 
 <img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
 
@@ -26,7 +16,7 @@ My work extends to **sponsor- and holding-company architecture**, connecting acq
 
 ## Engineering implementations
 
-**13 engineering implementations across four technical disciplines.** Each project explains the problem, the solution, and where to inspect the implementation and execution evidence.
+**13 engineering implementations across four technical disciplines.** Each project highlights the business challenge, what I engineered, verified results, and links to the implementation and execution evidence.
 
 ## Data, Analytics & MarTech Engineering
 
