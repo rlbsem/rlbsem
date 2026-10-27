@@ -61,8 +61,8 @@ Executed outcomes and independently checkable records. Each case identifies what
 
 <table>
 <tr>
-<td width="50%" valign="top"><a href="https://github.com/rlbsem/martech-estate-impact/blob/main/docs/evidence/change-assurance/README.md"><img width="100%" alt="Actual local PostgreSQL enterprise change assurance console" src="https://raw.githubusercontent.com/rlbsem/martech-estate-impact/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/browser/estate-desktop.png"/></a><p><strong>Enterprise change assurance</strong> — Actual local PostgreSQL console; multi-company dependencies and review gates.</p></td>
-<td width="50%" valign="top"><a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/live-release-acceptance.md"><img width="100%" alt="Actual local AI model release evidence viewer" src="https://raw.githubusercontent.com/rlbsem/enterprise-agent-runtime-evaluation/eeb3ab51b10c4e2dd5aa6f01254042f5a5990b4d/docs/images/live-release/release-review-desktop.png"/></a><p><strong>AI release and rollback</strong> — Actual local model evaluation evidence viewer with preserved failures.</p></td>
+<td width="50%" valign="top"><a href="https://github.com/rlbsem/martech-estate-impact/blob/main/docs/evidence/change-assurance/README.md"><img width="100%" alt="Actual local PostgreSQL enterprise change assurance console" src="https://raw.githubusercontent.com/rlbsem/martech-estate-impact/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/browser/estate-desktop.png"/></a><p><strong>Enterprise change assurance</strong><br/>Actual local PostgreSQL console; multi-company dependencies and review gates.</p></td>
+<td width="50%" valign="top"><a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/main/docs/live-release-acceptance.md"><img width="100%" alt="Actual local AI model release evidence viewer" src="https://raw.githubusercontent.com/rlbsem/enterprise-agent-runtime-evaluation/eeb3ab51b10c4e2dd5aa6f01254042f5a5990b4d/docs/images/live-release/release-review-desktop.png"/></a><p><strong>AI release and rollback</strong><br/>Actual local model evaluation evidence viewer with preserved failures.</p></td>
 </tr>
 </table>
 
@@ -137,7 +137,7 @@ Detailed implementation records, measured results, tests, and documentation for 
 *Expand any project to read its complete original implementation details, measurements, and verification links.*
 
 <details>
-<summary><strong>Revenue Metrics Platform</strong> — SQL/dbt parity, Snowflake evidence and synthetic-scale performance</summary>
+<summary><strong>Revenue Metrics Platform</strong>: SQL/dbt parity, Snowflake evidence and synthetic-scale performance</summary>
 
 ### [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform)
 
@@ -148,7 +148,7 @@ Detailed implementation records, measured results, tests, and documentation for 
 </details>
 
 <details>
-<summary><strong>First-Party Measurement Assurance</strong> — Native BigQuery sample and GA4 conversion reconciliation</summary>
+<summary><strong>First-Party Measurement Assurance</strong>: Native BigQuery sample and GA4 conversion reconciliation</summary>
 
 ### [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance)
 
@@ -161,7 +161,7 @@ A separate [local GA4 warehouse module](https://github.com/rlbsem/first-party-me
 </details>
 
 <details>
-<summary><strong>GTM Pipeline Orchestration</strong> — Qwen3 research, Salesforce Task, routing and pipeline verification</summary>
+<summary><strong>GTM Pipeline Orchestration</strong>: Qwen3 research, Salesforce Task, routing and pipeline verification</summary>
 
 ### [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration)
 
@@ -174,7 +174,7 @@ A **separate connected native Salesforce Developer Edition run** took a syntheti
 </details>
 
 <details>
-<summary><strong>Customer Signal & Activation</strong> — CRM/warehouse recovery, lifecycle measurement and experiments</summary>
+<summary><strong>Customer Signal & Activation</strong>: CRM/warehouse recovery, lifecycle measurement and experiments</summary>
 
 ### [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation)
 
@@ -187,7 +187,7 @@ Its **lifecycle orchestration and experimentation layer** now coordinates trial 
 </details>
 
 <details>
-<summary><strong>Enterprise MarTech / AI Control Plane</strong> — Identity authority, durable receipts, overload and recovery</summary>
+<summary><strong>Enterprise MarTech / AI Control Plane</strong>: Identity authority, durable receipts, overload and recovery</summary>
 
 ### [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
 
@@ -198,7 +198,7 @@ Its **lifecycle orchestration and experimentation layer** now coordinates trial 
 </details>
 
 <details>
-<summary><strong>Enterprise Revenue Integrity Platform</strong> — Order-to-cash recovery with retained synthetic ERP variance</summary>
+<summary><strong>Enterprise Revenue Integrity Platform</strong>: Order-to-cash recovery with retained synthetic ERP variance</summary>
 
 ### Enterprise Revenue Integrity Platform
 
@@ -207,7 +207,7 @@ Its **lifecycle orchestration and experimentation layer** now coordinates trial 
 </details>
 
 <details>
-<summary><strong>Enterprise Acquisition Onboarding</strong> — Multi-company finance, legal-entity controls and annual evidence</summary>
+<summary><strong>Enterprise Acquisition Onboarding</strong>: Multi-company finance, legal-entity controls and annual evidence</summary>
 
 ### Enterprise Acquisition Onboarding
 
@@ -220,7 +220,7 @@ Recorded verification includes **83 regression tests**, standalone demos, **53 p
 </details>
 
 <details>
-<summary><strong>Enterprise Agent Runtime & Evaluation</strong> — Real Qwen3 evaluations, canary, promotion and rollback</summary>
+<summary><strong>Enterprise Agent Runtime & Evaluation</strong>: Real Qwen3 evaluations, canary, promotion and rollback</summary>
 
 ### Enterprise Agent Runtime & Evaluation
 
@@ -229,7 +229,7 @@ Recorded verification includes **83 regression tests**, standalone demos, **53 p
 </details>
 
 <details>
-<summary><strong>Additional implementation evidence</strong> — CDC, temporal activation, reliability and estate assurance</summary>
+<summary><strong>Additional implementation evidence</strong>: CDC, temporal activation, reliability and estate assurance</summary>
 
 ### Additional implementation evidence
 
