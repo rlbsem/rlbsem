@@ -1,45 +1,41 @@
 # Richard Butts
 
-**Enterprise Systems Architecture · Data & Analytics Engineering · MarTech · Revenue Integrity · Applied AI**
+**Enterprise Systems Architecture | Data & Analytics Engineering | MarTech | Revenue Integrity | Applied AI**
 
-I design and build systems that connect **CRM, operations, marketing and finance** with governed data, durable workflows and source-linked reporting. My work spans B2B SaaS, ecommerce, PE-backed and multi-business operating environments.
+I design and build the systems that connect CRM, marketing, operations, and finance. My work spans B2B SaaS, ecommerce, and PE-backed or multi-business environments.
 
-**What the code demonstrates:** canonical identity, field ownership, source provenance, temporal history, SQL/dbt modeling, idempotency, replay safety, audited decisions and measurable failure recovery. Public fixtures are synthetic or explicitly sourced samples; native Salesforce, Snowflake, BigQuery and AWS evidence is identified separately from local execution.
-
-## Start here — interact with the engineering
-
-<a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/"><img src="assets/evidence-lab.svg" width="100%" alt="Engineering Evidence Lab: from source facts through governed control to verified effects and reproducible evidence"/></a>
-
-**[Open the live Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** · [Browse its source code](https://github.com/rlbsem/enterprise-revenue-systems-lab)
-
-Nine published, **read-only interactive investigations** make recorded evidence immediately inspectable without installing a development environment. The original engines, native vendor records, boundaries and reproduction instructions remain linked in source repositories.
-
-**Explore a technical lane:** [Revenue integrity](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity) · [Analytics Engineering](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=analytics-engineering) · [First-party measurement](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=measurement-integrity) · [AI release assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) · [AI account intelligence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research)
+I work across canonical identity, data engineering, source governance, revenue reconciliation, and reliable automation. The repositories below include code, tests, documented failure cases, and execution evidence. Synthetic scenarios and native platform tests are identified separately.
 
 ## Architecture Capability Map
 
-Thirteen engineering implementations across enterprise integration, data, revenue integrity, MarTech, GTM and applied AI. The diagram shows how the capabilities connect; the repositories below provide the code and execution evidence.
+<img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
 
-<img src="assets/capability-map.svg" width="100%" alt="Enterprise capability map illustrating thirteen projects spanning systems architecture, revenue integrity, analytics, MarTech, GTM and AI"/>
+[Open the full-size capability map](assets/capability-map.svg)
 
-[View the full-size diagram](assets/capability-map.svg). These are separate engineering implementations, not a claim of one production deployment.
+## Engineering Evidence Lab
+
+**[Explore the interactive Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** | [Source repository](https://github.com/rlbsem/enterprise-revenue-systems-lab)
+
+Nine read-only investigations let you inspect source records, architectural decisions, failures, and verification evidence directly in the browser.
+
+[Revenue integrity](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity) | [Analytics engineering](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=analytics-engineering) | [First-party measurement](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=measurement-integrity) | [AI model release](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) | [GTM account intelligence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research)
 
 ## Engineering implementations
 
-**13 engineering systems · four complementary disciplines.** These are substantive implementations, not rankings. Select a repository for source code, executed tests, evidence and limitations.
+**13 implementations across four disciplines.** Open any project for the source code, test results, and engineering evidence.
 
 ## Enterprise Architecture & Integration
 
-How independently owned source systems become governed, reconcilable operating infrastructure.
+Governed integration across CRM, operations, finance, and acquired businesses.
 
 <table>
 <tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/enterprise-acquisition-onboarding"><img src="assets/projects/acquisition-onboarding.svg" width="100%" alt="Enterprise Acquisition Onboarding architecture: Local IDs to Entity scope to Admission gate to Financial truth"/></a><p><strong><a href="https://github.com/rlbsem/enterprise-acquisition-onboarding">Enterprise Acquisition Onboarding</a></strong></p><p>Acquired-company identity, reviewed mappings and source-to-finance reconciliation across three synthetic companies; runnable PostgreSQL/dbt/Docker console.</p><p><a href="https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/main/docs/annual-scenario.md">Annual finance evidence</a> · <a href="https://github.com/rlbsem/enterprise-acquisition-onboarding">Code &amp; documentation</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/enterprise-revenue-integrity-platform"><img src="assets/projects/revenue-integrity.svg" width="100%" alt="Enterprise Revenue Integrity Platform architecture: CRM intent to Billing to ERP / cash to Variance"/></a><p><strong><a href="https://github.com/rlbsem/enterprise-revenue-integrity-platform">Enterprise Revenue Integrity Platform</a></strong></p><p>Executable order-to-cash control layer with independent receipt recovery; retains a synthetic $1,500 ERP posting variance.</p><p><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity">Interactive investigation</a> · <a href="https://github.com/rlbsem/enterprise-revenue-integrity-platform">Code &amp; documentation</a></p></td></tr>
-<tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane"><img src="assets/projects/martech-control-plane.svg" width="100%" alt="Enterprise MarTech / AI Control Plane architecture: Source facts to Field authority to Durable outbox to Receiver"/></a><p><strong><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane">Enterprise MarTech / AI Control Plane</a></strong></p><p>PostgreSQL-governed identity, approvals, field ownership and recoverable delivery; includes measured dependency-isolation tests.</p><p><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/dependency-isolation/arrival-review/README.md">Executed stress evidence</a> · <a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane">Code &amp; documentation</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/customer-signal-activation"><img src="assets/projects/customer-signal.svg" width="100%" alt="Customer Signal &amp; Activation architecture: Customer signal to Permissions to CRM action to Readback"/></a><p><strong><a href="https://github.com/rlbsem/customer-signal-activation">Customer Signal &amp; Activation</a></strong></p><p>Source-aware customer activation, lifecycle orchestration and experiments; includes recorded native Salesforce–Snowflake readback.</p><p><a href="https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md">Native integration evidence</a> · <a href="https://github.com/rlbsem/customer-signal-activation">Code &amp; documentation</a></p></td></tr>
+<tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane"><img src="assets/projects/martech-control-plane.svg" width="100%" alt="Enterprise MarTech / AI Control Plane architecture: Source facts to Field authority to Durable outbox to Receiver"/></a><p><strong><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane">Enterprise MarTech / AI Control Plane</a></strong></p><p>PostgreSQL-governed identity, approvals, field ownership and recoverable delivery; includes measured dependency-isolation tests.</p><p><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/dependency-isolation/arrival-review/README.md">Executed stress evidence</a> · <a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane">Code &amp; documentation</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/customer-signal-activation"><img src="assets/projects/customer-signal.svg" width="100%" alt="Customer Signal &amp; Activation architecture: Customer signal to Permissions to CRM action to Readback"/></a><p><strong><a href="https://github.com/rlbsem/customer-signal-activation">Customer Signal &amp; Activation</a></strong></p><p>Source-aware customer activation, lifecycle orchestration and experiments; includes recorded native Salesforce and Snowflake readback.</p><p><a href="https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md">Native integration evidence</a> · <a href="https://github.com/rlbsem/customer-signal-activation">Code &amp; documentation</a></p></td></tr>
 </table>
 
 ## Data, Analytics & MarTech Engineering
 
-How events, contracts and SQL models preserve grain, time, provenance and source authority.
+Warehouse modeling, event integrity, migration safety, and historical correctness.
 
 <table>
 <tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/revenue-metrics-platform"><img src="assets/projects/revenue-metrics.svg" width="100%" alt="Revenue Metrics Platform architecture: Source grain to 15 dbt models to Reconcile to Benchmark"/></a><p><strong><a href="https://github.com/rlbsem/revenue-metrics-platform">Revenue Metrics Platform</a></strong></p><p>Governed financial metrics, 15 dbt models, full rowset parity and measured 60K/180K synthetic-account performance.</p><p><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=analytics-engineering">Interactive SQL &amp; benchmarks</a> · <a href="https://github.com/rlbsem/revenue-metrics-platform">Code &amp; documentation</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/first-party-measurement-assurance"><img src="assets/projects/measurement-assurance.svg" width="100%" alt="First-Party Measurement Assurance architecture: Consent to Event receipt to dbt facts to Cash basis"/></a><p><strong><a href="https://github.com/rlbsem/first-party-measurement-assurance">First-Party Measurement Assurance</a></strong></p><p>Consent-aware measurement and offline conversion reconciliation; separately records genuine BigQuery public-sample queries.</p><p><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=measurement-integrity">Interactive investigation</a> · <a href="https://github.com/rlbsem/first-party-measurement-assurance">Code &amp; documentation</a></p></td></tr>
@@ -49,7 +45,7 @@ How events, contracts and SQL models preserve grain, time, provenance and source
 
 ## AI & GTM Engineering
 
-How intelligence becomes an accountable business action—and how model releases remain controlled.
+Account intelligence, approved actions, and controlled AI model releases.
 
 <table>
 <tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/gtm-pipeline-orchestration"><img src="assets/projects/gtm-pipeline.svg" width="100%" alt="GTM Pipeline Orchestration architecture: Account signal to AI research to Human review to CRM task"/></a><p><strong><a href="https://github.com/rlbsem/gtm-pipeline-orchestration">GTM Pipeline Orchestration</a></strong></p><p>AI-assisted account prioritization and accountable sales handoff, with real Qwen3 evaluations and separate native Salesforce evidence.</p><p><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research">Interactive account intelligence</a> · <a href="https://github.com/rlbsem/gtm-pipeline-orchestration">Code &amp; documentation</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation"><img src="assets/projects/agent-runtime.svg" width="100%" alt="Enterprise Agent Runtime &amp; Evaluation architecture: Evaluate to Shadow to Canary to Rollback"/></a><p><strong><a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation">Enterprise Agent Runtime &amp; Evaluation</a></strong></p><p>Actual local Qwen3 inference, rejected candidate evidence and tested shadow/canary/promotion/rollback across synthetic tasks.</p><p><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance">Interactive release evidence</a> · <a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation">Code &amp; documentation</a></p></td></tr>
@@ -57,7 +53,7 @@ How intelligence becomes an accountable business action—and how model releases
 
 ## Platform Governance & Economics
 
-How to change the systems estate without relying on unsupported impact or cost assumptions.
+Platform consolidation, dependency analysis, and cost constraints.
 
 <table>
 <tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/martech-estate-impact"><img src="assets/projects/estate-impact.svg" width="100%" alt="MarTech Estate Impact architecture: Systems to Dependency map to Uncertainty to Decision"/></a><p><strong><a href="https://github.com/rlbsem/martech-estate-impact">MarTech Estate Impact</a></strong></p><p>Dependency and impact analysis for platform consolidation; unresolved dependencies remain visible instead of becoming assumed savings.</p><p><a href="https://github.com/rlbsem/martech-estate-impact">Explore architecture</a> · <a href="https://github.com/rlbsem/martech-estate-impact">Code &amp; documentation</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/martech-stack-economics"><img src="assets/projects/stack-economics.svg" width="100%" alt="MarTech Stack Economics architecture: Tool spend to API quotas to Freshness to Constrained plan"/></a><p><strong><a href="https://github.com/rlbsem/martech-stack-economics">MarTech Stack Economics</a></strong></p><p>Constrained architecture-cost decisions that weigh spending, API quotas, capacity and freshness rather than price alone.</p><p><a href="https://github.com/rlbsem/martech-stack-economics">Optimization implementation</a> · <a href="https://github.com/rlbsem/martech-stack-economics">Code &amp; documentation</a></p></td></tr>
@@ -65,7 +61,7 @@ How to change the systems estate without relying on unsupported impact or cost a
 
 ## Selected execution evidence
 
-Native integrations, recovery behavior and independent validations are documented with their exact execution scope.
+Evidence from native systems, local execution, and independently checked recovery scenarios.
 
 - [Native Salesforce ↔ Snowflake handoff](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md): governed CRM action, uncertain acknowledgment, independent record readback and warehouse feedback.
 - [Historical native BigQuery results](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/google-bigquery/README.md): executed public GA4 sample queries; separate from the synthetic contract/payment scenario.
@@ -83,5 +79,5 @@ Native integrations, recovery behavior and independent validations are documente
 
 **Design and reliability:** Canonical identity · Source-of-truth governance · Field ownership · SCD Type 2 · Bitemporal modeling · Data contracts · ETL/ELT · Incremental processing · No-Regress Logic · Idempotency · Durable outbox · Retry/exception queues · RBAC · Consent governance · Audit logs · Revenue reconciliation · LLM evaluation
 
-**Engineering standard:** Tools execute. The control layer determines what is true.
+**Tools execute. The control layer determines what is true.**
 
