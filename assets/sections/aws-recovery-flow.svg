@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="300" viewBox="0 0 1160 300" role="img" aria-labelledby="rec-title rec-desc">
+<title id="rec-title">Executed AWS recovery: an unsafe restore stays blocked, a later verified restore resumes safely</title>
+<desc id="rec-desc">An original system with five intents and five independent receipts reaches two sequential RDS point-in-time restores. An earlier restore has three intents against five receipts, so recovery stays blocked. A distinct later restore reconciles five and five, requires fresh approval and consent, then independently verifies six intents and effects with zero duplicates. The run used synthetic one-off application tasks, not a full production deployment.</desc>
+<defs>
+<linearGradient id="rec-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#191A30"/><stop offset="1" stop-color="#10101D"/></linearGradient>
+<linearGradient id="rec-focus" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B6ABFF"/><stop offset="1" stop-color="#8FD8D2"/></linearGradient>
+</defs>
+<rect width="1160" height="300" rx="18" fill="url(#rec-bg)"/>
+<rect x="1" y="1" width="1158" height="298" rx="17" fill="none" stroke="#4F5272" stroke-width="1.5"/>
+<rect x="27" y="27" width="5" height="58" rx="2.5" fill="#B8B8FF"/>
+<g font-family="Arial,Segoe UI,sans-serif">
+<text x="49" y="48" font-size="13" letter-spacing="2" font-weight="700" fill="#B8B8FF">NATIVE AWS / EXECUTED RECOVERY EVIDENCE</text>
+<text x="49" y="79" font-size="23" font-weight="700" fill="#F3F4FF">Two RDS restores. One safe resumption decision.</text>
+<rect x="895" y="30" width="233" height="32" rx="16" fill="#282941" stroke="#696C91"/>
+<text x="1011" y="51" text-anchor="middle" font-size="12.5" font-weight="700" fill="#E6E8FF">OCT 2026 / SYNTHETIC TASKS</text>
+<path d="M38 102 H1123" stroke="#35384D" stroke-width="1.5"/>
+<!-- Flow cards -->
+<rect x="35" y="126" width="248" height="113" rx="12" fill="#25263E" stroke="#686B92" stroke-width="1.5"/>
+<rect x="35" y="126" width="248" height="4" rx="2" fill="#B8B8FF"/>
+<text x="53" y="154" font-size="12.5" font-weight="700" letter-spacing="1.1" fill="#BFC3FF">SOURCE / TWO RECOVERY POINTS</text>
+<text x="53" y="186" font-size="22" font-weight="700" fill="#FFFFFF">5 intents / 5 receipts</text>
+<text x="53" y="213" font-size="14" fill="#D0D3E6">Independent downstream ledger</text>
+
+<path d="M286 182 H308 m-8 -6 l8 6 l-8 6" stroke="#B8B8FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="313" y="126" width="248" height="113" rx="12" fill="#31291F" stroke="#D8AB68" stroke-width="1.7"/>
+<rect x="313" y="126" width="248" height="4" rx="2" fill="#E9BD7B"/>
+<text x="331" y="154" font-size="12.5" font-weight="700" letter-spacing="1.1" fill="#FFD39D">EARLIER PITR / UNSAFE</text>
+<text x="331" y="186" font-size="22" font-weight="700" fill="#FFFFFF">3 intents / 5 receipts</text>
+<text x="331" y="213" font-size="14.5" font-weight="700" fill="#F5C88A">BLOCKED. No replay.</text>
+
+<path d="M564 182 H586 m-8 -6 l8 6 l-8 6" stroke="#B8B8FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="591" y="126" width="248" height="113" rx="12" fill="#25263E" stroke="#A8A5F3" stroke-width="1.5"/>
+<rect x="591" y="126" width="248" height="4" rx="2" fill="#B8B8FF"/>
+<text x="609" y="154" font-size="12.5" font-weight="700" letter-spacing="1.1" fill="#C9C2FF">LATER PITR / FRESH PROOF</text>
+<text x="609" y="186" font-size="22" font-weight="700" fill="#FFFFFF">5 intents / 5 receipts</text>
+<text x="609" y="213" font-size="14" fill="#D0D3E6">Consent and approval rechecked</text>
+
+<path d="M842 182 H864 m-8 -6 l8 6 l-8 6" stroke="#91D6D0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="869" y="126" width="255" height="113" rx="12" fill="#193431" stroke="#91D6D0" stroke-width="1.7"/>
+<rect x="869" y="126" width="255" height="4" rx="2" fill="url(#rec-focus)"/>
+<text x="887" y="154" font-size="12.5" font-weight="700" letter-spacing="1.1" fill="#A3F0E8">INDEPENDENT VERIFICATION</text>
+<text x="887" y="186" font-size="22" font-weight="700" fill="#FFFFFF">6 intents / 6 effects</text>
+<text x="887" y="213" font-size="14.5" font-weight="700" fill="#A3F0E8">SAFE. Zero duplicates.</text>
+
+<text x="40" y="272" font-size="13.8" fill="#CED0E1">Actual AWS RDS PITR  ·  Separate synthetic Fargate tasks  ·  Not full production ECS / HTTPS / Multi-AZ acceptance</text>
+</g>
+</svg>
