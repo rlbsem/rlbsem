@@ -2,9 +2,9 @@
 
 **Data & Analytics Engineering | MarTech | GTM & AI Systems | Enterprise Integration | Revenue Integrity**
 
-I build **enterprise data, analytics, MarTech/GTM, integration, and AI systems** across B2B SaaS, enterprise ecommerce, and private-equity-backed portfolios.
+I build **enterprise data, analytics, MarTech/GTM, integration, and AI systems** across B2B SaaS, enterprise ecommerce, private equity firms, and their portfolio companies.
 
-My work extends to **sponsor- and holding-company architecture**, connecting acquired businesses through governed data infrastructure, cross-company systems integration, revenue reconciliation, and consolidated portfolio reporting.
+My work includes **enterprise systems architecture and repeated deployments across private equity investment platforms and their operating businesses**, connecting acquired companies through governed data infrastructure, CRM and financial systems integration, stateful middleware, revenue reconciliation, and consolidated portfolio reporting.
 
 **Engineering evidence:** The repositories include working Python, SQL, PostgreSQL, dbt and API implementations, native Salesforce, Snowflake and BigQuery acceptance records, and actual local LLM inference. Public business scenarios use synthetic or public sample data to protect confidential records. Native integrations and local simulated contracts are identified separately.
 
