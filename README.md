@@ -14,6 +14,8 @@ My work includes **enterprise systems architecture and repeated deployments acro
 
 [**Inspect executed AWS recovery evidence**](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md) · [Source repository](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
 
+<a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md"><img src="assets/sections/aws-recovery-flow.svg" width="100%" alt="Verified AWS application recovery: five source intents and receipts, earlier PITR restore three versus five blocked, later restore five versus five with fresh approval, then independent six of six reconciliation with zero duplicate effects"/></a>
+
 ## Architecture & Engineering Portfolio
 
 <img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
@@ -74,6 +76,11 @@ Executed outcomes and independently checkable records. Each case identifies what
 
 *Actual local screenshots from documented synthetic workflows; not production deployments or native vendor-console captures.*
 
+### [AWS RDS recovery: block unsafe replay, then verify safe resumption](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md)
+
+Executed one bounded AWS acceptance experiment with two sequential retained-backup PostgreSQL point-in-time restores. The first recovery point exposed **3 restored intents versus 5 independent receipts** and correctly kept execution blocked. The later recovery point required fresh proof, rejected stale worker completion, enforced consent and finished with **6 matching intents/effects and zero duplicates**, independently verified. These were synthetic one-off Fargate application tasks, not a production ECS/HTTPS/Multi-AZ deployment; pending AWS deletions and final billing limits remain documented.
+
+
 ### [Salesforce and Snowflake: recover an uncertain CRM write](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md)
 
 What if Salesforce saves an approved action but the response is lost? In a recorded connected Salesforce Developer Edition and Snowflake run, the dispatcher recovered the existing receipt rather than creating a duplicate. An independent reader verified the record, and CRM feedback changed the warehouse recommendation from `clarify_need` to `hold`. This demonstrates controlled CRM execution and warehouse feedback, not customer outreach or a sale.
@@ -107,11 +114,6 @@ The Revenue Metrics Platform models bookings, invoices, cash and ARR at their ow
 ### [Control-plane workload: isolate failing destinations and expose rate limits](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/dependency-isolation/arrival-review/README.md)
 
 PostgreSQL-governed permits, bounded queues and durable receiver receipts were tested under substantial synthetic load. Across four recorded runs, **12,035 admitted actions** reconciled to single effects while **7,965 overload rejections** were accounted for. Independent receiver analysis also found some one-second arrival buckets with **11 requests** despite a ten-per-window permit contract. The system records that boundary rather than falsely claiming strict downstream arrival-rate compliance.
-
-
-### [AWS RDS recovery: block unsafe replay, then verify safe resumption](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md)
-
-Executed one bounded AWS acceptance experiment with two sequential retained-backup PostgreSQL point-in-time restores. The first recovery point exposed **3 restored intents versus 5 independent receipts** and correctly kept execution blocked. The later recovery point required fresh proof, rejected stale worker completion, enforced consent and finished with **6 matching intents/effects and zero duplicates**, independently verified. These were synthetic one-off Fargate application tasks, not a production ECS/HTTPS/Multi-AZ deployment; pending AWS deletions and final billing limits remain documented.
 
 
 ## Explore engineering in action
