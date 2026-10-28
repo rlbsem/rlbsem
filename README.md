@@ -8,14 +8,6 @@ My work includes **enterprise systems architecture and repeated deployments acro
 
 **Engineering evidence:** Working Python, SQL, PostgreSQL, dbt and API implementations, executed AWS RDS recovery, native Salesforce/Snowflake/BigQuery integrations and local LLM inference. Public demonstrations use synthetic or public sample data to protect confidential client information; native executions and simulated vendor contracts are documented separately.
 
-## Featured engineering proof
-
-**AWS application recovery, verified October 2026.** Built and exercised a Python/PostgreSQL control plane on AWS using two sequential RDS point-in-time restores. The first recovery exposed **3 restored intents versus 5 independent effects** and correctly blocked execution. The later restore enforced fresh authorization and consent, rejected stale worker completion, and independently verified **6 matching intents/effects with zero duplicates**. The experiment ran synthetic, one-off Fargate tasks; full production ECS/HTTPS/Multi-AZ acceptance was outside scope.
-
-[**Inspect executed AWS recovery evidence**](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md) · [Source repository](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
-
-<a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md"><img src="assets/sections/aws-recovery-flow.svg" width="100%" alt="Verified AWS application recovery: five source intents and receipts, earlier PITR restore three versus five blocked, later restore five versus five with fresh approval, then independent six of six reconciliation with zero duplicate effects"/></a>
-
 ## Architecture & Engineering Portfolio
 
 <img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
@@ -79,6 +71,8 @@ Executed outcomes and independently checkable records. Each case identifies what
 ### [AWS RDS recovery: block unsafe replay, then verify safe resumption](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md)
 
 Executed one bounded AWS acceptance experiment with two sequential retained-backup PostgreSQL point-in-time restores. The first recovery point exposed **3 restored intents versus 5 independent receipts** and correctly kept execution blocked. The later recovery point required fresh proof, rejected stale worker completion, enforced consent and finished with **6 matching intents/effects and zero duplicates**, independently verified. These were synthetic one-off Fargate application tasks, not a production ECS/HTTPS/Multi-AZ deployment; pending AWS deletions and final billing limits remain documented.
+
+<a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md"><img src="assets/sections/aws-recovery-flow.svg" width="100%" alt="Verified AWS application recovery: five source intents and receipts, earlier PITR restore three versus five blocked, later restore five versus five with fresh approval, then independent six of six reconciliation with zero duplicate effects"/></a>
 
 
 ### [Salesforce and Snowflake: recover an uncertain CRM write](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md)
