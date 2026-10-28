@@ -37,6 +37,16 @@ Customer and account intelligence, governed CRM execution, stateful integration,
 <tr><td valign="top" width="50%"><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane"><img src="assets/projects/martech-control-plane.svg" width="100%" alt="Enterprise MarTech / AI Control Plane architecture diagram"/></a><p><strong><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane">Enterprise MarTech / AI Control Plane</a></strong></p><p><strong>Challenge:</strong> When CRM, marketing, and finance systems disagree, ordinary sync jobs can overwrite the right data or repeat an action after a timeout.</p><p><strong>Implementation:</strong> Implements a PostgreSQL control layer for canonical identities, field ownership, consent, durable delivery, and receipt-based recovery. Includes measured overload and isolation tests.</p><p><strong>Verification:</strong> Executed AWS recovery: two RDS point-in-time restores; 3/5 discrepancy blocked, followed by 6/6 reconciliation with zero duplicate effects. Separate synthetic load tests reconciled 12,035 actions.</p><p><a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md">AWS recovery evidence</a> | <a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/dependency-isolation/arrival-review/README.md">Load and failure evidence</a> | <a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane">Repository</a></p></td><td valign="top" width="50%"><a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation"><img src="assets/projects/agent-runtime.svg" width="100%" alt="Enterprise Agent Runtime &amp; Evaluation architecture diagram"/></a><p><strong><a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation">Enterprise Agent Runtime &amp; Evaluation</a></strong></p><p><strong>Challenge:</strong> An agent can appear to work in a demo but make unsupported claims, repeat actions, or regress after a model update.</p><p><strong>Implementation:</strong> Tests actual local Qwen3 responses against evidence and action rules, then exercises shadow evaluation, canary release, promotion, and verified rollback after a controlled failure.</p><p><strong>Verification:</strong> Actual Qwen3 release: 48/48 tasks per configuration and tested rollback.</p><p><a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance">Inspect the AI release decisions</a> | <a href="https://github.com/rlbsem/enterprise-agent-runtime-evaluation">Repository</a></p></td></tr>
 </table>
 
+### Control Plane: verified AWS application recovery
+
+The [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) now has executed AWS recovery evidence. Two sequential RDS point-in-time restores tested whether application state could safely reopen. The earlier restore had **3 intents against 5 independent receipts**, so execution remained blocked. The later restore required fresh approval and consent checks, rejected stale worker completion and independently verified **6 matching intents/effects with zero duplicates**.
+
+<a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md"><img src="assets/sections/aws-recovery-flow.svg" width="100%" alt="Verified AWS application recovery: five source intents and receipts, earlier PITR restore three versus five blocked, later restore five versus five with fresh approval, then independent six of six reconciliation with zero duplicate effects"/></a>
+
+[View executed AWS recovery records](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md) · [Control Plane repository](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
+
+*Scope: synthetic one-off Fargate application tasks using actual AWS RDS recovery, not full production ECS/HTTPS/Multi-AZ acceptance. Pending deletions and final billing remain documented in the evidence.*
+
 ## Enterprise Integration & Revenue Integrity
 
 Durable order-to-cash reconciliation and controlled multi-business integration, including acquisition-specific governance.
@@ -67,13 +77,6 @@ Executed outcomes and independently checkable records. Each case identifies what
 </table>
 
 *Actual local screenshots from documented synthetic workflows; not production deployments or native vendor-console captures.*
-
-### [AWS RDS recovery: block unsafe replay, then verify safe resumption](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md)
-
-Executed one bounded AWS acceptance experiment with two sequential retained-backup PostgreSQL point-in-time restores. The first recovery point exposed **3 restored intents versus 5 independent receipts** and correctly kept execution blocked. The later recovery point required fresh proof, rejected stale worker completion, enforced consent and finished with **6 matching intents/effects and zero duplicates**, independently verified. These were synthetic one-off Fargate application tasks, not a production ECS/HTTPS/Multi-AZ deployment; pending AWS deletions and final billing limits remain documented.
-
-<a href="https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md"><img src="assets/sections/aws-recovery-flow.svg" width="100%" alt="Verified AWS application recovery: five source intents and receipts, earlier PITR restore three versus five blocked, later restore five versus five with fresh approval, then independent six of six reconciliation with zero duplicate effects"/></a>
-
 
 ### [Salesforce and Snowflake: recover an uncertain CRM write](https://github.com/rlbsem/customer-signal-activation/blob/main/docs/evidence/connected-integration/README.md)
 
