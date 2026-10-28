@@ -6,7 +6,13 @@ I build **enterprise data, analytics, MarTech/GTM, integration, and AI systems**
 
 My work includes **enterprise systems architecture and repeated deployments across private equity investment platforms and their operating businesses**, connecting acquired companies through governed data infrastructure, CRM and financial systems integration, stateful middleware, revenue reconciliation, and consolidated portfolio reporting.
 
-**Engineering evidence:** The repositories include working Python, SQL, PostgreSQL, dbt and API implementations, native Salesforce, Snowflake and BigQuery acceptance records, and actual local LLM inference. Public business scenarios use synthetic or public sample data to protect confidential records. Native integrations and local simulated contracts are identified separately.
+**Engineering evidence:** Working Python, SQL, PostgreSQL, dbt and API implementations, executed AWS RDS recovery, native Salesforce/Snowflake/BigQuery integrations and local LLM inference. Public demonstrations use synthetic or public sample data to protect confidential client information; native executions and simulated vendor contracts are documented separately.
+
+## Featured engineering proof
+
+**AWS application recovery, verified October 2026.** Built and exercised a Python/PostgreSQL control plane on AWS using two sequential RDS point-in-time restores. The first recovery exposed **3 restored intents versus 5 independent effects** and correctly blocked execution. The later restore enforced fresh authorization and consent, rejected stale worker completion, and independently verified **6 matching intents/effects with zero duplicates**. The experiment ran synthetic, one-off Fargate tasks; full production ECS/HTTPS/Multi-AZ acceptance was outside scope.
+
+[**Inspect executed AWS recovery evidence**](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md) · [Source repository](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
 
 ## Architecture & Engineering Portfolio
 
@@ -204,13 +210,13 @@ Its **lifecycle orchestration and experimentation layer** now coordinates trial 
 </details>
 
 <details>
-<summary><strong>Enterprise MarTech / AI Control Plane</strong>: Identity authority, durable receipts, overload and recovery</summary>
+<summary><strong>Enterprise MarTech / AI Control Plane</strong>: Native AWS recovery, source authority, durable receipts and fault isolation</summary>
 
 ### [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane)
 
-**Business impact:** Let private equity sponsors and multi-brand operators govern data movement across acquired companies without manually reconciling disconnected operating systems. This Python/PostgreSQL control plane governs canonical identity, field ownership, consent, approvals and durable downstream actions. Its **dependency-isolation acceptance** offered 20,000 synthetic proposals across four five-minute local HTTP runs: **12,035 admitted actions** each reconciled to one effect, while **7,965 overload rejections** were explicitly accounted for. PostgreSQL-coordinated destination permits, bounded queues and recovery checks kept an unhealthy receiver from monopolizing shared workers. Permit issuance met its declared window contract; independent arrival analysis also identified bursts of 11 requests, valuable evidence for stricter provider-specific rate controls. Separate native AWS tests verified receipts, restricted permissions and an RDS restore reaching `available`, with the subsequent application-state recovery boundary documented in the evidence.
+**Business impact:** Let private equity sponsors and multi-brand operators govern data movement across acquired companies without manually reconciling disconnected operating systems. This Python/PostgreSQL control plane governs canonical identity, field ownership, consent, approvals and durable downstream actions. Its **dependency-isolation acceptance** offered 20,000 synthetic proposals across four five-minute local HTTP runs: **12,035 admitted actions** each reconciled to one effect, while **7,965 overload rejections** were explicitly accounted for. PostgreSQL-coordinated destination permits, bounded queues and recovery checks kept an unhealthy receiver from monopolizing shared workers. Permit issuance met its declared window contract; independent arrival analysis also identified bursts of 11 requests, valuable evidence for stricter provider-specific rate controls. **Native AWS application recovery passed** in a separate bounded synthetic test: two sequential RDS point-in-time restores, a blocked 3/5 discrepancy, and safe resumption after fresh evidence with 6/6 independent reconciliation and no duplicate effects. This is execution evidence for isolated tasks, not a full production ECS/HTTPS/Multi-AZ deployment.
 
-[Measured dependency isolation and receiver-rate evidence](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/dependency-isolation/arrival-review/README.md) · [AWS execution boundary](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/aws-readiness/retained-two-instance/native-outcome/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md)
+[Executed AWS recovery acceptance](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/cloud-recovery/native-application-2026-10-28/README.md) · [Measured load and receiver limits](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/dependency-isolation/arrival-review/README.md) · [Recovery tests](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/evidence/report.md) · [Architecture](https://github.com/rlbsem/enterprise-martech-ai-control-plane/blob/main/docs/architecture.md)
 
 </details>
 
