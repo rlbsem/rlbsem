@@ -254,7 +254,11 @@ Recorded verification includes **83 regression tests**, standalone demos, **53 p
 
 ## Systems, technologies, and control patterns
 
-**Enterprise platforms and business systems:** Salesforce · HubSpot · Salesforce Marketing Cloud · Marketing Cloud Account Engagement (Pardot) · Marketo · Segment · Clay · LinkedIn Sales Navigator · HighLevel (GoHighLevel) · LMN · Aspire · QuickBooks · NetSuite · Google Analytics 4 (GA4) · Google Tag Manager (GTM) · Adobe Analytics · Tableau · Power BI · Vapi · Dialpad · Make · n8n · Workato · Zapier
+**Enterprise platforms and business systems:** Salesforce · HubSpot · Salesforce Marketing Cloud · Marketing Cloud Account Engagement (Pardot) · Segment · Clay · LinkedIn Sales Navigator · HighLevel (GoHighLevel) · LMN · Aspire · QuickBooks · NetSuite · Google Analytics 4 (GA4) · Google Tag Manager (GTM) · Tableau · Power BI · Vapi · Dialpad · Make · n8n · Workato · Zapier
+
+**Adobe Experience Cloud & Content Supply Chain:** Adobe Workfront · Adobe GenStudio · Adobe Experience Platform (AEP) · Adobe Real-Time CDP · Adobe Journey Optimizer · Adobe Customer Journey Analytics · Adobe Analytics · Adobe Marketo Engage
+
+**Content Supply Chain & Marketing Operations:** Work management · Campaign workflows · Creative request intake · Proofing and approvals · Content version governance · Brand-aligned content production · Enterprise marketing integration
 
 **Engineering, data platforms, and cloud:** Python · SQL · JavaScript / TypeScript · PostgreSQL · Snowflake · BigQuery · Supabase · dbt · DuckDB · SQLite · FastAPI · Streamlit · Airflow · Git · GitHub Actions / CI/CD · Docker · Terraform · AWS architecture (ECS/Fargate, RDS, ECR, IAM/OIDC)
 
