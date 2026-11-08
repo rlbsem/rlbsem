@@ -8,7 +8,7 @@ My work includes **enterprise systems architecture and repeated deployments acro
 
 **Engineering evidence:** Working Python, SQL, PostgreSQL, dbt and API implementations; executed AWS RDS recovery, native Salesforce/Snowflake/BigQuery workflows, bounded native HubSpot CRM readback and local LLM inference. Public demonstrations use synthetic or public sample data to protect confidential client information; native executions and simulated vendor contracts are documented separately.
 
-**Recently verified:** [Native BigQuery/dbt execution](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/native-dbt-bigquery/README.md) — seven models, 30 tests per build, real incremental `MERGE` (six changed rows; zero on replay), independent full-refresh/Python parity and verified cloud cleanup on a synthetic GA4-shaped fixture.
+**Recently verified:** [Native BigQuery/dbt execution](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/native-dbt-bigquery/README.md) — seven models, 30 tests per build, real incremental `MERGE` (six changed rows; zero on replay), independent full-refresh/Python parity and verified cloud cleanup on a synthetic GA4-shaped fixture. Separately, [native read-only HubSpot acceptance](https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/main/docs/evidence/hubspot-native/2026-11-08/README.md) verified two synthetic CRM objects, their exact properties and their association in both directions through independent HTTPS readback.
 
 ## Architecture & Engineering Portfolio
 
