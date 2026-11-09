@@ -14,7 +14,7 @@ My work includes **enterprise systems architecture and repeated deployments acro
 
 <img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
 
-**Interactive Engineering Evidence Lab:** [Explore 13 browser-based engineering investigations](https://rlbsem.github.io/enterprise-revenue-systems-lab/) across 23 evidence cases, including [Enterprise Integration Economics](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=economics-integration) and [native GA4 SQL / local dbt verification](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=warehouse-verification). Inspect decisions, source records, failures and integrity checks. [Lab source code](https://github.com/rlbsem/enterprise-revenue-systems-lab).
+**Interactive Engineering Evidence Lab:** [Explore 14 browser-based engineering investigations](https://rlbsem.github.io/enterprise-revenue-systems-lab/) across 24 evidence cases, including [Acquisition Governance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance), [Enterprise Integration Economics](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=economics-integration) and [native GA4 SQL / local dbt verification](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=warehouse-verification). Inspect decisions, source records, failures and integrity checks. [Lab source code](https://github.com/rlbsem/enterprise-revenue-systems-lab).
 
 ## Engineering implementations
 
@@ -112,7 +112,7 @@ PostgreSQL-governed permits, bounded queues and durable receiver receipts were t
 
 **[Open the Enterprise Revenue Systems Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** · [Source code & reproduction](https://github.com/rlbsem/enterprise-revenue-systems-lab)
 
-Explore **13 interactive investigations and 23 evidence cases** covering real enterprise engineering problems: what went wrong, how the system handled it, and what the recorded execution proves.
+Explore **14 interactive investigations and 24 evidence cases** covering real enterprise engineering problems: what went wrong, how the system handled it, and what the recorded execution proves.
 
 <a href="https://rlbsem.github.io/enterprise-revenue-systems-lab/"><img src="https://raw.githubusercontent.com/rlbsem/enterprise-revenue-systems-lab/617dfe52a6fb6c64246e321c95db4aedb5ffa4d4/docs/images/integration-economics/font-fix/economics-integration-desktop.png" alt="Actual Engineering Evidence Lab interface showing enterprise integration architecture and cost decisions" width="760"/></a>
 
@@ -122,12 +122,12 @@ Explore **13 interactive investigations and 23 evidence cases** covering real en
 
 | Engineering focus | Business problem and technical proof | Start exploring |
 |---|---|---|
-| **Enterprise Architecture & Integration** | Govern architecture cost, capacity, and multi-company system changes without losing control of dependencies. | [Integration Economics](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=economics-integration) · [Enterprise Change Assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=estate-assurance) |
+| **Enterprise Architecture & Integration** | Govern architecture cost, capacity, acquisition identity/admission and multi-company change boundaries without losing provenance or control. | [Integration Economics](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=economics-integration) · [Enterprise Change Assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=estate-assurance) · [Acquisition Governance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance) |
 | **Data & Analytics Engineering** | Validate GA4 source grain, native BigQuery/dbt MERGE and replay correctness on synthetic inputs, separate public-sample SQL, lineage, and performance tradeoffs. | [GA4 Warehouse Verification](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=warehouse-verification) · [Model Correctness & Performance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=analytics-engineering) |
 | **Revenue & Enterprise Systems** | Reconcile billing, ERP, and cash; recover uncertain CRM writes with independently verified Salesforce and Snowflake effects. | [Revenue Integrity](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity) · [Salesforce–Snowflake Integration](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=connected-roundtrip) |
 | **AI & GTM Systems** | Evaluate evidence-grounded account intelligence, model release gates, rejected candidates, and safe rollback decisions. | [AI Model Release Assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) · [Account Intelligence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research) |
 
-**[Explore all 13 investigations and 23 evidence cases](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** — including failure records, provenance, reproducible artifacts, and explicit evidence boundaries.
+**[Explore all 14 investigations and 24 evidence cases](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** — including failure records, provenance, reproducible artifacts, and explicit evidence boundaries.
 
 ## Implementation details and verification
 
