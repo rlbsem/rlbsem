@@ -14,7 +14,7 @@ My work includes **enterprise systems architecture and repeated deployments acro
 
 <img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
 
-**Interactive Engineering Evidence Lab:** [Explore 14 browser-based engineering investigations](https://rlbsem.github.io/enterprise-revenue-systems-lab/) across 24 evidence cases, including [Acquisition Governance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance), [Enterprise Integration Economics](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=economics-integration) and [native GA4 SQL / local dbt verification](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=warehouse-verification). Inspect decisions, source records, failures and integrity checks. [Lab source code](https://github.com/rlbsem/enterprise-revenue-systems-lab).
+**Interactive Engineering Evidence Lab:** [Explore 14 browser-based engineering investigations](https://rlbsem.github.io/enterprise-revenue-systems-lab/) across 24 evidence cases, including [Acquisition Governance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance), [Enterprise Integration Economics](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=economics-integration) and [native dbt-BigQuery MERGE verification](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=warehouse-verification). Inspect decisions, source records, failures and integrity checks. [Lab source code](https://github.com/rlbsem/enterprise-revenue-systems-lab).
 
 ## Engineering implementations
 
