@@ -10,19 +10,6 @@ My work includes **enterprise systems architecture and repeated deployments acro
 
 **Recently verified:** [Native BigQuery/dbt execution](https://github.com/rlbsem/first-party-measurement-assurance/blob/main/docs/evidence/native-dbt-bigquery/README.md) with seven models, 30 tests per build, real incremental `MERGE` (six changed rows; zero on replay), independent full-refresh/Python parity and verified cloud cleanup on a synthetic GA4-shaped fixture. Separately, [native read-only HubSpot acceptance](https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/main/docs/evidence/hubspot-native/2026-11-08/README.md) verified two synthetic CRM objects, their exact properties and their association in both directions through independent HTTPS readback.
 
-## Start here: engineering proof by role
-
-For hiring managers and technical reviewers: choose the closest role focus below, then inspect the linked implementation and recorded execution. Native vendor/cloud work, local tests and synthetic business data are identified separately.
-
-| Role focus | Open first | What the evidence demonstrates |
-|---|---|---|
-| **Enterprise Systems & Integration Architecture** | [Stateful Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) · [Acquisition Governance Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance) | Canonical identity, source authority, durable receipts, safe AWS RDS recovery and company-scoped integration |
-| **Data & Analytics Engineering** | [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) · [Native dbt-BigQuery verification](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=warehouse-verification) | SQL/dbt lineage, financial grain, independent full-rowset parity, actual incremental MERGE and measured performance tradeoffs |
-| **MarTech & Marketing Data Engineering** | [First-Party Measurement Assurance](https://github.com/rlbsem/first-party-measurement-assurance) · [PostgreSQL CDC migration evidence](https://github.com/rlbsem/martech-migration-assurance/blob/main/docs/evidence/postgres-cdc/report.md) | Consent-aware collection, GA4 event/item/session grain, contract-versus-payment authority, late corrections and replay-safe migration |
-| **Revenue, GTM & AI Systems** | [Revenue Integrity investigation](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=revenue-integrity) · [Salesforce/Snowflake round trip](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=connected-roundtrip) · [AI release gates](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=release-assurance) | Invoice/ERP/cash reconciliation, governed CRM-to-warehouse effects, evaluated model decisions and controlled rollback |
-
-**[Explore the full interactive Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** · [Browse all 13 source implementations](#engineering-implementations) · [Inspect selected execution evidence](#selected-execution-evidence)
-
 ## Architecture & Engineering Portfolio
 
 <img src="assets/capability-map.svg" width="100%" alt="Capability map of thirteen engineering implementations covering enterprise integration, revenue systems, data architecture, MarTech, GTM, and applied AI"/>
